@@ -4,7 +4,7 @@
 
 ## What was done
 
-A person labeled 200 tuning rows blind on a private page: 20 labeled `NONE` and 20 labeled flagged, from each of `broadsheet-2026`, `beats-2026`, `context-2026`, `week-2026-10-19` and `harvested` (seed 20261019; `sample.json`). They never saw the model label. The answers are in `owner-labels.json`. Score them with:
+A person labeled 200 tuning rows blind on a private page: 20 labeled `NONE` and 20 labeled flagged, from each of `broadsheet-2026`, `beats-2026`, `context-2026`, `week-2026-10-19` and `harvested` (seed 20261019; `sample.json`). They never saw the model label. The answers are in `owner-labels.json`. They were scored with:
 
     node tools/spotcheck/score.mjs build/spotcheck/key.json docs/benchmark/spot-check-2026-10/owner-labels.json build/spotcheck/items.json
 
@@ -33,7 +33,7 @@ Most disagreements sit on a few rules. Recommendations for them were drawn up on
 |---|---|---|
 | 3, a fear word on a real event | "Two dead after horror crash", "Epping fire horror as locals urged to keep windows shut", "Horror at train station as youths wield machetes": all clean (s047, s046, s026) | A fear word counts only when it stands in for the facts or the threat is vague or future. A real, stated harm described with "horror" is clean. |
 | 1, quoted words with no speaker | 'biting and punching crew', 'stolen' goods, 'Hamas tribute', 'Elon Is a Nuke': all clean (s095, s161, s121, s132) | Reported conduct or an allegation in quotes is shorthand for "alleged" and is clean. A loaded label or sneer the outlet uses to frame the story stays `vague_sourcing`. |
-| 2, opinion | Flagged a Guardian editorial, a signed column and other opinion pieces (s078, s041, s017, s117, s166); left "Badenoch must go bigger" clean | Confirmed. A labelled editorial or signed column is never `opinion_as_fact`; an unsigned verdict stated as news ("Congress has never passed a real budget", s151) is. |
+| 2, opinion | Flagged a Guardian editorial, a signed column and other opinion pieces (s078, s041, s017, s117, s166); left "Badenoch must go bigger" clean | Confirmed. A labeled editorial or signed column is never `opinion_as_fact`; an unsigned verdict stated as news ("Congress has never passed a real budget", s151) is. |
 | 4, service | Flagged "Here's what you need to do", "everything you need to know" and "Here's how to maximise the benefits" (s019, s181, s051) | Confirmed: a practical guide that names its topic stays clean. |
 | Unnamed report | "…, report finds" and "…, report says" clean (s094, s176) | The rule pack 29 extension from unnamed studies to unnamed reports is reverted. |
 | Loaded labels | "disgraced ex-Labour MP" and "yobs" clean (s154, s173) | Both words come out of the loaded-label list. |

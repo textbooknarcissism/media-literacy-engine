@@ -146,7 +146,7 @@ object Harvest {
         if (!intake.exists()) {
             intake.parentFile?.mkdirs()
             intake.writeText(
-                "# Unlabelled broadsheet intake. Written by ./gradlew :tools:benchmark:run --args=\"harvest\".\n" +
+                "# Unlabeled broadsheet intake. Written by ./gradlew :tools:benchmark:run --args=\"harvest\".\n" +
                     "# Article type comes from the feed each item was found in.\n" +
                     "# ${IntakeRow.COLUMNS.joinToString("\t")}\n",
                 Charsets.UTF_8,

@@ -1,5 +1,5 @@
-# mined-2026-10: rule material, NOT evidence. 1,600 headlines from harvested-live-intake.tsv (harvested up to 2026-10-12) that appear in no other labelled set, balanced by outlet. Headline only: no summaries or links.
-# Labelled under codebook version 7 (draft) by a language model, blind to the engine, with the named pattern and the exact trigger words in the note column. A second pass spot-checked a random 174 rows (173 agreed on flagged-or-not; one changed) and ruled on the 31 unsure rows; 2 that turn on the stage of the science are left out.
+# mined-2026-10: rule material, NOT evidence. 1,600 headlines from harvested-live-intake.tsv (harvested up to 2026-10-12) that appear in no other labeled set, balanced by outlet. Headline only: no summaries or links.
+# Labeled under codebook version 7 (draft) by a language model, blind to the engine, with the named pattern and the exact trigger words in the note column. A second pass spot-checked a random 174 rows (173 agreed on flagged-or-not; one changed) and ruled on the 31 unsure rows; 2 that turn on the stage of the science are left out.
 # Every row was read while writing rules, so this set has no held-out part: it is registered tuning-only, and its numbers are never reported as a test.
 # Levels: NONE 1246, SUBTLE 315, PROMINENT 37. Flagged: 352/1598.
 # level	techniques	id	beat	outlet	articleType	typeSource	link	labeller	unsure	headline	note	summary	pageSection	pageType	fetchStatus

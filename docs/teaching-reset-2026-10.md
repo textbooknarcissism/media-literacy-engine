@@ -57,7 +57,7 @@ These follow from §1 and are written into position 17 so a future filter move h
 
 Removed entirely: `FlagMode`, `LearnedScorer`, `core/flagging/src/main/resources/weights-v1.json`, `FlagResult.learnedWords`, the `mode` parameter on `HeadlineFlagger` and `MediaLiteracyEngine` (and its alias in `Aliases.kt`), `StrictModeTest`, the `train-weights` tool (`TrainWeights.kt` and its entry in `Main.kt`), and the Strict section in `Report.kt`. Mentions in `README.md`, `docs/METHODOLOGY.md` and `docs/benchmark-results.md` are removed or rewritten.
 
-Strict existed for two days and v1.0.0 is unpublished, so there is nothing to deprecate. Default-mode verdicts do not change: the gate must pass with an unchanged baseline before the label revert in §4 is applied.
+Strict existed for two days and v1.0.0 was not yet published, so there was nothing to deprecate. Default-mode verdicts do not change: the gate must pass with an unchanged baseline before the label revert in §4 is applied.
 
 ## 6. Measurement
 

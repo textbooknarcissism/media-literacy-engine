@@ -244,7 +244,7 @@ class RealWorldPatternsTest {
         val verdict = flagger.flag("Brendan Carr is more worried about who The View interviews than foreign owners")
         assertTrue(
             Category.OPINION in verdict.categories,
-            "a comparative judgement about what someone cares about is the writer speaking",
+            "a comparative judgment about what someone cares about is the writer speaking",
         )
     }
 
@@ -261,7 +261,7 @@ class RealWorldPatternsTest {
     }
 
     @Test
-    fun `a judgement someone is named as making is reported, not the writers own`() {
+    fun `a judgment someone is named as making is reported, not the writers own`() {
         val quoted = flagger.flag("Rachel Reeves says the policy is a disaster for working families")
         assertTrue(
             Category.OPINION !in quoted.categories,
@@ -325,7 +325,7 @@ class RealWorldPatternsTest {
     }
 
     @Test
-    fun `broadsheet nudges still flag unless signed, and memorised v20 phrases stay gone`() {
+    fun `broadsheet nudges still flag unless signed, and memorized v20 phrases stay gone`() {
         val nudge = flagger.flag("Tony Blair would like Andy Burnham to take his advice on rejoining the EU. Should he?")
         assertEquals(FlagLevel.SUBTLE, nudge.level)
         assertTrue(Category.OPINION in nudge.categories)
@@ -906,10 +906,10 @@ class RealWorldPatternsTest {
         // Codebook rule 2: a labeled review or column has told the reader it
         // is opinion, so its verdict is not opinion presented as fact.
         val opinionReview = flagger.flag("Elden Ring review: a visual masterclass that nails the open world")
-        assertEquals(FlagLevel.NONE, opinionReview.level, "A labelled review's verdict is not opinion as fact")
+        assertEquals(FlagLevel.NONE, opinionReview.level, "A labeled review's verdict is not opinion as fact")
 
         val columnCommentary = flagger.flag("Column: the prime minister's speech was tone-deaf and laughable")
-        assertEquals(FlagLevel.NONE, columnCommentary.level, "A labelled column's verdict is not opinion as fact")
+        assertEquals(FlagLevel.NONE, columnCommentary.level, "A labeled column's verdict is not opinion as fact")
 
         // The same verdict with no label is the outlet speaking.
         val unlabelled = flagger.flag("The prime minister's speech was tone-deaf and laughable")
@@ -936,7 +936,7 @@ class RealWorldPatternsTest {
         assertTrue(Category.CURIOSITY in localNews.categories, "A genre label does not excuse an announced answer")
 
         val opEd = flagger.flag("Op-Ed: The mayor's plan is an absolute disaster")
-        assertEquals(FlagLevel.NONE, opEd.level, "A labelled op-ed's verdict is not opinion as fact (codebook rule 2)")
+        assertEquals(FlagLevel.NONE, opEd.level, "A labeled op-ed's verdict is not opinion as fact (codebook rule 2)")
         assertTrue(Category.OPINION in flagger.flag("The mayor's plan is an absolute disaster").categories)
     }
 
@@ -1020,7 +1020,7 @@ class RealWorldPatternsTest {
     fun `an article the feed calls opinion is never opinion as fact but can still tease`() {
         // Codebook rule 2 from the article's own type, not only from a byline in the headline.
         val thesis = "The prime minister's speech was tone-deaf and laughable"
-        assertTrue(Category.OPINION in flagger.flag(thesis).categories, "Unlabelled, it is the outlet speaking")
+        assertTrue(Category.OPINION in flagger.flag(thesis).categories, "Unlabeled, it is the outlet speaking")
         for (type in listOf(ArticleType.OPINION, ArticleType.EDITORIAL, ArticleType.REVIEW, ArticleType.LETTERS)) {
             assertTrue(Category.OPINION !in flagger.flag(thesis, articleType = type).categories, type.name)
         }

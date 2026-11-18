@@ -44,7 +44,7 @@ class RulePackLintTest {
     private fun packWith(rule: CategoryRule) = RulePack(version = 1, thresholds = Thresholds(0.5, 1.0), categories = listOf(rule))
 
     @Test
-    fun `memorisation lint errors on a phrase that only matches held-out headlines`() {
+    fun `memorization lint errors on a phrase that only matches held-out headlines`() {
         val pack = packWith(CategoryRule(id = "opinion_as_fact", weight = 1.0, noticeTerms = listOf("recipe for curtain-twitching disaster", "is a disaster")))
         val report = RulePackLinter.lintMemorisation(
             pack,
@@ -56,7 +56,7 @@ class RulePackLintTest {
     }
 
     @Test
-    fun `memorisation lint warns on a long single-headline phrase and spares grandfathered terms`() {
+    fun `memorization lint warns on a long single-headline phrase and spares grandfathered terms`() {
         val pack = packWith(CategoryRule(id = "manufactured_fear", weight = 1.0, terms = listOf("digital pathway to hell")))
 
         val warned = RulePackLinter.lintMemorisation(pack, emptyList(), listOf("I watched Trump TV. It's a digital pathway to hell"))
@@ -102,7 +102,7 @@ class RulePackLintTest {
     }
 
     @Test
-    fun `memorisation lint matches through curly quotes and dashes like the flagger does`() {
+    fun `memorization lint matches through curly quotes and dashes like the flagger does`() {
         val pack = packWith(CategoryRule(id = "manufactured_fear", weight = 1.0, terms = listOf("it's a digital pathway to hell")))
         val report = RulePackLinter.lintMemorisation(pack, listOf("I watched Trump TV – it’s a digital pathway to hell"), emptyList())
         assertEquals(1, report.errors.size, "The curly apostrophe must be normalised before matching, exactly as HeadlineFlagger does")

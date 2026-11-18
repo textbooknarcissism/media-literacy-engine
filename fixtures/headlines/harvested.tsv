@@ -1,10 +1,10 @@
 # Real headlines. Last added to 2026-09-21.
 #
 # 3492 headlines, 0 still unreviewed.
-# 2026-10-10: character corruption repaired and labels audited against docs/benchmark/codebook.md. See docs/benchmark/harvested-audit-2026-10-10.md.
-# 2026-10-11: 8 labels changed under codebook version 2 (a reason framed as a disclosure; a statement the headline holds back). See docs/benchmark/harvested-audit-2026-10-10.md §6.
-# 2026-10-11: 60 labels changed under codebook version 3 (announced answers, scare quotes with a dramatic claim and no speaker, fear words on events, staged exchanges, how-tos). See docs/benchmark/harvested-audit-2026-10-10.md §7.
-# 2026-10-11: optional columns 4-5 hold the article type and how it was found. Ten thesis-style rows were looked up on the web; six news-section theses moved from NONE to SUBTLE (opinion as fact, codebook rule 2). See docs/benchmark/harvested-audit-2026-10-10.md §8. Rows without a type are unknown and judged on the headline alone.
+# 2026-10-10: character corruption repaired and labels audited against docs/benchmark/codebook.md. The audit record is kept in the development repository.
+# 2026-10-11: 8 labels changed under codebook version 2 (a reason framed as a disclosure; a statement the headline holds back). See docs/benchmark/codebook.md §7.
+# 2026-10-11: 60 labels changed under codebook version 3 (announced answers, scare quotes with a dramatic claim and no speaker, fear words on events, staged exchanges, how-tos). See docs/benchmark/codebook.md §7.
+# 2026-10-11: optional columns 4-5 hold the article type and how it was found. Ten thesis-style rows were looked up on the web; six news-section theses moved from NONE to SUBTLE (opinion as fact, codebook rule 2). Rows without a type are unknown and judged on the headline alone.
 #
 # The label column is THE DETECTOR'S OWN GUESS until a person changes it.
 # Go through these, correct the ones it got wrong, and delete the REVIEW
@@ -15,7 +15,7 @@
 # Running the harvester again ADDS to this file. Your labels are kept.
 #
 # Columns: label, headline, source, REVIEW marker
-# 2026-11-12: 7 labels changed from NONE to SUBTLE by the owner's ruling in the precision-gap pass (an unnamed "influencer", "Hear panelist's reaction", "Career Criminal", "survey finds" with no survey named, "Nearly all … may", "These Scrolls … May", "raises fears" after a leading question). See docs/roadmap.md, Now 2.
+# 2026-11-12: 7 labels changed from NONE to SUBTLE on a person's call in the precision-gap pass (an unnamed "influencer", "Hear panelist's reaction", "Career Criminal", "survey finds" with no survey named, "Nearly all … may", "These Scrolls … May", "raises fears" after a leading question). See docs/roadmap.md, Now 2.
 
 NONE	12 Pumpkin Spice Beauty Finds That Are Basically Fall in a Bottle	# E! Online
 SUBTLE	5 Sunscreen Mistakes You’re Probably Making, According to a Derm	# E! Online

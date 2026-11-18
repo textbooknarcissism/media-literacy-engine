@@ -49,7 +49,7 @@ class LabelsTest {
     }
 
     @Test
-    fun `batches skip labelled rows and split by chunk size`() {
+    fun `batches skip labeled rows and split by chunk size`() {
         val intake = (1..5).map { IntakeRow("id$it", "BBC News", "news", "section-feed", "f", "l$it", "2026-09-27", "Headline $it", "") }
         val dir = createTempDirectory("batches").toFile().apply { deleteOnExit() }
         val files = Labels.writeBatches(intake, labelledIds = setOf("id1"), outDir = dir, chunkSize = 3)

@@ -173,7 +173,7 @@ fun runBenchmark(options: Options): Int {
     val gateFile = options.gatePath?.let { File(it) } ?: File("fixtures/benchmark-baseline.json")
     val baseline = if (gateFile.exists()) Baseline.readOrNull(gateFile) else null
     val gateFailures = if (baseline != null) {
-        Gate.check(baseline, current) + memorisation.errors.map { "Rule memorisation (${it.categoryId}): ${it.message}" }
+        Gate.check(baseline, current) + memorisation.errors.map { "Rule memorization (${it.categoryId}): ${it.message}" }
     } else {
         emptyList()
     }

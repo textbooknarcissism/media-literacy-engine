@@ -41,7 +41,7 @@ enum class Family(
     EDITORIALIZING(
         "editorializing",
         "Opinion written as news",
-        "The writer's own judgement, put as though it were an event.",
+        "The writer's own judgment, put as though it were an event.",
     );
 
     companion object {

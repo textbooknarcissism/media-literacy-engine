@@ -1,4 +1,4 @@
-# Headlines labelled by a person, blind.
+# Headlines labeled by a person, blind.
 #
 # Written by tools/label. Nothing else reads or writes this file, and
 # this tool never touches harvested.tsv.

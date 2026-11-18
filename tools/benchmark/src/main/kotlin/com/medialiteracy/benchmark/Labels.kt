@@ -111,14 +111,14 @@ object Labels {
 
     fun writeFrozen(out: File, labels: List<Label>, intake: Map<String, IntakeRow>, result: MergeResult, adjudicated: Int, codebookVersion: String) {
         val missing = labels.map { it.id }.filter { it !in intake }
-        require(missing.isEmpty()) { "Labelled ids not in the intake: ${missing.take(5)}" }
+        require(missing.isEmpty()) { "Labeled ids not in the intake: ${missing.take(5)}" }
         fun pct(v: Double) = String.format(Locale.ROOT, "%.1f%%", 100 * v)
         val header = buildString {
             appendLine("# broadsheet-2026: Independent double-annotated evaluation set.")
-            appendLine("# Labelled by two independent annotators per docs/benchmark/codebook.md (codebook version $codebookVersion) on ${LocalDate.now()}; disagreements settled by adjudication.")
+            appendLine("# Labeled by two independent annotators per docs/benchmark/codebook.md (codebook version $codebookVersion) on ${LocalDate.now()}; disagreements settled by adjudication.")
             appendLine("# No annotator or adjudicator saw the rules or the detector's output.")
             appendLine("# Items: ${labels.size}. Level agreement: ${pct(result.levelAgreement)}. Technique-set agreement: ${pct(result.techniqueAgreement)}. Cohen's kappa (level): ${String.format(Locale.ROOT, "%.3f", result.levelKappa)}. Adjudicated: $adjudicated.")
-            appendLine("# Labels change only by relabelling the whole set under a new codebook version.")
+            appendLine("# Labels change only by relabeling the whole set under a new codebook version.")
             appendLine("# ${HeadlineFiles.BROADSHEET_COLUMNS.joinToString("\t")}")
         }
         val rows = labels.sortedBy { it.id }.joinToString("") { label ->
@@ -175,7 +175,7 @@ fun labelMerge(args: List<String>): Int {
     }
     val out = File(f["--out"] ?: DEFAULT_LABELLED)
     require(!out.exists() || f.containsKey("--replace")) {
-        "$out exists and its labels are frozen. Pass --replace only when relabelling the whole set under a new codebook version."
+        "$out exists and its labels are frozen. Pass --replace only when relabeling the whole set under a new codebook version."
     }
     val labels = result.agreed + result.disagreements.map { (x, _) -> adjudicated.getValue(x.id) }
     Labels.writeFrozen(out, labels, intake, result, adjudicated = result.disagreements.size, codebookVersion = f.getValue("--codebook-version"))

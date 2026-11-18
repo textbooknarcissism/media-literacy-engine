@@ -381,7 +381,7 @@ private data class ArticleImages(val thumbnail: String?, val full: String?)
  * 5. Fallback: <img> tag in HTML description or content (with entity decoding)
  *
  * [ArticleImages.thumbnail] is always the first of these found, exactly as
- * before this returned one URL - existing behaviour for the row icon is
+ * before this returned one URL - existing behavior for the row icon is
  * unchanged. [ArticleImages.full] is the best *larger* picture the same feed
  * item offers: media:content or an enclosure, which sit behind a
  * media:thumbnail in the priority list above because they are usually the

@@ -1,7 +1,7 @@
-# owner-reported-2026-10: headlines the owner saw in a news reader app built on MLE and sent as screenshots on 2026-10-19, as examples of missed and wrong flags.
+# owner-reported-2026-10: headlines a person saw in a news reader app built on MLE and sent as screenshots on 2026-10-19, as examples of missed and wrong flags.
 # These are the target for the detection work, so they are tuning data only and never evidence: do not register them as a held-out benchmark set.
-# app_verdict: what the app showed (the engine at rule pack 27 gives the same verdict on every row). proposed_*: the model reviewer's reading under codebook v5, NOT yet confirmed by the owner.
-# call: ok | miss | false_flag | wrong_technique | question (the codebook leaves it open; put to the owner). owner_level / owner_techniques: filled in by the owner.
+# app_verdict: what the app showed (the engine at rule pack 27 gives the same verdict on every row). proposed_*: the model reviewer's reading under codebook v5, NOT yet confirmed by a person.
+# call: ok | miss | false_flag | wrong_technique | question (the codebook leaves it open; put to a person). owner_level / owner_techniques: that person's call.
 id	outlet	headline	app_verdict	proposed_level	proposed_techniques	call	note	owner_level	owner_techniques
 b31209f5ff5df1928787848872ba496b38e973563e4898d510d24a648ca95d77	The New York Times	Susan Collins Says Rival’s ‘Oh, Shut Up’ Comment Reflects How He Treats Women	NONE	NONE	-	miss	owner 2026-10-19: reads as a fight	SUBTLE	manufactured_rage
 242338e43e2ba40a7d9994d2aa2ddd7d48e0f86fca941120a4985f1cd9a2d178	The New York Times	What Pennsylvania Reveals About the Midterms	NONE	SUBTLE	curiosity_gap	miss	rule 5: "What X reveals about Y" announces an answer and holds it back		

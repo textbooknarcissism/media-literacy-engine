@@ -25,7 +25,7 @@ The rules were written phrase by phrase. They miss variants ("should know" where
 | R | The rules, pack 27 |
 | P | The rules plus a grammar guard (spaCy): an `unnamed_demonstrative` hit is dropped when its noun phrase holds a proper noun ("these Silicon Valley haunts") |
 | M1 | `ENTUM-AI/roberta-clickbait-classifier`, off the shelf (trained mostly on Chakraborty 2016: BuzzFeed against the NYT) |
-| M2 | `distilroberta-base` fine-tuned on our tuning rows (2,729 rows, 345 flagged; input: article type and headline) |
+| M2 | `distilroberta-base` fine-tuned on the project's tuning rows (2,729 rows, 345 flagged; input: article type and headline) |
 | M3 | The same, first trained one epoch on Webis-Clickbait-17 (19,538 crowd-rated posts) |
 | H:Mx | Hybrid. The rules decide, except in two cases. **Promote:** a sub-threshold rule hit (score at least 0.35) becomes a SUBTLE flag when the model's probability is at least t_hi; the hit's words are what gets underlined. **Veto:** a rule flag is dropped when the model's probability is at most t_lo. |
 | H+ | H plus a model-only flag when no rule hit at all (reported only; nothing would be underlined) |

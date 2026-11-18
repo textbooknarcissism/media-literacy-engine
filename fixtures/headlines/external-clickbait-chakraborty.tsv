@@ -1,6 +1,6 @@
 # External check: the Chakraborty et al. "Stop Clickbait" corpus (2016).
 #
-# 32,000 headlines, human-labelled, from OUTSIDE this project: 16,000
+# 32,000 headlines, human-labeled, from OUTSIDE this project: 16,000
 # clickbait headlines (BuzzFeed, Upworthy, ViralNova, Thatscoop, Scoopwhoop,
 # ViralStories) and 16,000 ordinary ones (WikiNews, NYT, The Guardian, The
 # Hindu). Source: https://github.com/bhargaviparanjape/clickbait
@@ -17,7 +17,7 @@
 # The labels in harvested.tsv were reviewed by a language model, not a person: see
 # docs/benchmark/review-process.md. That means they cannot be used to
 # prove the rules work; they can only be checked against something truly
-# independent. This corpus is that: labelled years ago, by different
+# independent. This corpus is that: labeled years ago, by different
 # people, for a different project, with no knowledge of this app's rules.
 #
 # WHAT THIS FILE IS NOT

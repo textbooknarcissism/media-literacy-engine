@@ -39,7 +39,7 @@ tasks.register<JavaExec>("runBroadsheetAudit") {
 
 tasks.register<JavaExec>("runOutletStudy") {
     group = "application"
-    description = "Offline study of outlets, beats and lean over the labelled sets (research only)."
+    description = "Offline study of outlets, beats and lean over the labeled sets (research only)."
     classpath = sourceSets["main"].runtimeClasspath
     mainClass.set("com.medialiteracy.harvest.OutletStudyKt")
     workingDir = rootProject.projectDir

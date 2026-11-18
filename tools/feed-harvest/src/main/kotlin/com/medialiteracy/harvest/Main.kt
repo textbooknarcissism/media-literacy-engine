@@ -233,7 +233,7 @@ fun main(args: Array<String>) {
     println("  Full 3-Layer Pipeline: Headline -> Summary -> Story Text")
     println("================================================================")
     if (dryRun) {
-        println("  [DRY RUN MODE] Live harvest results will be analysed without saving to disk; story pages come from the cache only.")
+        println("  [DRY RUN MODE] Live harvest results will be analyzed without saving to disk; story pages come from the cache only.")
     }
     if (offline) {
         println("  [OFFLINE MODE] Story pages come from the local cache only.")

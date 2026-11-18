@@ -225,7 +225,7 @@ private fun appendAnswer(file: File, label: FlagLevel, pick: Pick) {
     if (!file.exists()) {
         file.writeText(
             buildString {
-                appendLine("# Headlines labelled by a person, blind.")
+                appendLine("# Headlines labeled by a person, blind.")
                 appendLine("#")
                 appendLine("# Written by tools/label. Nothing else reads or writes this file, and")
                 appendLine("# this tool never touches harvested.tsv.")
@@ -255,7 +255,7 @@ private fun label() {
     val done = sample.size - remaining.size
 
     println()
-    println("MLE: blind labelling")
+    println("MLE: blind labeling")
     println()
     println("  ${sample.size} headlines in the sample, $done already answered.")
     if (remaining.isEmpty()) {
@@ -755,9 +755,9 @@ private fun auditBacklog() {
 
     println()
     println("================================================================")
-    println("MLE: Automated Backlog Audit & Ground-Truth Labelling")
+    println("MLE: Automated Backlog Audit & Ground-Truth Labeling")
     println("================================================================")
-    println("  Audited and labelled $reviewed unreviewed headlines:")
+    println("  Audited and labeled $reviewed unreviewed headlines:")
     println("    NONE (clean reporting):     ${markedNone.toString().padStart(5)} (${percent(markedNone, reviewed)})")
     println("    SUBTLE (quiet technique):   ${markedSubtle.toString().padStart(5)} (${percent(markedSubtle, reviewed)})")
     println("    PROMINENT (loud stacked):   ${markedProminent.toString().padStart(5)} (${percent(markedProminent, reviewed)})")

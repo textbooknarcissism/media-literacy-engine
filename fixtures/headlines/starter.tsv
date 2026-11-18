@@ -113,7 +113,7 @@ NONE	Developing story: results expected within the hour
 #
 # These exist because of a deliberate decision (see principle 2 in docs/positions.md): no
 # outlet is trusted by default. The same techniques get named wherever they
-# appear, including in respectable copy. Labels below are an honest judgement of
+# appear, including in respectable copy. Labels below are an honest judgment of
 # what the flag SHOULD be, not what the rules currently do. Expect failures,
 # because these are the headlines the rules have never been tested against.
 # ---------------------------------------------------------------------------

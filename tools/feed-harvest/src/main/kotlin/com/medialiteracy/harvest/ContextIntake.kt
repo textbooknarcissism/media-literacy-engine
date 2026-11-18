@@ -81,7 +81,7 @@ internal object ContextIntake {
     const val DEFAULT_PER_OUTLET = 6
     const val SUMMARY_CHARS = 600
 
-    private const val HEADER = "# Context-labelled set, intake. No detector labels: read each summary and story, then label blind.\n"
+    private const val HEADER = "# Context-labeled set, intake. No detector labels: read each summary and story, then label blind.\n"
 
     /**
      * Picks up to [perOutlet] rows for each outlet, counting rows [existing] already holds.

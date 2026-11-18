@@ -98,7 +98,7 @@ class ContextIntakeTest {
     }
 
     @Test
-    fun `rows already labelled in another set are skipped`() {
+    fun `rows already labeled in another set are skipped`() {
         val dir = tempDir()
         val id = "a".repeat(64)
         File(dir, "older-set.tsv").writeText("# header\nNONE\t-\t$id\tpolitics\tPaper\n")

@@ -15,7 +15,7 @@ Bibliographic details were checked against the publishers' records (DOI, arXiv, 
 | Lakoff, G., & Johnson, M. (1980). [Metaphors We Live By](https://press.uchicago.edu/ucp/books/book/chicago/M/bo3637992.html). University of Chicago Press. | Conflict and war metaphor |
 | Halliday, M. A. K., & Matthiessen, C. M. I. M. (2014). *An Introduction to Functional Grammar* (4th ed.). Routledge. | Modality, evidentiality |
 | Kovach, B., & Rosenstiel, T. (2014). *The Elements of Journalism* (3rd ed.). Crown. | Sourcing and verification norms |
-| Otis, A. (2024). [The effects of transparency cues on news source credibility online: An investigation of 'opinion labels'](https://doi.org/10.1177/14648849221129001). *Journalism*, 25(1), 198–217. | Signed and labelled opinion (codebook rule 2) |
+| Otis, A. (2024). [The effects of transparency cues on news source credibility online: An investigation of 'opinion labels'](https://doi.org/10.1177/14648849221129001). *Journalism*, 25(1), 198–217. | Signed and labeled opinion (codebook rule 2) |
 
 ## Clickbait Detection and Tactic Taxonomies
 

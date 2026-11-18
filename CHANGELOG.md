@@ -16,7 +16,11 @@ Work that is finished but not yet released sits under **Unreleased** at the top.
 
 ## Unreleased
 
-Nothing yet.
+Rule pack 38, codebook 13, unchanged. No verdict changes.
+
+- The Opinion family's description now says "judgment" (American spelling) instead of "judgement". It is the only text an app shows that changed.
+
+**For apps.** Nothing to do.
 
 ## 1.0.0 (2026-11-17)
 
