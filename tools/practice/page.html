@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>MLE Practice</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Same palette and type scale as the flag review page, with system fonts only: this page makes no network requests. */
+:root {
+  --paper: #f7f8f6;
+  --card: #ffffff;
+  --ink: #1b2124;
+  --muted: #5b666b;
+  --rule: #d9dedd;
+  --marker: #f3e27a;
+  --marker-ink: #1b2124;
+  --yes: #1f6f5c;
+  --yes-soft: #e1f0eb;
+  --no: #9a3b2c;
+  --no-soft: #f6e4e0;
+  --focus: #2f5fa8;
+  --pick: #dbe6f7;
+  --display: Georgia, "Times New Roman", serif;
+  --body: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #14191b; --card: #1c2326; --ink: #e6eae9; --muted: #9aa6aa; --rule: #2f3a3e;
+    --marker: #6b5f1c; --marker-ink: #fff8d6; --yes: #6cc4a8; --yes-soft: #19352d;
+    --no: #e58a77; --no-soft: #3a211c; --focus: #8fb3ef; --pick: #27385a; color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--paper); color: var(--ink); font: 15px/1.5 var(--body); margin: 0;
+  padding: 0 max(16px, env(safe-area-inset-right, 0px)) 48px max(16px, env(safe-area-inset-left, 0px));
+}
+.wrap { max-width: 720px; margin: 0 auto; display: grid; gap: 20px; }
+header.intro { padding-top: 28px; display: grid; gap: 10px; }
+h1 { font: 650 30px/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 650 16px/1.3 var(--body); margin: 0; }
+p { margin: 0; }
+.muted { color: var(--muted); }
+.card { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 18px; display: grid; gap: 14px; min-width: 0; }
+.progress { font: 500 12px var(--mono); color: var(--muted); letter-spacing: .04em; }
+.prompt { color: var(--muted); }
+.headline { font: 500 26px/1.5 var(--display); margin: 0; overflow-wrap: anywhere; }
+.word {
+  font: inherit; color: inherit; background: transparent; border: 0; border-radius: 4px;
+  padding: 0 1px; margin: 0; cursor: pointer; display: inline;
+}
+.word:hover { background: color-mix(in srgb, var(--pick) 55%, transparent); }
+.word[aria-pressed="true"] { background: var(--pick); box-shadow: 0 0 0 2px var(--focus); }
+button:focus-visible, a:focus-visible, h2:focus-visible, [tabindex="-1"]:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+button.btn { font: 500 14px var(--body); background: var(--card); color: var(--ink); border: 1px solid var(--rule); border-radius: 6px; padding: 8px 16px; cursor: pointer; }
+button.btn.primary { background: var(--yes-soft); color: var(--yes); border-color: var(--yes); }
+button.btn:disabled { cursor: not-allowed; opacity: .55; }
+.linkbtn { font: 13px var(--body); background: none; border: 0; padding: 0; color: var(--muted); text-decoration: underline; cursor: pointer; }
+.under { text-decoration: underline; text-decoration-color: var(--no); text-decoration-thickness: 3px; text-underline-offset: 4px; background: var(--marker); color: var(--marker-ink); border-radius: 2px; }
+.pick { box-shadow: 0 0 0 2px var(--focus); background: var(--pick); border-radius: 3px; }
+.under.pick { background: var(--marker); box-shadow: 0 0 0 2px var(--focus); }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13px; color: var(--muted); }
+.legend span.sw { display: inline-block; width: 1.4em; height: .9em; vertical-align: -1px; margin-right: 6px; }
+.hit { display: grid; gap: 2px; padding-left: 10px; border-left: 2px solid var(--marker); }
+.hit .name { font-weight: 600; font-size: 14px; }
+.hit .name q { font-weight: 400; color: var(--muted); }
+.hit .ask { font-size: 14px; color: var(--muted); font-style: italic; }
+.result { font-weight: 600; }
+.story h2 { font-size: 13px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; }
+.figures { display: grid; gap: 6px; }
+.figure b { font: 500 22px var(--mono); margin-right: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 500; color: var(--muted); }
+.notice { border: 1px solid var(--no); background: var(--no-soft); padding: 10px 14px; border-radius: 6px; }
+footer { font-size: 13px; color: var(--muted); }
+</style>
+
+<div class="wrap">
+  <header class="intro">
+    <h1>Find the trick, or find none</h1>
+    <p class="muted">Each headline comes with no markings. Tap the words you think are working on you, or say there is nothing there. Then see what MLE marks. Most headlines are fine, and knowing that is part of the skill.</p>
+  </header>
+  <div class="notice" id="nostore" hidden>This browser would not let the page keep your answers, so they will be lost when you close it.</div>
+  <main id="main"></main>
+  <footer><button type="button" class="linkbtn" id="reset">Start over</button> clears the answers kept in this browser. <span id="versions"></span></footer>
+</div>
+
+<script>
+(() => {
+  const ROUND_SIZE = 10;
+  const MIN_STRAIGHT = 3;
+  const KEY = "mle-practice:v1";
+  const DATA = window.__CASES__;
+  const $ = (id) => document.getElementById(id);
+  const main = $("main");
+
+  if (!DATA || !Array.isArray(DATA.cases) || !DATA.cases.length) {
+    main.textContent = "The practice deck is missing from this page. Build it again with node tools/practice/local.mjs.";
+    return;
+  }
+  $("versions").textContent = "Codebook version " + DATA.codebook + ", rule pack " + DATA.rulePack + ".";
+
+  // The record: one entry per answer. Kept in localStorage; held in memory if that is blocked.
+  let memory = [];
+  let storeOk = true;
+  function readAnswers() {
+    try { const v = JSON.parse(localStorage.getItem(KEY) || "[]"); return Array.isArray(v) ? v : []; }
+    catch (e) { storeOk = false; return memory; }
+  }
+  function writeAnswers(list) {
+    memory = list;
+    try { localStorage.setItem(KEY, JSON.stringify(list)); } catch (e) { storeOk = false; }
+    $("nostore").hidden = storeOk;
+  }
+
+  /** Words are runs of non-space characters, so punctuation stays with its word. Offsets index the headline. */
+  function splitWords(text) {
+    const words = [];
+    const re = /\S+/g;
+    let m;
+    while ((m = re.exec(text)) !== null) words.push({ start: m.index, end: m.index + m[0].length });
+    return words;
+  }
+  function overlaps(a, b) { return a.start < b.end && b.start < a.end; }
+  function isFlagged(c) { return c.hits.length > 0; }
+
+  function shuffle(list) {
+    const a = list.slice();
+    for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+    return a;
+  }
+
+  /** Ten cases, the least-seen first, with at least three that MLE leaves alone when the deck has them. */
+  function drawRound(answers) {
+    const seen = {};
+    for (const a of answers) seen[a.case] = (seen[a.case] || 0) + 1;
+    const byLeastSeen = (list) => shuffle(list).sort((x, y) => (seen[x.k] || 0) - (seen[y.k] || 0));
+    const size = Math.min(ROUND_SIZE, DATA.cases.length);
+    const straight = byLeastSeen(DATA.cases.filter((c) => !isFlagged(c)));
+    const flagged = byLeastSeen(DATA.cases.filter(isFlagged));
+    const picked = straight.slice(0, Math.min(MIN_STRAIGHT, straight.length));
+    const rest = byLeastSeen(DATA.cases.filter((c) => !picked.includes(c)));
+    return shuffle(picked.concat(rest.slice(0, size - picked.length)));
+  }
+
+  const state = { phase: "ask", round: 0, deck: [], i: 0, picked: new Set(), words: [], last: null };
+
+  function el(tag, props, ...kids) {
+    const n = document.createElement(tag);
+    if (props) Object.assign(n, props);
+    n.append(...kids);
+    return n;
+  }
+
+  function startRound() {
+    const answers = readAnswers();
+    state.round = answers.reduce((m, a) => Math.max(m, a.round), 0) + 1;
+    state.deck = drawRound(answers);
+    state.i = 0;
+    showAsk();
+  }
+
+  function render(...nodes) {
+    main.replaceChildren(...nodes);
+    const h = main.querySelector("[data-focus]");
+    if (h) h.focus({ preventScroll: false });
+  }
+
+  function progress() {
+    return el("div", { className: "progress", textContent: (state.i + 1) + " of " + state.deck.length });
+  }
+
+  function showAsk() {
+    const c = state.deck[state.i];
+    state.phase = "ask";
+    state.picked = new Set();
+    state.words = splitWords(c.headline);
+    const check = el("button", { type: "button", className: "btn primary", textContent: "Check my answer", disabled: true });
+    const none = el("button", { type: "button", className: "btn", textContent: "Nothing here. It is a straight headline." });
+    const h = el("p", { className: "headline" });
+    state.words.forEach((w, idx) => {
+      const b = el("button", { type: "button", className: "word", textContent: c.headline.slice(w.start, w.end) });
+      b.setAttribute("aria-pressed", "false");
+      b.addEventListener("click", () => {
+        if (state.picked.has(idx)) state.picked.delete(idx); else state.picked.add(idx);
+        b.setAttribute("aria-pressed", String(state.picked.has(idx)));
+        check.disabled = state.picked.size === 0;
+      });
+      h.append(b, idx < state.words.length - 1 ? " " : "");
+    });
+    check.addEventListener("click", () => reveal(c));
+    none.addEventListener("click", () => { state.picked = new Set(); reveal(c); });
+    const q = el("p", { className: "prompt", textContent: "Is anything in this headline working on you? Tap the words." });
+    q.tabIndex = -1;
+    q.dataset.focus = "1";
+    render(el("section", { className: "card", ariaLabel: "Headline " + (state.i + 1) }, progress(), q, h, el("div", { className: "actions" }, check, none)));
+  }
+
+  /** The headline cut at every span edge, so a word can be both underlined and picked. */
+  function marked(c, picks) {
+    const cuts = new Set([0, c.headline.length]);
+    for (const h of c.hits) { cuts.add(h.start); cuts.add(h.end); }
+    for (const p of picks) { cuts.add(p.start); cuts.add(p.end); }
+    const sorted = Array.from(cuts).filter((n) => n >= 0 && n <= c.headline.length).sort((a, b) => a - b);
+    const p = el("p", { className: "headline" });
+    for (let i = 0; i < sorted.length - 1; i++) {
+      const seg = { start: sorted[i], end: sorted[i + 1] };
+      const text = c.headline.slice(seg.start, seg.end);
+      const under = c.hits.some((h) => overlaps(seg, h));
+      const pick = picks.some((w) => overlaps(seg, w)) && text.trim() !== "";
+      if (!under && !pick) { p.append(text); continue; }
+      p.append(el("span", { className: (under ? "under " : "") + (pick ? "pick" : ""), textContent: text }));
+    }
+    return p;
+  }
+
+  function reveal(c) {
+    const picks = Array.from(state.picked).sort((a, b) => a - b).map((i) => state.words[i]);
+    const flagged = isFlagged(c);
+    const found = flagged && picks.some((w) => c.hits.some((h) => overlaps(w, h)));
+    let outcome, line;
+    if (flagged) {
+      if (found) { outcome = "found"; line = "You found it."; }
+      else if (picks.length) { outcome = "other_words"; line = "MLE marks different words."; }
+      else { outcome = "missed"; line = "MLE marks this one."; }
+    } else if (picks.length) { outcome = "false_alarm"; line = "MLE leaves this one alone."; }
+    else { outcome = "left_alone"; line = "Right. MLE leaves this one alone."; }
+
+    const answers = readAnswers();
+    answers.push({
+      case: c.k,
+      round: state.round,
+      at: new Date().toISOString(),
+      selected: picks.map((w) => [w.start, w.end]),
+      outcome,
+      seenBefore: answers.some((a) => a.case === c.k && a.round < state.round),
+    });
+    writeAnswers(answers);
+
+    state.phase = "reveal";
+    const legend = el("div", { className: "legend" },
+      el("span", null, el("span", { className: "sw under" }), "What MLE marks"),
+      el("span", null, el("span", { className: "sw pick" }), "Words you tapped"));
+    const parts = [progress(), marked(c, picks)];
+    if (picks.length || flagged) parts.push(legend);
+    const result = el("p", { className: "result", textContent: line });
+    result.tabIndex = -1;
+    result.dataset.focus = "1";
+    result.setAttribute("role", "status");
+    parts.push(result);
+
+    if (flagged) {
+      const seen = new Set();
+      for (const h of c.hits) {
+        const key = h.technique + "|" + h.text;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        parts.push(el("div", { className: "hit" },
+          el("span", { className: "name" }, h.name + " ", el("q", { textContent: h.text })),
+          el("span", { className: "ask", textContent: "Ask yourself: " + h.question })));
+      }
+    } else if (c.why) {
+      parts.push(el("p", { textContent: c.why }));
+    }
+    if (c.summary) {
+      parts.push(el("div", { className: "story" }, el("h2", { textContent: "What the story said" }), el("p", { className: "muted", textContent: c.summary })));
+    }
+    const last = state.i === state.deck.length - 1;
+    const next = el("button", { type: "button", className: "btn primary", textContent: last ? "Finish round" : "Next" });
+    next.id = "next";
+    next.addEventListener("click", advance);
+    parts.push(el("div", { className: "actions" }, next));
+    render(el("section", { className: "card" }, ...parts));
+    next.focus();
+  }
+
+  function advance() {
+    if (state.i + 1 >= state.deck.length) showEnd(); else { state.i++; showAsk(); }
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Enter" || state.phase !== "reveal" || e.target.closest("button")) return;
+    e.preventDefault();
+    advance();
+  });
+
+  /** Two figures per round, never combined. */
+  function roundFigures(answers, round) {
+    const mine = answers.filter((a) => a.round === round);
+    const tricks = mine.filter((a) => a.outcome === "found" || a.outcome === "other_words" || a.outcome === "missed");
+    const straight = mine.filter((a) => a.outcome === "left_alone" || a.outcome === "false_alarm");
+    return {
+      found: tricks.filter((a) => a.outcome === "found").length, tricks: tricks.length,
+      alone: straight.filter((a) => a.outcome === "left_alone").length, straight: straight.length,
+    };
+  }
+
+  function showEnd() {
+    state.phase = "end";
+    const answers = readAnswers();
+    const f = roundFigures(answers, state.round);
+    const h = el("h2", { textContent: "Round " + state.round + " done" });
+    h.tabIndex = -1;
+    h.dataset.focus = "1";
+    const parts = [h, el("div", { className: "figures" },
+      el("p", { className: "figure" }, el("b", { textContent: f.found + " of " + f.tricks }), "You found the trick in " + f.found + " of " + f.tricks),
+      el("p", { className: "figure" }, el("b", { textContent: f.alone + " of " + f.straight }), "You left " + f.alone + " of " + f.straight + " straight headlines alone"))];
+
+    const earlier = Array.from(new Set(answers.map((a) => a.round))).filter((r) => r !== state.round).sort((a, b) => a - b);
+    if (earlier.length) {
+      const body = el("tbody");
+      for (const r of earlier.concat([state.round])) {
+        const g = roundFigures(answers, r);
+        body.append(el("tr", null, el("td", { textContent: String(r) }), el("td", { textContent: g.found + " of " + g.tricks }), el("td", { textContent: g.alone + " of " + g.straight })));
+      }
+      parts.push(el("table", null,
+        el("caption", { className: "muted", textContent: "Every round so far", style: "text-align:left;padding-bottom:6px" }),
+        el("thead", null, el("tr", null, el("th", { scope: "col", textContent: "Round" }), el("th", { scope: "col", textContent: "Tricks found" }), el("th", { scope: "col", textContent: "Straight headlines left alone" }))),
+        body));
+    }
+    const again = el("button", { type: "button", className: "btn primary", textContent: "Play another round" });
+    again.addEventListener("click", startRound);
+    const dl = el("button", { type: "button", className: "btn", textContent: "Download results.json" });
+    dl.addEventListener("click", download);
+    parts.push(el("div", { className: "actions" }, again, dl));
+    render(el("section", { className: "card" }, ...parts));
+  }
+
+  function download() {
+    const body = { codebook: DATA.codebook, rulePack: DATA.rulePack, answers: readAnswers() };
+    const blob = new Blob([JSON.stringify(body, null, 2) + "\n"], { type: "application/json" });
+    const link = Object.assign(document.createElement("a"), { href: URL.createObjectURL(blob), download: "results.json" });
+    link.click();
+    URL.revokeObjectURL(link.href);
+  }
+
+  $("reset").addEventListener("click", () => {
+    if (!confirm("Clear every answer kept in this browser?")) return;
+    writeAnswers([]);
+    startRound();
+  });
+
+  readAnswers();
+  $("nostore").hidden = storeOk;
+  startRound();
+})();
+</script>

@@ -1,0 +1,1013 @@
+{
+    "month": "2026-11",
+    "codebook": 12,
+    "rulePack": 35,
+    "intake": "docs/benchmark/flag-review/2026-11/intake.tsv",
+    "headlines": 365,
+    "flagged": 30,
+    "items": [
+        {
+            "k": "f01",
+            "id": "168c5a2feb8acbc9cf8e0b0ba409d748810cea0d07862305305ba916daef8156",
+            "outlet": "Daily Express",
+            "link": "https://www.express.co.uk/news/uk/2264712/polar-vortex-snow-rain-dry-weather",
+            "headline": "Professor tells BBC the 1 'most concerning' impact of polar vortex in UK — not snow",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": " — not snow",
+                    "start": 72,
+                    "end": 83,
+                    "question": "It says what the answer is not. What is it?"
+                }
+            ]
+        },
+        {
+            "k": "f02",
+            "id": "5598f840c96c03693ba2c0235719a347fb0a2a0bcb5c5ddaf13a721e6a252f54",
+            "outlet": "ScienceAlert",
+            "link": "https://www.sciencealert.com/pandemic-stress-linked-to-faster-epigenetic-aging-but-only-in-one-generation",
+            "headline": "Pandemic Stress Linked to Faster Epigenetic Aging, But Only in One Generation",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "One Generation",
+                    "start": 63,
+                    "end": 77,
+                    "question": "What is the one thing, and could the headline have named it?"
+                }
+            ]
+        },
+        {
+            "k": "f03",
+            "id": "5c1cd7efae553221c12e1bef7c329075a6802453eff094ca1944e7668a754975",
+            "outlet": "Eurogamer",
+            "link": "https://www.eurogamer.net/bloodborne-251-000-sales-in-2016-ps4",
+            "headline": "Over a decade later, Bloodborne remains so popular it reportedly sold a quarter of a million copies this year alone",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Unnamed sources",
+                    "text": "reportedly",
+                    "start": 54,
+                    "end": 64,
+                    "question": "Who is reporting this, and have they shown how they know?"
+                }
+            ]
+        },
+        {
+            "k": "f04",
+            "id": "8aaaf4f3810efa3d96cff1c95c88920f40a7c947434c2cb511f994ea8c760ad1",
+            "outlet": "MarketWatch",
+            "link": "https://www.marketwatch.com/story/analysts-say-these-chip-stocks-are-bargains-is-it-time-to-buy-fb5fdde8?mod=mw_rss_topstories",
+            "headline": "Analysts say these chip stocks are bargains. Is it time to buy?",
+            "level": "PROMINENT",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "these chip stocks",
+                    "start": 13,
+                    "end": 30,
+                    "question": "Which things is it talking about, and does the headline name them?"
+                },
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Unnamed sources",
+                    "text": "Analysts say",
+                    "start": 0,
+                    "end": 12,
+                    "question": "Who said this, and could you go and check them?"
+                }
+            ]
+        },
+        {
+            "k": "f05",
+            "id": "38b6c36804891ed4c52dabea1a588dd794b47027e046bd8153ee0f93a4c01a3f",
+            "outlet": "Daily Mail",
+            "link": "https://www.dailymail.com/lifestyle/love-sex/article-16275883/personal-trainer-love-affairs-midlife-clients-husbands.html?ns_mchannel=rss&ito=1490&ns_campaign=1490",
+            "headline": "Confessions of a male personal trainer: I'm 32, have a six-pack and biceps. But diet-obsessed gym bunnies bore me. Here's why the married, middle-aged women I'm whipping into shape are irresistible",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "Here's why",
+                    "start": 115,
+                    "end": 125,
+                    "question": "What is the answer, and could the headline have just said it?"
+                }
+            ]
+        },
+        {
+            "k": "f06",
+            "id": "ed6dd94544036fe882f0d855bd4e5602fed69074a72b6b49cf5cc846f230dbeb",
+            "outlet": "ScienceAlert",
+            "link": "https://www.sciencealert.com/study-identifies-the-1-issue-affecting-the-academic-performance-of-us-college-students",
+            "headline": "Study Identifies The #1 Issue Affecting The Academic Performance of US College Students",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "#1 Issue",
+                    "start": 21,
+                    "end": 29,
+                    "question": "What is the one thing, and could the headline have named it?"
+                }
+            ]
+        },
+        {
+            "k": "f07",
+            "id": "0de2577809de459dee3e1eaa319848c1906a6ef3c49f7fc40b225a2678d9c884",
+            "outlet": "The Independent",
+            "link": "https://www.independent.co.uk/news/uk/home-news/deliveroo-top-100-delivery-uk-iceland-ice-b3081881.html",
+            "headline": "Deliveroo's top 10 most delivered items – with an unexpected order in top spot",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "an unexpected order",
+                    "start": 47,
+                    "end": 66,
+                    "question": "What is the surprising thing, and why isn't it named?"
+                }
+            ]
+        },
+        {
+            "k": "f08",
+            "id": "c0b4971c470857d296d5e1325b028f41ff484be100c6bd1afa5c86bc70a97386",
+            "outlet": "Engadget",
+            "link": "https://www.engadget.com/2307712/military-radar-makes-your-router-change-wifi-channels/",
+            "headline": "Military radar can make your router switch Wi-Fi channels - here's why",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "here's why",
+                    "start": 60,
+                    "end": 70,
+                    "question": "What is the answer, and could the headline have just said it?"
+                }
+            ]
+        },
+        {
+            "k": "f09",
+            "id": "8a11b3a9a36f598afe3b23310a148c724af45fdea59bce7558a3b0c94813ac6b",
+            "outlet": "The Atlantic",
+            "link": "https://www.theatlantic.com/magazine/2026/12/ethel-dougan-mittens/689027/?utm_source=feed",
+            "headline": "Look Closer: A Mysterious Pair of Mittens",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "A Mysterious Pair",
+                    "start": 13,
+                    "end": 30,
+                    "question": "What is the surprising thing, and why isn't it named?"
+                }
+            ]
+        },
+        {
+            "k": "f10",
+            "id": "5e1fc00f30465950a304054558d07c8ad767916bca2267249f7ac93f0f5bc837",
+            "outlet": "PC Gamer",
+            "link": "https://www.pcgamer.com/games/the-elder-scrolls/this-massive-mod-essentially-turns-skyrim-into-a-persistent-mmo-where-player-actions-create-lasting-consequences/",
+            "headline": "This massive mod essentially turns Skyrim into a persistent MMO 'where player actions create lasting consequences'",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "This massive mod essentially",
+                    "start": 0,
+                    "end": 28,
+                    "question": "Which things is it talking about, and does the headline name them?"
+                }
+            ]
+        },
+        {
+            "k": "f11",
+            "id": "3bef84117c3487173035beacf3e8e9c853379b484919005f6910199c8d7dc13b",
+            "outlet": "SciTechDaily",
+            "link": "https://scitechdaily.com/a-new-approach-could-eliminate-zombie-cancer-cells-that-survive-chemotherapy/",
+            "headline": "A New Approach Could Eliminate “Zombie” Cancer Cells That Survive Chemotherapy",
+            "level": "PROMINENT",
+            "hits": [
+                {
+                    "technique": "science_overhype",
+                    "name": "Early science",
+                    "text": "Eliminate",
+                    "start": 21,
+                    "end": 30,
+                    "question": "Has this been tested on people, or only in a lab?"
+                }
+            ]
+        },
+        {
+            "k": "f12",
+            "id": "0b4b332c4990a2753fb0d5b99469e0323d622ea861e11ed3df908a54811c80d7",
+            "outlet": "Daily Mail",
+            "link": "https://www.dailymail.com/sport/boxing/article-16277957/hstikkytokky-boxing-riot-tommy-robinson-kilkenny.html?ns_mchannel=rss&ito=1490&ns_campaign=1490",
+            "headline": "What REALLY triggered HSTikkyTokky's boxing night riot between Tommy Robinson and Mo Deen, as Muslim influencer breaks cover to claim 'set up'",
+            "level": "PROMINENT",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "What REALLY",
+                    "start": 0,
+                    "end": 11,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f13",
+            "id": "b3eb2270811ceeca09b6b075ac6e5c1a1cdeb457e248649c3a3196e616364769",
+            "outlet": "New Statesman",
+            "link": "https://www.newstatesman.com/the-weekend-report/2026/11/this-is-israels-last-chance-to-get-netanyahu-out",
+            "headline": "This is Israel’s last chance to get Netanyahu out",
+            "level": "PROMINENT",
+            "hits": [
+                {
+                    "technique": "urgency_pressure",
+                    "name": "Manufactured urgency",
+                    "text": "last chance",
+                    "start": 17,
+                    "end": 28,
+                    "question": "Is there a deadline in this story, or does it just sound like there is?"
+                }
+            ]
+        },
+        {
+            "k": "f14",
+            "id": "60f7eacddcc0a0f9d62726a68ad2b823b8cceac70116f27140dec84ff49eaf29",
+            "outlet": "CBS News",
+            "link": "https://www.cbsnews.com/news/gas-prices-below-four-dollars-expert-predicts/",
+            "headline": "U.S. gas prices on track to fall below $4 a gallon, experts say",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Unnamed sources",
+                    "text": "experts say",
+                    "start": 52,
+                    "end": 63,
+                    "question": "Who said this, and could you go and check them?"
+                }
+            ]
+        },
+        {
+            "k": "f15",
+            "id": "e2353eaaf53819c5ee7f54ed43fd995f10a25c05ed168dfd287ae9b28b26998e",
+            "outlet": "The Independent",
+            "link": "https://www.independent.co.uk/news/uk/crime/andrew-sachs-granddaughter-georgina-baillie-russell-brand-b3081721.html",
+            "headline": "Andrew Sachs’ granddaughter issues statement in support of Russell Brand before sentencing",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "issues statement",
+                    "start": 28,
+                    "end": 44,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f16",
+            "id": "bb092d2b231724fcaeaa4a495d1995f9f6a69a3089afe2614efa85fe7be3cb62",
+            "outlet": "Politico",
+            "link": "https://www.politico.com/video/2026/11/05/jim-clyburn-gives-his-reaction-to-dems-historic-midterm-win-2221728",
+            "headline": "Jim Clyburn gives his reaction to Dems’ historic midterm win",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "gives his reaction",
+                    "start": 12,
+                    "end": 30,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f17",
+            "id": "df3fba2e4da4cbebe1f614a05bc33d700d9248a5c91e689b9427daea8ddd730e",
+            "outlet": "MarketWatch",
+            "link": "https://www.marketwatch.com/story/we-had-the-worst-fight-weve-ever-had-i-want-my-husband-to-retire-at-65-but-i-dont-want-to-lose-his-280-000-salary-48511469?mod=mw_rss_topstories",
+            "headline": "‘We had the worst fight’: I want my husband to retire at 65, but I don’t want to lose his $280,000 salary. Is that unreasonable?",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "‘We had the worst fight’: I want my husband to retire at 65, but I don’t want to lose his $280,000 salary. Is that unreasonable?",
+                    "start": 0,
+                    "end": 128,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f18",
+            "id": "e07f0730951f18e3b008e8a65d1d62092b159cd434a69f579ed79989181f8738",
+            "outlet": "Quanta Magazine",
+            "link": "https://www.quantamagazine.org/a-strange-quantum-theorem-has-killed-einsteins-reality-20261106/",
+            "headline": "A Strange Quantum Theorem Has Killed Einstein’s Reality",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "A Strange Quantum",
+                    "start": 0,
+                    "end": 17,
+                    "question": "What is the surprising thing, and why isn't it named?"
+                }
+            ]
+        },
+        {
+            "k": "f19",
+            "id": "14304814b3eac02f92bc34db501eefd40868a64502e68a32064f078fc980a793",
+            "outlet": "E! Online",
+            "link": "https://www.eonline.com/news/1437946/amanda-seyfried-reveals-daughter-ninas-reaction-to-mean-girls?cmpid=rss-syndicate-genericrss-us-top_stories",
+            "headline": "Amanda Seyfried Reveals Her Daughter's Reaction to Mean Girls",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "Reveals Her Daughter's Reaction",
+                    "start": 16,
+                    "end": 47,
+                    "question": "What was revealed, and could the headline have said it?"
+                }
+            ]
+        },
+        {
+            "k": "f20",
+            "id": "a35d9abfc985f0d3ea02050a319a8c37899ba5a230387c4ac342be5149e7a379",
+            "outlet": "Daily Mirror",
+            "link": "https://www.mirror.co.uk/news/uk-news/investigators-uncover-cause-boxing-day-37846384",
+            "headline": "Investigators uncover cause of Boxing Day fire which killed mum and two children",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "uncover cause",
+                    "start": 14,
+                    "end": 27,
+                    "question": "What was revealed, and could the headline have said it?"
+                }
+            ]
+        },
+        {
+            "k": "f21",
+            "id": "2ad8d5f69d61035789b7e7f201f87ebb54d10f9fbfeb22475a9833daca1745de",
+            "outlet": "E! Online",
+            "link": "https://www.eonline.com/news/1437954/mormon-wives-taylor-frankie-paul-reveals-how-long-shes-been-celibate?cmpid=rss-syndicate-genericrss-us-top_stories",
+            "headline": "Taylor Frankie Paul Shares Update on Sex Life After Cheating Scandal",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "Shares Update",
+                    "start": 20,
+                    "end": 33,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f22",
+            "id": "f809f26611a77724722143b56bce7741247140d1614ae33e2f729edb3260f1a0",
+            "outlet": "Sydney Morning Herald",
+            "link": "https://www.smh.com.au/goodfood/melbourne-eating-out/this-one-man-run-sake-bar-and-wine-shop-is-odd-in-a-wonderful-and-delicious-way-20261110-p61c2n.html?ref=rss&utm_medium=rss&utm_source=rss_feed",
+            "headline": "This one-man-run sake bar and wine shop is odd in a wonderful and delicious way",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "This one-man-run sake bar",
+                    "start": 0,
+                    "end": 25,
+                    "question": "Which things is it talking about, and does the headline name them?"
+                }
+            ]
+        },
+        {
+            "k": "f23",
+            "id": "834842b5f3001a720c51ac74177bc4ebd980f1c05927fc5d53973354a8f4af4f",
+            "outlet": "Condé Nast Traveler",
+            "link": "https://www.cntraveler.com/story/this-train-offers-a-front-row-seat-to-one-of-colorados-greatest-natural-wonders",
+            "headline": "This Train Offers a Front-Row Seat to One of Colorado’s Greatest Natural Wonders",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "This Train Offers a",
+                    "start": 0,
+                    "end": 19,
+                    "question": "Which things is it talking about, and does the headline name them?"
+                }
+            ]
+        },
+        {
+            "k": "f24",
+            "id": "5abad90110091ca76fbb2d319eb75d94489e84a2a10a0d21ee93fdea59104dfb",
+            "outlet": "PC Gamer",
+            "link": "https://www.pcgamer.com/games/sim/inspired-by-dark-messiah-and-thief-this-stealth-game-sees-you-sneak-through-a-medieval-megastructure-prowled-by-undead-guards/",
+            "headline": "Inspired by Dark Messiah and Thief, this stealth game sees you sneak through a medieval megastructure prowled by undead guards",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "this stealth game sees",
+                    "start": 36,
+                    "end": 58,
+                    "question": "Which things is it talking about, and does the headline name them?"
+                }
+            ]
+        },
+        {
+            "k": "f25",
+            "id": "b13769cf10d7db9293bf3ffb2e18adc01696422d8517e2dfd914a67594665f17",
+            "outlet": "Politico",
+            "link": "https://www.politico.com/news/2026/11/06/poll-republicans-democrats-divided-elections-01152054",
+            "headline": "Poll: Republicans split on whether they’re split",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Unnamed sources",
+                    "text": "Poll:",
+                    "start": 0,
+                    "end": 5,
+                    "question": "Which poll or study, and who ran it?"
+                }
+            ]
+        },
+        {
+            "k": "f26",
+            "id": "a2fd450df4642091a8ced6f3641a22770b777420d2aed4b1635dbe3bb95f55c2",
+            "outlet": "ScienceAlert",
+            "link": "https://www.sciencealert.com/the-worlds-biggest-sea-of-sand-shows-no-trace-of-ancient-humans-heres-why",
+            "headline": "The World's Biggest Sea of Sand Shows No Trace of Ancient Humans. Here's Why.",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "Here's Why",
+                    "start": 66,
+                    "end": 76,
+                    "question": "What is the answer, and could the headline have just said it?"
+                }
+            ]
+        },
+        {
+            "k": "f27",
+            "id": "1fc2ccbded41d3b4448bfac67bbcb63a455d17fa52047a9a2bb026cfcc328a2e",
+            "outlet": "Breitbart",
+            "link": "https://www.breitbart.com/politics/2026/11/08/report-wes-moores-army-supervisor-calls-his-service-claims-disingenuous/",
+            "headline": "Report: Wes Moore’s Army Supervisor Calls His Service Claims 'Disingenuous'",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Unnamed sources",
+                    "text": "Report:",
+                    "start": 0,
+                    "end": 7,
+                    "question": "Who is reporting this, and have they shown how they know?"
+                }
+            ]
+        },
+        {
+            "k": "f28",
+            "id": "a7ee55929f228ffdebba918cfd97de026a0f2f1e74b60de863ee0aafdad87487",
+            "outlet": "Sydney Morning Herald",
+            "link": "https://www.smh.com.au/goodfood/sydney-eating-out/le-dodo-affamer-canterbury-review-20261110-p61btb.html?ref=rss&utm_medium=rss&utm_source=rss_feed",
+            "headline": "‘Lively, tangy and electric’: This rare island gem is another reason to jump on the Metro",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "This rare island gem",
+                    "start": 30,
+                    "end": 50,
+                    "question": "Which things is it talking about, and does the headline name them?"
+                }
+            ]
+        },
+        {
+            "k": "f29",
+            "id": "a58a72b92dbcfaa0c62f59082350e06a1df1457ba86aea0494188807d036e946",
+            "outlet": "E! Online",
+            "link": "https://www.eonline.com/news/1437944/love-is-blinds-michaela-giorgio-addresses-romance-with-beekeeper-matt?cmpid=rss-syndicate-genericrss-us-top_stories",
+            "headline": "Love Is Blind Star Michaella Giorgio’s Romance With Costar Revealed",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "’s Romance With Costar Revealed",
+                    "start": 36,
+                    "end": 67,
+                    "question": "What was revealed, and could the headline have said it?"
+                }
+            ]
+        },
+        {
+            "k": "f30",
+            "id": "d5bb0d79958dd6a7a8392765a54965fbcbc7f38570da4224cecb9a34c99b68cd",
+            "outlet": "Mother Jones",
+            "link": "https://www.motherjones.com/politics/2026/11/inside-centcom-podcast-lifestyle-military-war-iran-trump/",
+            "headline": "The Military Chose a Strange Moment to Launch a Lifestyle Podcast",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "a Strange Moment",
+                    "start": 19,
+                    "end": 35,
+                    "question": "What is the surprising thing, and why isn't it named?"
+                }
+            ]
+        }
+    ],
+    "unflagged": [
+        {
+            "k": "m01",
+            "id": "ab1e76bad482c286369d5f8a31b2316625d0b898816ff062986d3f988d93b405",
+            "outlet": "The Critic",
+            "articleType": "opinion",
+            "link": "https://thecritic.co.uk/issues/november-2026/dressing-up-dei-in-an-academic-comfort-blanket/",
+            "headline": "Dressing up DEI in an academic comfort blanket",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m02",
+            "id": "66299bc06259088a1a8419b0ae08c4f3930a2e17da44131dac79807f619ec196",
+            "outlet": "Sydney Morning Herald",
+            "link": "https://www.smh.com.au/lifestyle/health-and-wellness/nations-first-gym-class-for-glp-1-users-20261110-p61cs9.html?ref=rss&utm_medium=rss&utm_source=rss_feed",
+            "headline": "Nation's first gym class for GLP-1 users",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m03",
+            "id": "671b9416fb5a39d56737a08c00dbdb166c5f4e5df02e19bfb8d7bf5639e9dc71",
+            "outlet": "Mother Jones",
+            "link": "https://www.motherjones.com/politics/2026/11/fetal-viability-abortion-laws-repro-rights-state-amendments/",
+            "headline": "Abortion Laws Treat “Viability” as a Bright Line. It Isn’t.",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m04",
+            "id": "06b87d204d78d78e0cb52f74bc3d15dd477e21638abdda2342f4984d8abbe93e",
+            "outlet": "Daily Star",
+            "link": "https://www.dailystar.co.uk/tv/maya-jamas-next-tv-role-37860099",
+            "headline": "Maya Jama's next TV role 'rumbled' by fans after ITV Love Island exit",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m05",
+            "id": "ebf76bf441c0fc8a6a013b1d6f258cdb117e7391a7cea720651080d478be0b87",
+            "outlet": "Grist",
+            "link": "https://grist.org/culture/glaciers-around-the-world-are-endangered-but-no-two-are-alike/",
+            "headline": "Glaciers around the world are endangered — but no two are alike",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m06",
+            "id": "e5ae8103b53fa00d6f636efb5245ed1242f9fd9ea8965c1d2096c30b89594883",
+            "outlet": "PC Gamer",
+            "link": "https://www.pcgamer.com/games/the-elder-scrolls/skyrim-lead-designer-gives-the-most-succinct-summary-of-bethesdas-design-ive-ever-heard-youre-not-playing-my-game-im-making-your-game/",
+            "headline": "Skyrim lead designer gives the most succinct summary of Bethesda's design I've ever heard: 'You're not playing my game, I'm making your game'",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m07",
+            "id": "890df974af9a81a33500f815396b14eab5239f5afe97fbcb65317782cf41f7be",
+            "outlet": "Wired",
+            "link": "https://www.wired.com/story/the-midterms-were-a-pretty-good-sign-for-right-to-repair/",
+            "headline": "The Midterms Were a Pretty Good Sign for the Right-to-Repair Movement",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m08",
+            "id": "d96fde15d60ceefd6f1cb72fe482dd5bc1f047f18499d4e586605280a217ed22",
+            "outlet": "Ars Technica",
+            "link": "https://arstechnica.com/science/2026/11/earths-churning-mantle-may-have-created-the-great-unconformity/",
+            "headline": "Earth's churning mantle may have created the Great Unconformity",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m09",
+            "id": "d74d56e2862c4dc625bfa021593b2373a97288c233203e24cf3a5d042764e4d3",
+            "outlet": "Carbon Brief",
+            "link": "https://www.carbonbrief.org/qa-what-is-the-brazil-led-deforestation-roadmap",
+            "headline": "Q&A: What is the Brazil-led ‘deforestation roadmap’?",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m10",
+            "id": "2d78fe480cd41d7e24b4b6dab1a130fdba49456af0ed7b15aa9e2952cf8d7658",
+            "outlet": "The Hill",
+            "articleType": "opinion",
+            "link": "https://thehill.com/opinion/campaign/6206429-jon-ossoff-politician-year/",
+            "headline": "Ossoff is my choice as politician of the year",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m11",
+            "id": "9955c53e53d9bccf6d1b683b14929c64b8135cea27683dcf0510611910991af4",
+            "outlet": "NPR",
+            "link": "https://www.npr.org/2026/11/09/g-s1-152627/up-first-newsletter-stephen-miller-trump-congress-nvidia-cop31",
+            "headline": "Congress is back after GOP's midterm defeat. And, Trump appoints new chief of staff",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m12",
+            "id": "4d2c1dac08712af8587b011713341a36bb078332358d4bfc54f561554acdb9dd",
+            "outlet": "TechCrunch",
+            "link": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/",
+            "headline": "Medium’s new TK app brings AI assistance directly into the writing process",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m13",
+            "id": "76b142fbdc06cb9d16f51acdc596f762a4a91c486da1e885fe496fb348bb4436",
+            "outlet": "New Statesman",
+            "articleType": "review",
+            "link": "https://www.newstatesman.com/culture/books/book-of-the-day/2026/11/china-mievilles-island-ghost-story",
+            "headline": "China Miéville’s island ghost story",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m14",
+            "id": "91c68d5403bdb19ece56e758cc9756fa1112f7f99359ce9f146e3f9e43ecf5b1",
+            "outlet": "Politico",
+            "link": "https://www.politico.com/news/2026/11/07/kevin-stitt-republicans-butt-whipping-be-nice-01155140",
+            "headline": "Why this GOP governor thinks his party got ‘worse than a butt whipping’ on Tuesday",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m15",
+            "id": "0b1cd8acf5fcd85320dc6c9664c16d545453d85c6ccb59f0917af667fe683b26",
+            "outlet": "ProPublica",
+            "link": "https://www.propublica.org/article/vitamin-k-shot-texas-lonestar-emergency-room-nicole-malouf",
+            "headline": "An 11-Day-Old Baby Couldn’t Stop Bleeding. For Hours, the ER Didn’t Provide a Critical Vitamin Shot.",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m16",
+            "id": "f5735a4561025f7ba1bb18bf8a2400499420b02ece3124abb0d94d78e76a548f",
+            "outlet": "Guardian Environment",
+            "link": "https://www.theguardian.com/environment/2026/nov/09/air-pollution-soars-fog-traps-emissions-england-urban-areas",
+            "headline": "Air pollution soars as fog traps emissions in England’s urban areas",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m17",
+            "id": "d13e8bc6939774d5ed15e78b5aeaebf38d8946156ff02acf1170ef650dd6fd79",
+            "outlet": "NBC News",
+            "link": "https://www.nbcnews.com/sports/college-football/college-football-playoff-expanding-24-teams-2027-rcna608336",
+            "headline": "College Football Playoff is expanding to 24 teams in 2027",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m18",
+            "id": "02a5bc94e89c87db1e799b78153fe36e9da03cfca6fc87dafc2602e00fe3978f",
+            "outlet": "ABC News Australia",
+            "link": "https://www.abc.net.au/news/2026-11-10/sandpapergate-ball-tampering-scandal-still-wounding-australia/107366182",
+            "headline": "Sandpapergate continues to wound Australia eight years on",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m19",
+            "id": "e288e10e5c70065b57d65ed92057f7373d70e1d7124a9753224b7eb2abf1a1db",
+            "outlet": "Financial Times",
+            "link": "https://www.ft.com/content/ec66a5d6-70f1-47fc-b573-067dd96dc913?syn-25a6b1a6=1",
+            "headline": "Germany issues ultimatum to secure Ukraine funding",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m20",
+            "id": "987c5a2bc1fd97866cea4253b0f9861701720b233e03b02830383be510eb8175",
+            "outlet": "Axios",
+            "link": "https://www.axios.com/2026/11/09/ukraine-russia-zelensky-putin-peace-abu-dhabi",
+            "headline": "White House cautiously upbeat about Russia-Ukraine peace talks this week",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m21",
+            "id": "cf08095b5f24a12c3f46cdfd86df38d91e091d351ffb46bff6b860339d5d72d8",
+            "outlet": "New Atlas",
+            "link": "https://newatlas.com/motorcycles/norton-450-urban/",
+            "headline": "Norton, we need to talk about your new 450cc naked motorcycle",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m22",
+            "id": "5ca6de229008a8da360476da3d46eeed008d3e5e9c83c6988e101d72887716b9",
+            "outlet": "Al Jazeera",
+            "link": "https://www.aljazeera.com/video/newsfeed/2026/11/9/russell-brand-sentenced-to-10-5-years-over-sexual-assault-charges?traffic_source=rss",
+            "headline": "Russell Brand sentenced to 10.5 years over sexual assault charges",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m23",
+            "id": "cdb12104e6620eb934771d777369d5a69c339f36bc5cd0655b28927b9ca9a0fc",
+            "outlet": "Fox News",
+            "link": "https://www.foxnews.com/politics/scotus-allows-trump-admin-temporarily-resume-border-construction-texas-big-bend",
+            "headline": "SCOTUS allows Trump admin to temporarily resume border construction in Texas' Big Bend",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m24",
+            "id": "f846d8f06343042cf960d82c6715c3f9a1524554ebf12829763508cc310e54af",
+            "outlet": "Kiplinger",
+            "link": "https://www.kiplinger.com/retirement/retirement-planning/retirement-tax-efficient-withdrawal-plan",
+            "headline": "How to Build a Tax-Efficient Retirement Withdrawal Plan",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m25",
+            "id": "f3cdbd0ed89247a33dbf8eb26cb3d5c20cde575db47f738cc046f13fc3d19b0f",
+            "outlet": "BleepingComputer",
+            "link": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
+            "headline": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m26",
+            "id": "cf2829ad74c8e9e2273e5fdb3f134428596d23f924577dbc4fb73309de28d235",
+            "outlet": "The Verge",
+            "link": "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters",
+            "headline": "Instagram’s Effect Builder makes new filters from AI prompts",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m27",
+            "id": "a41676d606e1760570661f0bdb407a3da2cffa333226812f9dad33b7e04c0728",
+            "outlet": "Manchester Evening News",
+            "link": "https://www.manchestereveningnews.co.uk/news/health/one-drug-hope-celine-dion-34887563",
+            "headline": "One-off drug offers hope to people with same disorder as Celine Dion",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m28",
+            "id": "59177a075e838371a1c81e3cc63c212ac48228184781d99e0805c5979d52ce7c",
+            "outlet": "CNBC",
+            "link": "https://www.cnbc.com/2026/11/09/the-issues-a-really-frustrated-trump-may-actually-work-with-democrats-on-according-to-former-speaker-paul-ryan.html",
+            "headline": "The issues a 'really frustrated' Trump may actually work with Democrats on, according to former Speaker Paul Ryan",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m29",
+            "id": "173cf53365b90af4f54564c26d003d1bcba8c7c9d0e49884a161b94e4302524d",
+            "outlet": "The Atlantic",
+            "link": "https://www.theatlantic.com/technology/2026/11/fridge-hacks-europe-supermarkets/689328/?utm_source=feed",
+            "headline": "Perhaps Connecting Fridges to the Internet Was a Bad Idea",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m30",
+            "id": "9d03f7df41a721c9454abf87357930a524922b6ba712d653ee6705ac80c56f41",
+            "outlet": "Daily Express",
+            "link": "https://www.express.co.uk/news/uk/2264750/russell-brand-target-prison",
+            "headline": "Russell Brand has 'target' on back as he heads to prison – 'risk is high'",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m31",
+            "id": "ecd5356c079f86addc4159d768502c86be7549faf94cc70577ef974833311bc5",
+            "outlet": "Sky News",
+            "link": "https://news.sky.com/story/positive-momentum-towards-end-to-iran-war-trump-says-13610128",
+            "headline": "'Positive momentum' towards end to Iran war, Trump says",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m32",
+            "id": "bd64b6498540f2d49a45b1284651564aac41e84699d19d08ea7ea7c15055d34f",
+            "outlet": "Rock Paper Shotgun",
+            "link": "https://www.rockpapershotgun.com/arkane-is-profitable-say-marvels-blade-developers-in-fiery-new-statement-just-not-profitable-enough-for-microsoft",
+            "headline": "\"Arkane is profitable,\" say Marvel's Blade developers in fiery new statement, \"just not profitable enough for Microsoft\"",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m33",
+            "id": "9cb8fa640dc018281a541b3b79c21f4908d4075398e4c4925b39df26b9c71bd4",
+            "outlet": "The Independent",
+            "link": "https://www.independent.co.uk/news/uk/politics/nigel-farage-reform-uk-poll-latest-kemi-badenoch-b3081748.html",
+            "headline": "Yet another poll shows Reform UK falling to third place behind Tories",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m34",
+            "id": "8b69c95c2b0a1ad96dd7ed199b4dfe3e8d88d90c2a3ba65bef52569efcb6deb7",
+            "outlet": "Nature",
+            "link": "https://www.nature.com/articles/d41586-026-03267-w",
+            "headline": "People’s social networks can be unintentionally reshaped during randomized interventions",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m35",
+            "id": "908c5ebb53400a7dd16e8f52866cf547d1b6a6991e9a0eeefbb4cf085c3e54de",
+            "outlet": "Investing.com",
+            "link": "https://www.investing.com/news/insider-trading-news/iron-mountain-ceo-william-meaney-sells-407-million-in-shares-93CH-5013379",
+            "headline": "Iron Mountain CEO William Meaney sells $4.07 million in shares",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m36",
+            "id": "6bb52355bbf9150cfc886c12c799e7895a5df73c0ad1f34f875793ccf0cb0ca0",
+            "outlet": "CBS News",
+            "link": "https://www.cbsnews.com/video/jeffries-and-massie-take-questions-after-new-impeachment-articles-introduced-against-hegseth/",
+            "headline": "Jeffries and Massie take questions after new impeachment articles introduced against Hegseth",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m37",
+            "id": "c9892629e12d1033f2c139d7137555c28bf264c980c7f03ee38b6329a6695052",
+            "outlet": "Engadget",
+            "link": "https://www.engadget.com/2311532/youtube-will-once-again-be-part-of-billboard-chart-calculations-in-2027/",
+            "headline": "YouTube will once again be part of Billboard chart calculations in 2027",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m38",
+            "id": "b03dafd27d25640158a187770020a96470b5b269b91b6fb3622c5697557538cc",
+            "outlet": "Breitbart",
+            "link": "https://www.breitbart.com/politics/2026/11/09/democrat-texas-attorney-general-elect-will-allow-out-of-state-doctors-to-flood-state-with-abortion-pills/",
+            "headline": "Democrat Texas Attorney General-Elect Says He Will Allow Out-of-State Doctors to Flood State with Abortion Pills",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m39",
+            "id": "84a3daf089bf0df67e47f6f4411c5bb69a380242ab0effbb086c85a94cd95088",
+            "outlet": "Redwood City Pulse",
+            "link": "https://www.rwcpulse.com/calmatters/2026/11/09/after-silicon-valley-spending-spree-more-moderate-democrats-are-heading-to-the-capitol/",
+            "headline": "After Silicon Valley spending spree, more moderate Democrats are heading to the Capitol",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m40",
+            "id": "b2e5869f42dd0f6b93ce0fa04e662504b57e4487dfcdfaef7295aa791f9eac44",
+            "outlet": "ScienceDaily",
+            "link": "https://www.sciencedaily.com/releases/2026/11/261104012248.htm",
+            "headline": "MIT scientists break a 20-year rule and unlock never-before-seen crystal structures",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m41",
+            "id": "157da9e4365c647cc6e3b0a1458a6c7d55e088bbf6a0a726d6e690e7d2d6ff93",
+            "outlet": "ABC News",
+            "link": "https://abcnews.com/Politics/trump-plans-tremendous-numbers-pardons-2nd-half-term/story?id=137968247",
+            "headline": "Trump says he plans 'tremendous numbers' of pardons in 2nd half of term",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m42",
+            "id": "988e33cedf7304f8cc6daa3bca7ce4310206732ac6fae95fe6e10cfdcaf7af00",
+            "outlet": "MIT Technology Review",
+            "link": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+            "headline": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m43",
+            "id": "af79a84969f93cb7df5f4433c3efc746e3a4d3eb898ad862053f2fe4487172bc",
+            "outlet": "Daily Mail",
+            "link": "https://www.dailymail.com/money/cars/article-16262329/We-drive-5-SUVs-actually-sporty.html?ns_mchannel=rss&ito=1490&ns_campaign=1490",
+            "headline": "SUVs that are actually sporty: From Porsche Cayenne to the Ford Puma ST, FREDA LEWIS-STEMPEL picks her five favourites",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m44",
+            "id": "7e03ba46fec02423a2d5b208f4e0dbb40165b125291e8d6d298c7f0d625ad4ad",
+            "outlet": "PBS NewsHour",
+            "link": "https://www.pbs.org/newshour/world/watch-smog-blankets-new-delhi-after-diwali-celebrations",
+            "headline": "WATCH: Smog blankets New Delhi after Diwali celebrations",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m45",
+            "id": "868141eba5aeddb8c6f09764efd3daf7b1a4be5a4c631040cbdb8adeae483c52",
+            "outlet": "ScienceAlert",
+            "link": "https://www.sciencealert.com/scientists-reach-a-record-temperature-280-billion-times-colder-than-the-universe",
+            "headline": "Scientists Reach a Record Temperature: 280 Billion Times Colder Than The Universe",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m46",
+            "id": "bbc8da66b75b71283ef15119869bd85ef0dab3762de473d1662983297f400a51",
+            "outlet": "ESPN",
+            "link": "https://www.espn.com/nfl/story/_/id/50435349/packers-rb-josh-jacobs-needs-surgery-fractured-finger",
+            "headline": "LaFleur: Packers RB Jacobs needs surgery on finger; IR not ruled out",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m47",
+            "id": "4b202876b351a2be5ec86656ae7fcf9d6b7b5fc3c1767f2e55ac4fecfa16fe44",
+            "outlet": "MarketWatch",
+            "link": "https://www.marketwatch.com/story/the-stock-market-rally-keeps-spreading-beyond-big-tech-october-inflation-data-could-put-it-to-the-test-c1b87dcd?mod=mw_rss_topstories",
+            "headline": "The stock-market rally keeps spreading beyond Big Tech. October inflation data could put it to the test.",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m48",
+            "id": "75d5a862a13dfc8932625b76d9a0ad841955dcf84267603609842e1b39bab0fc",
+            "outlet": "Deutsche Welle",
+            "link": "https://www.dw.com/en/russia-s-giant-new-radar-in-kaliningrad-raises-alarm-in-nato/a-79797815?maca=en-rss-en-all-1573-rdf",
+            "headline": "Russia's giant new radar in Kaliningrad raises alarm in NATO",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m49",
+            "id": "3432a3c71db78db2636db6a192e10540d781c503c12529bf605f520643f6b86b",
+            "outlet": "Condé Nast Traveler",
+            "link": "https://www.cntraveler.com/story/the-best-way-to-eat-swiss-fondue-floating-on-lake-brienz",
+            "headline": "The Best Way to Eat Swiss Fondue? Floating on Lake Brienz",
+            "level": "NONE",
+            "hits": []
+        },
+        {
+            "k": "m50",
+            "id": "2cc26145d426d54fd97e9a161a4008a58da1dacacd6d5efea860638b7a6299f9",
+            "outlet": "CBC News Canada",
+            "link": "https://www.cbc.ca/news/entertainment/skims-advent-calendar-backlash-9.7414783?cmp=rss",
+            "headline": "$276 for hair ties? Skims offers advent calendar refunds after online backlash",
+            "level": "NONE",
+            "hits": []
+        }
+    ]
+}

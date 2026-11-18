@@ -1,0 +1,1702 @@
+{
+ "labelledBy": "owner",
+ "page": "private review page",
+ "collectedAt": "2026-10-19",
+ "labels": {
+  "s001": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s002": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s003": {
+   "level": "SUBTLE",
+   "techniques": [
+    "opinion_as_fact"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s004": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s005": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s006": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "manufactured_rage"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s007": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "manufactured_rage"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s008": {
+   "level": "PROMINENT",
+   "techniques": [
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s009": {
+   "level": "PROMINENT",
+   "techniques": [
+    "opinion_as_fact",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s010": {
+   "level": "SUBTLE",
+   "techniques": [
+    "opinion_as_fact"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s011": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s012": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s013": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s014": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s015": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "manufactured_rage",
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s016": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "manufactured_rage",
+    "opinion_as_fact",
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s017": {
+   "level": "PROMINENT",
+   "techniques": [
+    "opinion_as_fact",
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s018": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s019": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s020": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s021": {
+   "level": "SUBTLE",
+   "techniques": [
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s022": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s023": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s024": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": true,
+   "note": "",
+   "summaryShown": true
+  },
+  "s025": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "manufactured_rage"
+   ],
+   "unsure": true,
+   "note": "",
+   "summaryShown": true
+  },
+  "s026": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s027": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s028": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s029": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s030": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s031": {
+   "level": "PROMINENT",
+   "techniques": [
+    "opinion_as_fact",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s032": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s033": {
+   "level": "SUBTLE",
+   "techniques": [
+    "manufactured_rage"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s034": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s035": {
+   "level": "SUBTLE",
+   "techniques": [
+    "opinion_as_fact"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s036": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s037": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s038": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s039": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s040": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s041": {
+   "level": "SUBTLE",
+   "techniques": [
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s042": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s043": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s044": {
+   "level": "SUBTLE",
+   "techniques": [
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s045": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s046": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s047": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s048": {
+   "level": "PROMINENT",
+   "techniques": [
+    "manufactured_fear",
+    "manufactured_rage"
+   ],
+   "unsure": false,
+   "note": "theyre clearly using the first part to grab people in",
+   "summaryShown": false
+  },
+  "s049": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s050": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "science_overhype"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s051": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "science_overhype"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s052": {
+   "level": "SUBTLE",
+   "techniques": [
+    "manufactured_rage"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s053": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s054": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "manufactured_fear"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s055": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "opinion_as_fact",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s056": {
+   "level": "SUBTLE",
+   "techniques": [
+    "opinion_as_fact"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s057": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s058": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s059": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s060": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s061": {
+   "level": "SUBTLE",
+   "techniques": [
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s062": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s063": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s064": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s065": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s066": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s067": {
+   "level": "SUBTLE",
+   "techniques": [
+    "speculative_hedge"
+   ],
+   "unsure": true,
+   "note": "there's a lot of alarmist language here",
+   "summaryShown": false
+  },
+  "s068": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s069": {
+   "level": "PROMINENT",
+   "techniques": [
+    "opinion_as_fact",
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s070": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s071": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "opinion_as_fact",
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s072": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s073": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s074": {
+   "level": "PROMINENT",
+   "techniques": [
+    "manufactured_fear",
+    "opinion_as_fact",
+    "speculative_hedge",
+    "urgency_pressure"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s075": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s076": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s077": {
+   "level": "PROMINENT",
+   "techniques": [
+    "speculative_hedge",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s078": {
+   "level": "SUBTLE",
+   "techniques": [
+    "opinion_as_fact"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s079": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s080": {
+   "level": "SUBTLE",
+   "techniques": [
+    "manufactured_fear"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s081": {
+   "level": "PROMINENT",
+   "techniques": [
+    "opinion_as_fact",
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s082": {
+   "level": "PROMINENT",
+   "techniques": [
+    "manufactured_fear",
+    "opinion_as_fact",
+    "speculative_hedge",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s083": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s084": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "manufactured_fear",
+    "speculative_hedge",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s085": {
+   "level": "SUBTLE",
+   "techniques": [
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s086": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s087": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s088": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s089": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s090": {
+   "level": "PROMINENT",
+   "techniques": [
+    "opinion_as_fact",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s091": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s092": {
+   "level": "SUBTLE",
+   "techniques": [
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s093": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s094": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s095": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s096": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s097": {
+   "level": "PROMINENT",
+   "techniques": [
+    "manufactured_fear",
+    "speculative_hedge",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s098": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s099": {
+   "level": "PROMINENT",
+   "techniques": [
+    "opinion_as_fact",
+    "speculative_hedge",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s100": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s101": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s102": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "manufactured_rage"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s103": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s104": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "manufactured_fear",
+    "opinion_as_fact",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s105": {
+   "level": "SUBTLE",
+   "techniques": [
+    "opinion_as_fact"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s106": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s107": {
+   "level": "PROMINENT",
+   "techniques": [
+    "opinion_as_fact",
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s108": {
+   "level": "SUBTLE",
+   "techniques": [
+    "manufactured_fear"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s109": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s110": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "manufactured_fear",
+    "opinion_as_fact",
+    "speculative_hedge",
+    "urgency_pressure"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s111": {
+   "level": "SUBTLE",
+   "techniques": [
+    "manufactured_fear"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s112": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s113": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "shopping",
+   "summaryShown": false
+  },
+  "s114": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s115": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s116": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s117": {
+   "level": "SUBTLE",
+   "techniques": [
+    "opinion_as_fact"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s118": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s119": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s120": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s121": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s122": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s123": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s124": {
+   "level": "SUBTLE",
+   "techniques": [
+    "manufactured_fear"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s125": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s126": {
+   "level": "PROMINENT",
+   "techniques": [
+    "manufactured_fear",
+    "opinion_as_fact"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s127": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "opinion_as_fact"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s128": {
+   "level": "SUBTLE",
+   "techniques": [
+    "manufactured_fear"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s129": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s130": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s131": {
+   "level": "SUBTLE",
+   "techniques": [
+    "science_overhype"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s132": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s133": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "opinion_as_fact",
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s134": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "science_overhype"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s135": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s136": {
+   "level": "SUBTLE",
+   "techniques": [
+    "manufactured_fear"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s137": {
+   "level": "SUBTLE",
+   "techniques": [
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s138": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s139": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s140": {
+   "level": "SUBTLE",
+   "techniques": [
+    "manufactured_fear"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s141": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s142": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s143": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s144": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s145": {
+   "level": "PROMINENT",
+   "techniques": [
+    "manufactured_fear",
+    "manufactured_rage"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s146": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s147": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s148": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s149": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s150": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s151": {
+   "level": "SUBTLE",
+   "techniques": [
+    "opinion_as_fact"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s152": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s153": {
+   "level": "PROMINENT",
+   "techniques": [
+    "manufactured_rage",
+    "opinion_as_fact",
+    "speculative_hedge",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s154": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s155": {
+   "level": "SUBTLE",
+   "techniques": [
+    "manufactured_rage"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s156": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s157": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s158": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s159": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "opinion_as_fact"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s160": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s161": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s162": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s163": {
+   "level": "SUBTLE",
+   "techniques": [
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s164": {
+   "level": "SUBTLE",
+   "techniques": [
+    "manufactured_fear"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s165": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s166": {
+   "level": "SUBTLE",
+   "techniques": [
+    "opinion_as_fact"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s167": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s168": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s169": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s170": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s171": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s172": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s173": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s174": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s175": {
+   "level": "PROMINENT",
+   "techniques": [
+    "urgency_pressure",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s176": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s177": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s178": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s179": {
+   "level": "SUBTLE",
+   "techniques": [
+    "manufactured_fear"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s180": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s181": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s182": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "science_overhype"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s183": {
+   "level": "SUBTLE",
+   "techniques": [
+    "manufactured_rage"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s184": {
+   "level": "SUBTLE",
+   "techniques": [
+    "science_overhype"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s185": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s186": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s187": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s188": {
+   "level": "PROMINENT",
+   "techniques": [
+    "opinion_as_fact"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s189": {
+   "level": "SUBTLE",
+   "techniques": [
+    "manufactured_rage"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s190": {
+   "level": "SUBTLE",
+   "techniques": [
+    "curiosity_gap"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s191": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s192": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s193": {
+   "level": "PROMINENT",
+   "techniques": [
+    "opinion_as_fact",
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s194": {
+   "level": "PROMINENT",
+   "techniques": [
+    "science_overhype",
+    "speculative_hedge"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s195": {
+   "level": "PROMINENT",
+   "techniques": [
+    "curiosity_gap",
+    "speculative_hedge",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s196": {
+   "level": "PROMINENT",
+   "techniques": [
+    "manufactured_fear",
+    "opinion_as_fact",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": true
+  },
+  "s197": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s198": {
+   "level": "PROMINENT",
+   "techniques": [
+    "opinion_as_fact",
+    "vague_sourcing"
+   ],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s199": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  },
+  "s200": {
+   "level": "NONE",
+   "techniques": [],
+   "unsure": false,
+   "note": "",
+   "summaryShown": false
+  }
+ }
+}

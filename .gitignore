@@ -1,0 +1,36 @@
+*.iml
+.gradle
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+.idea
+.DS_Store
+*.hprof
+local.properties
+gradle.properties
+bin/
+**/bin/
+# Live dumps written by the removed *LiveResearchTest classes; never committed.
+engine/fixtures/
+
+# Cached external research datasets (see tools/benchmark Sources.kt); never committed.
+fixtures/external/
+.cache/
+
+# IDE and Kotlin daemon artifacts
+.kotlin/
+.vscode/
+
+# Local database files
+*.db
+know-news-reader.db
+
+# Temporary developer probe tests
+**/Zz*Test.kt
+
+
+
+# Local harvest staging: Haystack appends here. The monthly flag review harvests into
+# docs/benchmark/flag-review/YYYY-MM/ instead.
+fixtures/headlines/harvested-live-intake.tsv
+fixtures/harvest-log/

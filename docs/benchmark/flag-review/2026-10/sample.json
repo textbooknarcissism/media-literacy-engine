@@ -1,0 +1,677 @@
+{
+    "month": "2026-10",
+    "codebook": 10,
+    "rulePack": 31,
+    "intake": "docs/benchmark/flag-review/2026-10/intake.tsv",
+    "headlines": 366,
+    "flagged": 33,
+    "items": [
+        {
+            "k": "f01",
+            "id": "9fce21d4dfab2ecba0374c0f120d2aed5181b7581a502a4513abe534213aa2b6",
+            "outlet": "Condé Nast Traveler",
+            "link": "https://www.cntraveler.com/gallery/these-mini-backpacks-hold-more-than-you-think",
+            "headline": "These Mini Backpacks Hold More Than You Think",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "These Mini Backpacks Hold",
+                    "start": 0,
+                    "end": 25,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f02",
+            "id": "73143c0293e9443ec720b042e15d78c509fe925b02903e60c7c839d2dcfaa578",
+            "outlet": "The Verge",
+            "link": "https://www.theverge.com/tech/1016389/microsoft-garage-closure-hackathon-notepad",
+            "headline": "Microsoft shuts down its beloved maker space",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "manufactured_rage",
+                    "name": "Conflict framing",
+                    "text": "shuts down",
+                    "start": 10,
+                    "end": 20,
+                    "question": "Did anyone actually attack anyone, or did they just disagree?"
+                }
+            ]
+        },
+        {
+            "k": "f03",
+            "id": "426304a3f9e961bdcfbe5ca267194b48e8da96467079d7cf81bc60574f700818",
+            "outlet": "Breitbart",
+            "link": "https://www.breitbart.com/middle-east/2026/10/21/report-turkey-seeks-parliamentary-mandate-for-sending-troops-to-defend-saudi-arabia/",
+            "headline": "Report: Turkey Seeks Parliamentary Mandate for Sending Troops to Defend Saudi Arabia",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Anonymous sourcing",
+                    "text": "Report:",
+                    "start": 0,
+                    "end": 7,
+                    "question": "Who said this, and could you go and check them?"
+                }
+            ]
+        },
+        {
+            "k": "f04",
+            "id": "9b26b6d5be358e6ca9286db5bdf2dd8b0ea5845de86c830446caafebd588ee2a",
+            "outlet": "Rock Paper Shotgun",
+            "link": "https://www.rockpapershotgun.com/i-know-you-probably-dont-have-mushroom-in-your-backlog-but-fungus-looter-shooter-mycopunk-is-now-out-in-10-and-looks-like-the-opposite-of-a-shiitake-time",
+            "headline": "I know you probably don't have mushroom in your backlog, but fungus looter shooter Mycopunk is now out in 1.0 and looks like the opposite of a shiitake time",
+            "level": "PROMINENT",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "you probably don't",
+                    "start": 7,
+                    "end": 25,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f05",
+            "id": "ca71d5c6477259d48d24a2311c681ede9305885501fad8ed24b56b4e600b00ab",
+            "outlet": "Daily Mail",
+            "link": "https://www.dailymail.com/travel/article-16229059/airbnb-new-rules-washing-cleaning-backlash.html?ns_mchannel=rss&ito=1490&ns_campaign=1490",
+            "headline": "Airbnb bans hosts from demanding guests strip beds and wash up - as new rules are branded a 'nightmare' and furious owners threaten to QUIT",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Anonymous sourcing",
+                    "text": "'nightmare'",
+                    "start": 92,
+                    "end": 103,
+                    "question": "Who said this, and could you go and check them?"
+                },
+                {
+                    "technique": "manufactured_rage",
+                    "name": "Conflict framing",
+                    "text": "branded",
+                    "start": 82,
+                    "end": 89,
+                    "question": "Did anyone actually attack anyone, or did they just disagree?"
+                }
+            ]
+        },
+        {
+            "k": "f06",
+            "id": "79347a92527c3997529a3f16fc8c58ef78695a2b4436c40783b01bffddbda07f",
+            "outlet": "MarketWatch",
+            "link": "https://www.marketwatch.com/story/markets-are-pricing-in-long-term-ai-winners-this-veteran-investor-says-history-proves-customers-win-more-than-innovators-f7043439?mod=mw_rss_topstories",
+            "headline": "Markets are pricing in long-term AI winners. This veteran investor says history proves customers win more than innovators.",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "This veteran investor says",
+                    "start": 45,
+                    "end": 71,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f07",
+            "id": "6504af4bd978d3b435fb6a09936374e50f8f71088884750eb9b6e92431cf29cd",
+            "outlet": "ScienceAlert",
+            "link": "https://www.sciencealert.com/scientists-dug-into-a-weird-patch-on-the-seafloor-they-unearthed-a-watery-grave",
+            "headline": "Scientists Dug Into a Weird Patch on The Seafloor. They Unearthed a Watery Grave",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "a Weird Patch",
+                    "start": 20,
+                    "end": 33,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f08",
+            "id": "d1d40e06f00577ae4d42de195a520b8981ce3f506451d45079caf53b87910f03",
+            "outlet": "ScienceDaily",
+            "link": "https://www.sciencedaily.com/releases/2026/10/261018084028.htm",
+            "headline": "Modern neuroscience is rediscovering a surprising idea freud had 130 years ago",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "a surprising idea",
+                    "start": 37,
+                    "end": 54,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f09",
+            "id": "0410afd36faef528a38709c38cc9fe7c964d49c6fe1015c2bfdad2ac0baec408",
+            "outlet": "Business Insider",
+            "link": "https://www.businessinsider.com/best-lesser-known-european-travel-destinations-from-frequent-traveler-2026-10",
+            "headline": "I've visited over 50 cities in Europe. London and Paris were great, but these 5 lesser-known locations are worth a visit.",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "these 5 lesser-known locations",
+                    "start": 72,
+                    "end": 102,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f10",
+            "id": "8b4aa4671575e316deaa8474f02556017455d5aa20649e826c3d507cc37eeda3",
+            "outlet": "Fox News",
+            "articleType": "opinion",
+            "link": "https://www.foxnews.com/opinion/independent-brian-bengs-why-want-south-dakota-vote-senate",
+            "headline": "I'm independent Brian Bengs. This is why I want South Dakota's vote for Senate",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "This is why",
+                    "start": 29,
+                    "end": 40,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f11",
+            "id": "8c5daed3a88a294f4746019a31011283a0dc38e0537da557c8c56ae2737491f8",
+            "outlet": "ScienceDaily",
+            "link": "https://www.sciencedaily.com/releases/2026/10/261019093439.htm",
+            "headline": "Scientists find 10 different diets linked to slower aging",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Anonymous sourcing",
+                    "text": "Scientists find",
+                    "start": 0,
+                    "end": 15,
+                    "question": "Who said this, and could you go and check them?"
+                }
+            ]
+        },
+        {
+            "k": "f12",
+            "id": "b0f23804bb90f7812e7cedb928e0a8a3abc0a4129f9f8d4240f32ab4d87b7168",
+            "outlet": "SciTechDaily",
+            "link": "https://scitechdaily.com/study-uncovers-a-surprising-new-way-deadly-brain-cancer-spreads/",
+            "headline": "Study Uncovers a Surprising New Way Deadly Brain Cancer Spreads",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "a Surprising New Way",
+                    "start": 15,
+                    "end": 35,
+                    "question": "What has been left out, and could it have been said here?"
+                },
+                {
+                    "technique": "manufactured_fear",
+                    "name": "Alarmist framing",
+                    "text": "Deadly",
+                    "start": 36,
+                    "end": 42,
+                    "question": "Does it say who is actually at risk, and how likely it is?"
+                }
+            ]
+        },
+        {
+            "k": "f13",
+            "id": "f2142be26698445802f9356b3779a80805dbef82b0aedbc8a952b4780902279a",
+            "outlet": "Investing.com",
+            "link": "https://www.investing.com/news/commodities-news/venezuela-eyes-qatar-bridge-loan-to-clear-idb-arrears-sources-say-4967021",
+            "headline": "Venezuela eyes Qatar bridge loan to clear IDB arrears, sources say",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Anonymous sourcing",
+                    "text": "sources say",
+                    "start": 55,
+                    "end": 66,
+                    "question": "Who said this, and could you go and check them?"
+                }
+            ]
+        },
+        {
+            "k": "f14",
+            "id": "e7d56fe1c291ffe2361995942d69a096f2d9b0c1d93438bc2760e209d3d3475b",
+            "outlet": "Quanta Magazine",
+            "link": "https://www.quantamagazine.org/see-inside-cells-like-never-before-in-these-vivid-microscopic-images-20261021/",
+            "headline": "See Inside Cells Like Never Before in These Vivid Microscopic Images",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "These Vivid Microscopic Images",
+                    "start": 38,
+                    "end": 68,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f15",
+            "id": "3e6e7d63092efdba51ed2461e0ee8e74cf49f7fa40ef3894c96a22d01582c1cd",
+            "outlet": "CNBC",
+            "link": "https://www.cnbc.com/2026/10/22/us-iran-trump-hormuz-.html",
+            "headline": "U.S. pulls diplomats from Saudi Arabia as it reportedly readies Iran strikes after midterms",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Anonymous sourcing",
+                    "text": "reportedly",
+                    "start": 45,
+                    "end": 55,
+                    "question": "Who said this, and could you go and check them?"
+                }
+            ]
+        },
+        {
+            "k": "f16",
+            "id": "9a1a1793604fc69266abd6e7696e2b4ac0babf430c586970548919cc8d3ec10e",
+            "outlet": "Wired",
+            "link": "https://www.wired.com/story/goldmund-preamp-costs-more-than-a-sports-car/",
+            "headline": "This Preamp Costs More Than a Fancy Sports Car",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "This Preamp Costs More",
+                    "start": 0,
+                    "end": 22,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f17",
+            "id": "f2b91e0c74dea6c64bed232c20c3ad0807eb07a94d926da180f9ce378bec4e3a",
+            "outlet": "ScienceDaily",
+            "link": "https://www.sciencedaily.com/releases/2026/10/261021231235.htm",
+            "headline": "Scientists discover a surprising secret behind the human brain’s wrinkles",
+            "level": "PROMINENT",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Anonymous sourcing",
+                    "text": "Scientists discover",
+                    "start": 0,
+                    "end": 19,
+                    "question": "Who said this, and could you go and check them?"
+                },
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "a surprising secret",
+                    "start": 20,
+                    "end": 39,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f18",
+            "id": "f13156f80e91ae46bca620885f480799b3a5358e3cbfbbcc347869816163204c",
+            "outlet": "ScienceDaily",
+            "link": "https://www.sciencedaily.com/releases/2026/10/261019093353.htm",
+            "headline": "Scientists discover a way to kill dangerous gut bacteria without killing the good",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Anonymous sourcing",
+                    "text": "Scientists discover",
+                    "start": 0,
+                    "end": 19,
+                    "question": "Who said this, and could you go and check them?"
+                },
+                {
+                    "technique": "manufactured_fear",
+                    "name": "Alarmist framing",
+                    "text": "dangerous",
+                    "start": 34,
+                    "end": 43,
+                    "question": "Does it say who is actually at risk, and how likely it is?"
+                }
+            ]
+        },
+        {
+            "k": "f19",
+            "id": "99a1be9e4925af3ed595a44fac9b4c6f93e6b20956b08c033fbc0114ec489fd4",
+            "outlet": "The Atlantic",
+            "link": "https://www.theatlantic.com/podcasts/2026/10/david-frum-show-kara-swisher-tech-oligarchs-trump-ai/689101/?utm_source=feed",
+            "headline": "Will the Tech Oligarchs Turn on Trump?",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "opinion_as_fact",
+                    "name": "Opinion as fact",
+                    "text": "Tech Oligarchs",
+                    "start": 9,
+                    "end": 23,
+                    "question": "Is this something that happened, or somebody's view of it?"
+                },
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "?",
+                    "start": 37,
+                    "end": 38,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f20",
+            "id": "1ca1addbb8cfb832266deb7ad9a1b0b3df1e55d9b04b91810944b3fbe205c10b",
+            "outlet": "Eurogamer",
+            "link": "https://www.eurogamer.net/microsoft-next-gen-xbox-helix-date-price",
+            "headline": "Xbox's next-gen console to reportedly cost up to $1,800, with a Helix handheld coming in 2027 and a full release in holiday 2028",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Anonymous sourcing",
+                    "text": "reportedly",
+                    "start": 27,
+                    "end": 37,
+                    "question": "Who said this, and could you go and check them?"
+                }
+            ]
+        },
+        {
+            "k": "f21",
+            "id": "b42247234071e8983f2fdc42e7e768847ff29ca0a4e4960060a40ef0cc7a34c3",
+            "outlet": "CNBC",
+            "link": "https://www.cnbc.com/select/southwest-companion-pass-2027-changes/",
+            "headline": "Now is your last chance to qualify for a Southwest Companion Pass with a credit card bonus",
+            "level": "PROMINENT",
+            "hits": [
+                {
+                    "technique": "urgency_pressure",
+                    "name": "Manufactured urgency",
+                    "text": "last chance",
+                    "start": 12,
+                    "end": 23,
+                    "question": "Is there a deadline in this story, or does it just sound like there is?"
+                }
+            ]
+        },
+        {
+            "k": "f22",
+            "id": "ee7dc1a799fb42158e943fd7260c419a092d10b290c9617a99bda14b1a45cd4b",
+            "outlet": "Daily Express",
+            "link": "https://www.express.co.uk/news/uk/2259571/horror-american-covid-rapidly-spreads",
+            "headline": "Horror as 'American Covid' rapidly spreads in UK - 12 grim symptoms to look out for",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "manufactured_fear",
+                    "name": "Alarmist framing",
+                    "text": "Horror as",
+                    "start": 0,
+                    "end": 9,
+                    "question": "Does it say who is actually at risk, and how likely it is?"
+                }
+            ]
+        },
+        {
+            "k": "f23",
+            "id": "fc533a696765b50ef22904309a59e123e3394b4384508324b7a37087fb502374",
+            "outlet": "CBC News Canada",
+            "link": "https://www.cbc.ca/news/canada/montreal/certified-pre-owned-volvo-problems-9.7388134?cmp=rss",
+            "headline": "He bought a used SUV from a Volvo dealer. He regrets trusting their inspection process",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "He bought",
+                    "start": 0,
+                    "end": 9,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f24",
+            "id": "2dba5216d961d0cf2930f9e27c776dad4da8543ca47dfd43c8a047c2fa65e955",
+            "outlet": "TechCrunch",
+            "link": "https://techcrunch.com/2026/10/22/fusion-startup-helion-is-developing-new-semiconductors-that-could-double-output-of-its-power-plants/",
+            "headline": "Fusion startup Helion is developing new semiconductors that could double output of its power plants",
+            "level": "PROMINENT",
+            "hits": [
+                {
+                    "technique": "science_overhype",
+                    "name": "Early science",
+                    "text": "double",
+                    "start": 66,
+                    "end": 72,
+                    "question": "Has this been tested on people, or only in a lab?"
+                },
+                {
+                    "technique": "urgency_pressure",
+                    "name": "Manufactured urgency",
+                    "text": "developing",
+                    "start": 25,
+                    "end": 35,
+                    "question": "Is there a deadline in this story, or does it just sound like there is?"
+                },
+                {
+                    "technique": "speculative_hedge",
+                    "name": "Speculation",
+                    "text": "could",
+                    "start": 60,
+                    "end": 65,
+                    "question": "Has this actually happened, or might it happen?"
+                }
+            ]
+        },
+        {
+            "k": "f25",
+            "id": "3b403aaa76af6b6f3566b5171799fb0600c2f729b53bfb61ffcfbb6355f61e70",
+            "outlet": "Eurogamer",
+            "link": "https://www.eurogamer.net/xbox-layoffs-october-november-january-report",
+            "headline": "Xbox reportedly planning three more rounds of layoffs, with the first wave coming as early as this month",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Anonymous sourcing",
+                    "text": "reportedly",
+                    "start": 5,
+                    "end": 15,
+                    "question": "Who said this, and could you go and check them?"
+                }
+            ]
+        },
+        {
+            "k": "f26",
+            "id": "cf5aad5f3205b4380b3a529031726356e6f12613504baad5bf0e02225e992e63",
+            "outlet": "SciTechDaily",
+            "link": "https://scitechdaily.com/scientists-discover-a-potential-early-warning-sign-of-alzheimers-in-adults-as-young-as-45/",
+            "headline": "Scientists Discover a Potential Early Warning Sign of Alzheimer’s in Adults As Young as 45",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Anonymous sourcing",
+                    "text": "Scientists Discover",
+                    "start": 0,
+                    "end": 19,
+                    "question": "Who said this, and could you go and check them?"
+                },
+                {
+                    "technique": "manufactured_fear",
+                    "name": "Alarmist framing",
+                    "text": "Warning",
+                    "start": 38,
+                    "end": 45,
+                    "question": "Does it say who is actually at risk, and how likely it is?"
+                }
+            ]
+        },
+        {
+            "k": "f27",
+            "id": "a1b8572eeb443653a77727f5cd1b53b193f33e976aeb10a77da7144532d47cb8",
+            "outlet": "SciTechDaily",
+            "link": "https://scitechdaily.com/scientists-discover-d-rex-a-giant-fungus-unlike-anything-seen-before/",
+            "headline": "Scientists Discover “D-Rex,” a Giant Fungus Unlike Anything Seen Before",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Anonymous sourcing",
+                    "text": "Scientists Discover",
+                    "start": 0,
+                    "end": 19,
+                    "question": "Who said this, and could you go and check them?"
+                }
+            ]
+        },
+        {
+            "k": "f28",
+            "id": "28bba0c1408aa452eb8930ae94502cd2864b4fcc0e5766f218c890736f046a8a",
+            "outlet": "ScienceAlert",
+            "link": "https://www.sciencealert.com/one-quarter-of-data-centers-are-located-in-water-stressed-areas-study-shows",
+            "headline": "One-Quarter of Data Centers Are Located in Water-Stressed Areas, Study Shows",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Anonymous sourcing",
+                    "text": ", Study Shows",
+                    "start": 63,
+                    "end": 76,
+                    "question": "Who said this, and could you go and check them?"
+                }
+            ]
+        },
+        {
+            "k": "f29",
+            "id": "4072a3d8573d8ddff3f48859e6ae1a908e9e9af96a9eae5efcb4bf336830912e",
+            "outlet": "ScienceDaily",
+            "link": "https://www.sciencedaily.com/releases/2026/10/261019093355.htm",
+            "headline": "Scientists find a way to fight Alzheimer’s brain damage without removing toxic tau",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Anonymous sourcing",
+                    "text": "Scientists find",
+                    "start": 0,
+                    "end": 15,
+                    "question": "Who said this, and could you go and check them?"
+                }
+            ]
+        },
+        {
+            "k": "f30",
+            "id": "62bb573217be4dc828a08d050e7f10effeb999ea2ce4ee5bad0864291bd0ae1b",
+            "outlet": "CNBC",
+            "link": "https://www.cnbc.com/2026/10/22/trump-deposition-bbc-defamation-lawsuit.html",
+            "headline": "Judge orders Trump to sit for deposition in BBC defamation lawsuit by Dec. 11: Reports",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "vague_sourcing",
+                    "name": "Anonymous sourcing",
+                    "text": ": Reports",
+                    "start": 77,
+                    "end": 86,
+                    "question": "Who said this, and could you go and check them?"
+                }
+            ]
+        },
+        {
+            "k": "f31",
+            "id": "9201d4620664b1cb018d6c3ba5c2ad6a9f3fb3bac0bcaf0f76cf31edb5d14d9d",
+            "outlet": "Business Insider",
+            "link": "https://www.businessinsider.com/ina-garten-easy-mashed-potatoes-with-buttermilk-recipe-review-2026-10",
+            "headline": "I made Ina Garten's flavorful mashed potatoes. From now on, I'll bring this easy side dish to every dinner party.",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "this easy side dish",
+                    "start": 71,
+                    "end": 90,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f32",
+            "id": "070faca45f1273e91f8a79638dc40a4b01cc856d90f00b9251cf522e8e40db23",
+            "outlet": "E! Online",
+            "link": "https://www.eonline.com/news/1437342/daisy-edgar-jones-says-makeup-was-banned-from-sense-and-sensibility-set?cmpid=rss-syndicate-genericrss-us-top_stories",
+            "headline": "Daisy Edgar-Jones Reveals What Was Banned on Sense and Sensibility Set",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "Reveals What",
+                    "start": 18,
+                    "end": 30,
+                    "question": "What has been left out, and could it have been said here?"
+                }
+            ]
+        },
+        {
+            "k": "f33",
+            "id": "201bab886818268469f044e7d28073b997639567c4ad426744f55cd8c1248b5f",
+            "outlet": "SciTechDaily",
+            "link": "https://scitechdaily.com/these-mysterious-underwater-reefs-could-help-save-marine-life-as-coral-reefs-decline/",
+            "headline": "These Mysterious Underwater Reefs Could Help Save Marine Life As Coral Reefs Decline",
+            "level": "SUBTLE",
+            "hits": [
+                {
+                    "technique": "curiosity_gap",
+                    "name": "Withheld detail",
+                    "text": "These Mysterious Underwater Reefs",
+                    "start": 0,
+                    "end": 33,
+                    "question": "What has been left out, and could it have been said here?"
+                },
+                {
+                    "technique": "speculative_hedge",
+                    "name": "Speculation",
+                    "text": "Could",
+                    "start": 34,
+                    "end": 39,
+                    "question": "Has this actually happened, or might it happen?"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1052 @@
+{
+ "purpose": "Owner blind spot-check, codebook v7: 20 labelled NONE and 20 labelled flagged tuning rows per evidence set. Model labels are read from fixtures at labelsCommit, never stored here, so the owner is not anchored.",
+ "seed": 20261019,
+ "codebook": 7,
+ "rulePack": 30,
+ "labelsCommit": "68d9cfd78429aae56cf5fcbe3504dc3de74d22bf",
+ "page": "private review page",
+ "strata": {
+  "broadsheet-2026|NONE": {
+   "population": 307,
+   "sampled": 20
+  },
+  "broadsheet-2026|FLAGGED": {
+   "population": 57,
+   "sampled": 20
+  },
+  "beats-2026|NONE": {
+   "population": 219,
+   "sampled": 20
+  },
+  "beats-2026|FLAGGED": {
+   "population": 68,
+   "sampled": 20
+  },
+  "context-2026|NONE": {
+   "population": 205,
+   "sampled": 20
+  },
+  "context-2026|FLAGGED": {
+   "population": 50,
+   "sampled": 20
+  },
+  "week-2026-10-19|NONE": {
+   "population": 195,
+   "sampled": 20
+  },
+  "week-2026-10-19|FLAGGED": {
+   "population": 62,
+   "sampled": 20
+  },
+  "harvested|NONE": {
+   "population": 1954,
+   "sampled": 20
+  },
+  "harvested|FLAGGED": {
+   "population": 498,
+   "sampled": 20
+  }
+ },
+ "rows": [
+  {
+   "k": "s001",
+   "dataset": "beats-2026",
+   "id": "0b273d13c7982de6ff3b25ed47420df387f2aec11a6cde2f7f15afb3912b5d6c"
+  },
+  {
+   "k": "s002",
+   "dataset": "context-2026",
+   "id": "e939b2c086262924a8f301d3286faa17f67b8ea1ee2b6482c0bc9d44e42c6a16"
+  },
+  {
+   "k": "s003",
+   "dataset": "harvested",
+   "id": "475cdd01727a39d7e5ac3e179936982278d3022841e4fb1e95f9526a49b98874"
+  },
+  {
+   "k": "s004",
+   "dataset": "week-2026-10-19",
+   "id": "8b0c296daf1f90b97c465a8e7a96d7721580b100f0f95b603ad4d9eb37a69cc3"
+  },
+  {
+   "k": "s005",
+   "dataset": "harvested",
+   "id": "f11f80d22e33f7faabe97cb51668ff1020cc10de7c3e0b39a253bab54a2f116e"
+  },
+  {
+   "k": "s006",
+   "dataset": "beats-2026",
+   "id": "3c3cd18021b52dad12f54a8ed1fc0f0cb7e7e2eef30f6b8d831b7e8e2bd2ff68"
+  },
+  {
+   "k": "s007",
+   "dataset": "beats-2026",
+   "id": "121a35bde2d6d21ee9f535e8727bcd325edc41df4e12a59846119e376042d6bc"
+  },
+  {
+   "k": "s008",
+   "dataset": "broadsheet-2026",
+   "id": "8464f93402c4eec24815713316f0e61c5e572c7b77dccae642ba7b1f36503412"
+  },
+  {
+   "k": "s009",
+   "dataset": "harvested",
+   "id": "201db6178f8395a7bd5ac34e64c8956eb3c61a58d8bd19404a0d2bb08874dbf9"
+  },
+  {
+   "k": "s010",
+   "dataset": "harvested",
+   "id": "ede8580e77b0765e23722aac781f69cef1728df69b90dfa006053b64749f02a0"
+  },
+  {
+   "k": "s011",
+   "dataset": "week-2026-10-19",
+   "id": "16eddc2105cf8883d0ab644d1ea36214b841f1a5487a5fb29cce6e3527d7b6b7"
+  },
+  {
+   "k": "s012",
+   "dataset": "harvested",
+   "id": "67a92747afd55bd5be4c6a1b428a4e9bc765f756fe623e6839f8cf022f6168a0"
+  },
+  {
+   "k": "s013",
+   "dataset": "context-2026",
+   "id": "c80ddb2959e6cb9b9a26d5afce3567e91e8804115afe59495a67a88a437c1781"
+  },
+  {
+   "k": "s014",
+   "dataset": "beats-2026",
+   "id": "3c95da28c22bb1274dbbdbfa117fc2f7d42966dda0913773f537caafe73de4c4"
+  },
+  {
+   "k": "s015",
+   "dataset": "context-2026",
+   "id": "7bfcea6e6ce0bea0d4e1e1d3ced8fa7a57b7ece305974b20b3f19b4ebcdd4211"
+  },
+  {
+   "k": "s016",
+   "dataset": "broadsheet-2026",
+   "id": "8b714227d2894ef443a8400137a664cc382343060731e203420550fd802b8433"
+  },
+  {
+   "k": "s017",
+   "dataset": "broadsheet-2026",
+   "id": "1704e6cf9b974373bda9da22a52b199f70387476ede1bbc46fa077209379b706"
+  },
+  {
+   "k": "s018",
+   "dataset": "week-2026-10-19",
+   "id": "5ab005decb93750635e48e7dac6a25290cc3b40a8491d69a8f113bff67eeafb4"
+  },
+  {
+   "k": "s019",
+   "dataset": "broadsheet-2026",
+   "id": "16ca50d75b2ba0eacef991c1582350818e068d9dc52bef4ed3b1df00fd98d18f"
+  },
+  {
+   "k": "s020",
+   "dataset": "week-2026-10-19",
+   "id": "a390e8cedb49da85601d7ca2ba88e3dda372a60d745b72f71fecb578253824a6"
+  },
+  {
+   "k": "s021",
+   "dataset": "broadsheet-2026",
+   "id": "a81e73175b0cde1cc6976922d02182184ef0fa9e7a1065e3b749e3c4dde7acc5"
+  },
+  {
+   "k": "s022",
+   "dataset": "harvested",
+   "id": "745253a0ba8e0aa99720dded6f2e9f98118f179b360ddf88a62098309f950e3f"
+  },
+  {
+   "k": "s023",
+   "dataset": "harvested",
+   "id": "9e6239ff9ab6d15fab5de8caf863c2895e16d164cc6307d11debbd62a11c745e"
+  },
+  {
+   "k": "s024",
+   "dataset": "context-2026",
+   "id": "3320a1c150bd248b61e93f3b136c3af0f58a3e042ff7e510719e51ebf79c909e"
+  },
+  {
+   "k": "s025",
+   "dataset": "week-2026-10-19",
+   "id": "a979c3e1e88f0e660e6e3438593ec4eb4ed0a941f3c3aaf70693d38e15939705"
+  },
+  {
+   "k": "s026",
+   "dataset": "context-2026",
+   "id": "84e531c1409e612917539a4043a847e5bda21f975fe1197916318b6675ed38f0"
+  },
+  {
+   "k": "s027",
+   "dataset": "week-2026-10-19",
+   "id": "cc7b755adb7133fc5b6cee899f31567c84a028b967c9b4e95bae7955b2808adc"
+  },
+  {
+   "k": "s028",
+   "dataset": "harvested",
+   "id": "fda76fdbb257dd16a43075f52b0f0be356cd18b5de942e449b8198bcbef60419"
+  },
+  {
+   "k": "s029",
+   "dataset": "week-2026-10-19",
+   "id": "8f49e17bfd830c478ea096d406561a8af831de8fdb7cd88bb43924b8b9e9b5f9"
+  },
+  {
+   "k": "s030",
+   "dataset": "harvested",
+   "id": "3c992ed6de598ed3df487cb1b4e3d82723188a364630efa260dc30ba86c4f2c0"
+  },
+  {
+   "k": "s031",
+   "dataset": "broadsheet-2026",
+   "id": "bd9a910dc56bff0a09848b702e5d2039b19325514babc176e09d8c1ac3b285bc"
+  },
+  {
+   "k": "s032",
+   "dataset": "week-2026-10-19",
+   "id": "84b18266ac3a3ddd91c1c9da9f2d2708fe3659a44cfee390b78e25667362c0ae"
+  },
+  {
+   "k": "s033",
+   "dataset": "context-2026",
+   "id": "70befaa4626f73d40692ef9b6260b9231903039325bd4fc2f7f5c080b0123c9d"
+  },
+  {
+   "k": "s034",
+   "dataset": "beats-2026",
+   "id": "b7c3f7192e6a51e1c5fb6c5e3bdb50bd5243b035a1743b35a28dc45d0c939f34"
+  },
+  {
+   "k": "s035",
+   "dataset": "beats-2026",
+   "id": "695b3c081880816735039ca6c66947dcdc1924649b7af15c12df4ac4e3b54de9"
+  },
+  {
+   "k": "s036",
+   "dataset": "broadsheet-2026",
+   "id": "2b602b02a61154ab7d1dc84d7d7c4d133e270374bac099fd196856d55a8ce304"
+  },
+  {
+   "k": "s037",
+   "dataset": "harvested",
+   "id": "9cc59a848e8c1580b61e82b544e9de825fa1a38e3d12e8b0fd2d4bb83b910b13"
+  },
+  {
+   "k": "s038",
+   "dataset": "context-2026",
+   "id": "4a2da922dc862505aa71d1303193eeb77e2e6c1e7d123e5e00d40e6a6e1a2e1b"
+  },
+  {
+   "k": "s039",
+   "dataset": "harvested",
+   "id": "511b88398e1a6df6f44da55bd7393af5f1da3ebb19dd7caf332a32e53441f5cd"
+  },
+  {
+   "k": "s040",
+   "dataset": "harvested",
+   "id": "76ee2b0f911aa897a6078608231f5365c205965672a6d58b9fe64bfd6c90844c"
+  },
+  {
+   "k": "s041",
+   "dataset": "broadsheet-2026",
+   "id": "440311526d5278ea0dbfef95ff6f4bdbb23c0038bbefa61cadef070ced942d9d"
+  },
+  {
+   "k": "s042",
+   "dataset": "week-2026-10-19",
+   "id": "d486a1101e2d516602196991ae495d6f98976c1b2f3f79b7369ae7f095720cf9"
+  },
+  {
+   "k": "s043",
+   "dataset": "broadsheet-2026",
+   "id": "e138ab9d94794515bddc60ece072cc85ce79ef9b865e7544122fc39f8ed31352"
+  },
+  {
+   "k": "s044",
+   "dataset": "harvested",
+   "id": "aeb1f239a70845d8d7a5bde577b1017e7abfbd4a6413e7d8e7ff857e37ccc1df"
+  },
+  {
+   "k": "s045",
+   "dataset": "broadsheet-2026",
+   "id": "2aa2deb4366b39525c138a9cc471e094af97538e446e4c13dea51abc31f757bf"
+  },
+  {
+   "k": "s046",
+   "dataset": "harvested",
+   "id": "f6e0b2b9f71947096970e35e9fb417e739d51579cc68aac110783ce9f04497bc"
+  },
+  {
+   "k": "s047",
+   "dataset": "broadsheet-2026",
+   "id": "7b85d36fa2b692976d26f4d99bb428529606401c0c7a8e427568a5d1ce8f66e1"
+  },
+  {
+   "k": "s048",
+   "dataset": "harvested",
+   "id": "ac971dba42c16c56f6c95b30fabc0e1f44db127e1a71523a084a240fa9f9323d"
+  },
+  {
+   "k": "s049",
+   "dataset": "harvested",
+   "id": "5e95f6071df82bc7100d53f9ec630c1176be9630ee917554c624d0a4025b466f"
+  },
+  {
+   "k": "s050",
+   "dataset": "broadsheet-2026",
+   "id": "6111a0c8359d5083248a553a86cb1128bf34c4bb7cdd8ce9a11c2a01142772ce"
+  },
+  {
+   "k": "s051",
+   "dataset": "week-2026-10-19",
+   "id": "fef0620faf8d903b1e13e6a6083bda2f44da12d3e70a18d23703974864bb3821"
+  },
+  {
+   "k": "s052",
+   "dataset": "harvested",
+   "id": "ba1c671cfeb63277b6b2fbec81b50fb9d4453613e4225247c8c6d7a9ff33ef0d"
+  },
+  {
+   "k": "s053",
+   "dataset": "broadsheet-2026",
+   "id": "ef449ec66cc5f815d3ca42d384a127ce95986a716bc8e79cf8d647c72129e432"
+  },
+  {
+   "k": "s054",
+   "dataset": "week-2026-10-19",
+   "id": "54a2a18809ccf44c52696084dd48b1ccb3391a5bf52cf1e562bd69c1329e6d35"
+  },
+  {
+   "k": "s055",
+   "dataset": "broadsheet-2026",
+   "id": "5ce6fa7197e8a7f4750b099d37a2f1547bed4ed0c909ceda9f8edcd4ce633ebc"
+  },
+  {
+   "k": "s056",
+   "dataset": "context-2026",
+   "id": "a5c4e67474cd013d91a93c3e05b74c2289fe84c7d7c79cee5f0f535a76af0bad"
+  },
+  {
+   "k": "s057",
+   "dataset": "context-2026",
+   "id": "11531a6b2f1a29947a975fe5a3b6b99959a7f13ba61bbe056a7eb0b432f9c8b9"
+  },
+  {
+   "k": "s058",
+   "dataset": "broadsheet-2026",
+   "id": "47d2b85afa3265156ac3aff59d3a0fd1efbdde83aa5c8ee6cccc39782d2ad664"
+  },
+  {
+   "k": "s059",
+   "dataset": "context-2026",
+   "id": "7c739ce0593e8f65be5172737cadf8ea64b8ea8a66a6db04803c0a5527df2273"
+  },
+  {
+   "k": "s060",
+   "dataset": "beats-2026",
+   "id": "00d3a553aebfc6cd57a40625b2a2813dea38b80bb61296e351bebb0eb1421eb0"
+  },
+  {
+   "k": "s061",
+   "dataset": "broadsheet-2026",
+   "id": "c1f3bde2c5f66dbd87b7c1e41a3a410f0316493e03ccdbc42c4151418bcda105"
+  },
+  {
+   "k": "s062",
+   "dataset": "harvested",
+   "id": "95d61c0afdfa0fc61902e419495d945c32ac1188c61245407884db9e5c130d4d"
+  },
+  {
+   "k": "s063",
+   "dataset": "week-2026-10-19",
+   "id": "aa5e493a628c4fe08d1113a4501cd6af292f5ba0d250bd307cce49a57d9409aa"
+  },
+  {
+   "k": "s064",
+   "dataset": "broadsheet-2026",
+   "id": "035e9bd11a0da4755b1a0a38b95166c860128fe2a76d24f8483bf4b6d5c69080"
+  },
+  {
+   "k": "s065",
+   "dataset": "context-2026",
+   "id": "de138e4f378daeea0f94e6582082dfcf05274ccbf2af56baf2762a060f303de2"
+  },
+  {
+   "k": "s066",
+   "dataset": "week-2026-10-19",
+   "id": "93350f6dd1566bfb14009d8c7dc450cbff93acc4dce66a8a2b1bd9efc1fce4e3"
+  },
+  {
+   "k": "s067",
+   "dataset": "broadsheet-2026",
+   "id": "d900f37d135dbae121b089c0001420e46e62d6e510198efea2f2b724f565d302"
+  },
+  {
+   "k": "s068",
+   "dataset": "harvested",
+   "id": "1900f13fb51af1363c7f71fa73f5b15d768d1bfb81d5aca24497d59d9f460732"
+  },
+  {
+   "k": "s069",
+   "dataset": "broadsheet-2026",
+   "id": "26890f12c6722a28c865f912ec9e479c3e818e4f483b41a71dd8de9ed594e84e"
+  },
+  {
+   "k": "s070",
+   "dataset": "week-2026-10-19",
+   "id": "aa234ac8dd67ae0bfad056666cb819818c5109f8122a0986a9a8fe675392f670"
+  },
+  {
+   "k": "s071",
+   "dataset": "context-2026",
+   "id": "bd4630cb63d67f3eb40f3eaf1cc6017720ab71bf41b7673de96031e19a04d081"
+  },
+  {
+   "k": "s072",
+   "dataset": "harvested",
+   "id": "3f7e38f30762da648d92767263b38156e4016f6ad0b0463ecc0d97ddbafcec18"
+  },
+  {
+   "k": "s073",
+   "dataset": "context-2026",
+   "id": "2abd2ed14f7884ca9e4986f525351de5ee1b9d068249aa4ac0c52778f8626b8c"
+  },
+  {
+   "k": "s074",
+   "dataset": "broadsheet-2026",
+   "id": "6a271f0f7f985a5fa637ae045e756893842b37a74875429eca80b31498482708"
+  },
+  {
+   "k": "s075",
+   "dataset": "context-2026",
+   "id": "84e5c0d3be33f522f912efb8986bdd66ba2d17dd242c9acc33c4ab040fb96da7"
+  },
+  {
+   "k": "s076",
+   "dataset": "context-2026",
+   "id": "7909b8f0dea00501a3b12b3037df5d8b3b75ea464025bbf128bc39f0b2cf931a"
+  },
+  {
+   "k": "s077",
+   "dataset": "week-2026-10-19",
+   "id": "84f537985cff99585b81ea7bac7aa66997853d17f6de6e65bb5c5bdc0353312a"
+  },
+  {
+   "k": "s078",
+   "dataset": "broadsheet-2026",
+   "id": "39069610cfad1fa1ad4238ebef91bc36b3f998fe9784ce740c75519ed13d85eb"
+  },
+  {
+   "k": "s079",
+   "dataset": "beats-2026",
+   "id": "74fffab2840cdc997ad678bfc00c2fdc866dc62bfd2140d739d49b1891fb9eed"
+  },
+  {
+   "k": "s080",
+   "dataset": "broadsheet-2026",
+   "id": "002ff5ca6ddab9daf34418eb74aac785af85fc211e4d08604fed342a824284ab"
+  },
+  {
+   "k": "s081",
+   "dataset": "context-2026",
+   "id": "b00c6cf8c2cfafd9a07b7c87d0a63b2177fd41f8ebf99abfaef7785f26840ab8"
+  },
+  {
+   "k": "s082",
+   "dataset": "beats-2026",
+   "id": "0276c35616cde179d7e9136ff88cf5103814fb487ac58c1af4e0d1c669ce0ed6"
+  },
+  {
+   "k": "s083",
+   "dataset": "week-2026-10-19",
+   "id": "8e780187393024f1ad176068420e666009c1b44374aa8e04f9be77434136ab11"
+  },
+  {
+   "k": "s084",
+   "dataset": "beats-2026",
+   "id": "0dc35940047e9d04aa0ce330fc848a786e738282035192772e0e8cd8d7fde7c9"
+  },
+  {
+   "k": "s085",
+   "dataset": "beats-2026",
+   "id": "2f0d09a7b46b37576394bf6953237c1b60d172c25c7bec85b448beeb92bd8ea8"
+  },
+  {
+   "k": "s086",
+   "dataset": "beats-2026",
+   "id": "0a99e6342b39e1f1b0c905b064c3a5ce75e223611ecb97dacf6c7f14d428585b"
+  },
+  {
+   "k": "s087",
+   "dataset": "beats-2026",
+   "id": "6eea64a128893fbdf13d94fbea44e35fface472542c081bb4a775c4505123ccc"
+  },
+  {
+   "k": "s088",
+   "dataset": "harvested",
+   "id": "29b23a963a49db6e65e52c7ace4c3aac61394b7ff33ea22cefdcb92cd65aa64b"
+  },
+  {
+   "k": "s089",
+   "dataset": "harvested",
+   "id": "2dc211303d543e71114fd5d8872bc83fc13b183417ad60dc23217112ed0bdaad"
+  },
+  {
+   "k": "s090",
+   "dataset": "week-2026-10-19",
+   "id": "bcd41fe2f618253006c5b1b6944202dfa5d87c4f57613c50a625be54dc1c0973"
+  },
+  {
+   "k": "s091",
+   "dataset": "broadsheet-2026",
+   "id": "543752e81afbf5136f3fe878e148ba0d1577d4db52e59c54aa0791b01c56dc35"
+  },
+  {
+   "k": "s092",
+   "dataset": "harvested",
+   "id": "f723b74a7031beffca0b57ce07510544a94adba44d273a31d4e0ab2301811a82"
+  },
+  {
+   "k": "s093",
+   "dataset": "broadsheet-2026",
+   "id": "29253b4c74424ab5fb0b413a6a032053f13a1393b70912fc468e67b9ff60f08d"
+  },
+  {
+   "k": "s094",
+   "dataset": "week-2026-10-19",
+   "id": "578ef30bdd4c92867ac250903e4e2853870f3774db75eeeddc1b13c7c152ce7f"
+  },
+  {
+   "k": "s095",
+   "dataset": "context-2026",
+   "id": "84d386cc60def48fa5a20ec86c0c517b3d133418411abb32827ebb5b34d9958b"
+  },
+  {
+   "k": "s096",
+   "dataset": "broadsheet-2026",
+   "id": "c18f6e53026fc2b52615f3027bd47c8663afb6d7bf691178f160d097fd7f4803"
+  },
+  {
+   "k": "s097",
+   "dataset": "harvested",
+   "id": "bef7dc5674a63d2a3fd5816dff58ea4987f470de862395f3992ea1f1fcdcd141"
+  },
+  {
+   "k": "s098",
+   "dataset": "beats-2026",
+   "id": "075c92ef36bcf9131c2a4efe7418c73fd477481fd4fc20b2799961c2a1bbd8d2"
+  },
+  {
+   "k": "s099",
+   "dataset": "beats-2026",
+   "id": "58a1682d802e1bbea5dd5065e4e47be4c77c615fcb84d184ee7fd223ec61334b"
+  },
+  {
+   "k": "s100",
+   "dataset": "context-2026",
+   "id": "197e8f509685ba090edc2bfdd75d673da6ce9bcc4a05251a2125a9af59af1ad2"
+  },
+  {
+   "k": "s101",
+   "dataset": "beats-2026",
+   "id": "51fef641852ae8aef32439f1875338a405c7029c52068e87331dfec1eceda552"
+  },
+  {
+   "k": "s102",
+   "dataset": "broadsheet-2026",
+   "id": "f1b4c6b2ec2545bd74de91d86871598d0e0c40b647226c3b6fa954a64ad313a9"
+  },
+  {
+   "k": "s103",
+   "dataset": "beats-2026",
+   "id": "5371972d604fd64dee072827fb4fc29e7198e8af31beeed8d556c90f8478b9ce"
+  },
+  {
+   "k": "s104",
+   "dataset": "beats-2026",
+   "id": "13c5699365ee86f6ea38ee0750424b994433857d5cda6a3b3bc3be1d2e6b0cfa"
+  },
+  {
+   "k": "s105",
+   "dataset": "beats-2026",
+   "id": "3953353f9706346510e9783d8112b6a01595e008e5934bba8d9060649bc8f464"
+  },
+  {
+   "k": "s106",
+   "dataset": "harvested",
+   "id": "d025dd879ec78893e297fbeaec6d714c33456c76f1e7f72bfc831b23768372ad"
+  },
+  {
+   "k": "s107",
+   "dataset": "beats-2026",
+   "id": "4bc73a98ed894b0e2b10477f1a817e24e79a20075d0f9548a838d99eb0605b68"
+  },
+  {
+   "k": "s108",
+   "dataset": "broadsheet-2026",
+   "id": "bfd72e7830ec8d6c0ab24aeacfef1a5c5204a806e7fe15f163a2e4247b3fca6a"
+  },
+  {
+   "k": "s109",
+   "dataset": "context-2026",
+   "id": "bad2633659b80dbddfa4c7dddf803f9cef6ea8ba36a47cfb3422dd889cb34fd1"
+  },
+  {
+   "k": "s110",
+   "dataset": "broadsheet-2026",
+   "id": "291a230620bbb0ae2f1aeb96f0c9575a9f9cc013e4be75dac171f1b3d76d4a81"
+  },
+  {
+   "k": "s111",
+   "dataset": "broadsheet-2026",
+   "id": "73082824c13b6837f7c57e906c81ce41db4349b57fa9b91c6bcb1194295ca0e9"
+  },
+  {
+   "k": "s112",
+   "dataset": "harvested",
+   "id": "e1f8d3014ffb9d97dac79c3aa6d587b648c8518b23b7172d94a398b9fb338c1b"
+  },
+  {
+   "k": "s113",
+   "dataset": "context-2026",
+   "id": "e2c5671c5061492c318b83a3bcb5262efa4a18aa80ed69aec6d9fda35b282073"
+  },
+  {
+   "k": "s114",
+   "dataset": "harvested",
+   "id": "718854c2afe7a5b423e526b33304898a8b79a8e5b95974487221b441470b813b"
+  },
+  {
+   "k": "s115",
+   "dataset": "week-2026-10-19",
+   "id": "bc5d1663bb0d70ff13d90280fa662f95cb9b92efc1f4cb4ee74982a11d05b3f5"
+  },
+  {
+   "k": "s116",
+   "dataset": "beats-2026",
+   "id": "5629628a65e84540632d8cc19d90f8e57ca6ec5cc9662d5d3aa5a80daeff8b92"
+  },
+  {
+   "k": "s117",
+   "dataset": "broadsheet-2026",
+   "id": "1b4a78f2cefd46a9740b4912c74e510a36fabfb139670c013f5eaf3440757079"
+  },
+  {
+   "k": "s118",
+   "dataset": "beats-2026",
+   "id": "05a53e7e45d5aafed686feabfd87ea8b6c0d4757ea30e71e9bd94dd811a46ea4"
+  },
+  {
+   "k": "s119",
+   "dataset": "week-2026-10-19",
+   "id": "1d8cf179a8292a298adb2a0a1753fe733eaa4acc8c89f7a5523b2b9b6174ccf6"
+  },
+  {
+   "k": "s120",
+   "dataset": "beats-2026",
+   "id": "086746110205c99b8a5089a4dcf29a230e0e2409c6ec1ffa0298eb9dc27bc71c"
+  },
+  {
+   "k": "s121",
+   "dataset": "broadsheet-2026",
+   "id": "7ea4593b8b94554793ea0971b23a9c060f45066f84fa6df831fb9120f2b52f9d"
+  },
+  {
+   "k": "s122",
+   "dataset": "context-2026",
+   "id": "9d1135199d7a94429f268ecd66e6af993add605f02f1f5229b6049ebe6ce3fea"
+  },
+  {
+   "k": "s123",
+   "dataset": "beats-2026",
+   "id": "7374d026ddf5c6aa475c5ca74e88e20740a3f9add71bee746bd277d44b0505f8"
+  },
+  {
+   "k": "s124",
+   "dataset": "broadsheet-2026",
+   "id": "d8a52603351ed8618df65dacbf48ae4307cd9333f694836b03f3d540b545fda9"
+  },
+  {
+   "k": "s125",
+   "dataset": "harvested",
+   "id": "1f12633d2a716221f664a9723810d66795d34bda5703fd93925376f6977f6b27"
+  },
+  {
+   "k": "s126",
+   "dataset": "harvested",
+   "id": "cd69f85c8c05f2743d6b6604661ba235e095782dc3709c95213250500f0cc264"
+  },
+  {
+   "k": "s127",
+   "dataset": "beats-2026",
+   "id": "089dc23e1c5f717a671345e267695098dcae510a4943e94536e825f90bb73fd0"
+  },
+  {
+   "k": "s128",
+   "dataset": "broadsheet-2026",
+   "id": "aa71579d4ea2b67fbacb690d3442cea57f2da946f04080302e9ad6eaae1fab87"
+  },
+  {
+   "k": "s129",
+   "dataset": "context-2026",
+   "id": "caa0af8e85f5251fdddf6b82ba5a6cf88a14fd23b795903d082c34f9321aab9f"
+  },
+  {
+   "k": "s130",
+   "dataset": "harvested",
+   "id": "931374ebfd49d34a20e6dfc23b0942e33e499b6981c75af4ce6904cfb22fe1da"
+  },
+  {
+   "k": "s131",
+   "dataset": "context-2026",
+   "id": "09b5f17057bbd7c0f4f2dc6e06b1ab55c0b194cffcec6e02f4a0e3f94c5d6bde"
+  },
+  {
+   "k": "s132",
+   "dataset": "context-2026",
+   "id": "bf0235df3b9666f76fd15d40f348e35a0a39dc68401f9eec31c5c0bcb3036ce7"
+  },
+  {
+   "k": "s133",
+   "dataset": "week-2026-10-19",
+   "id": "89001e2126eb168ac4ff9bb9445024e117a51f885c5b970f3aed317e576b38c0"
+  },
+  {
+   "k": "s134",
+   "dataset": "week-2026-10-19",
+   "id": "d74f68aee89fb1990052bed9973f0ab1c3cc9ef9016b744d47f855e5870c8964"
+  },
+  {
+   "k": "s135",
+   "dataset": "beats-2026",
+   "id": "0ba2199974ce6f122a9730c3eaa2e5b3c247755dd88d761e36c74222e160dc63"
+  },
+  {
+   "k": "s136",
+   "dataset": "context-2026",
+   "id": "978fe873cb153e471e6d6d76d86aa8e3348c70af7f63a3db1a2956bbd26f2caf"
+  },
+  {
+   "k": "s137",
+   "dataset": "harvested",
+   "id": "adbfca934b81926d38b175ba156f414bb2fc8c20bfabda6eecdf2daef66960fd"
+  },
+  {
+   "k": "s138",
+   "dataset": "harvested",
+   "id": "45465f37b9bb644b09802c474f326d9cd853a1b237bcee296d204a02291fd4fa"
+  },
+  {
+   "k": "s139",
+   "dataset": "harvested",
+   "id": "973c124ad86e1eca5f53e19b34c59e131267de220522a35c46980b9d56926929"
+  },
+  {
+   "k": "s140",
+   "dataset": "week-2026-10-19",
+   "id": "45275381899763181be845119443cdea4471b8b79c7df3bb42cb896a03ef5755"
+  },
+  {
+   "k": "s141",
+   "dataset": "harvested",
+   "id": "09885ce63531627ef31796a1ac10996a1faad2ab282fae7895d63e45fbaaec02"
+  },
+  {
+   "k": "s142",
+   "dataset": "week-2026-10-19",
+   "id": "177eab61e566c98db29d3b488aac0548d4ed71210491fae0fb294ca92a330f97"
+  },
+  {
+   "k": "s143",
+   "dataset": "beats-2026",
+   "id": "27108b9522bc4995a675effc7bd9baff70e99c0f3b2e60137758772a2834a413"
+  },
+  {
+   "k": "s144",
+   "dataset": "broadsheet-2026",
+   "id": "aaab1c793caeeedd3e8db401a54414cdec80cc51063fdd5ebe1b68f2d2df7626"
+  },
+  {
+   "k": "s145",
+   "dataset": "week-2026-10-19",
+   "id": "af91496f0a7b9de1617cdf60de523fb674008a4d0534588fa39dcec3f8afe580"
+  },
+  {
+   "k": "s146",
+   "dataset": "context-2026",
+   "id": "3672899349fe409aac36b183302aa3f9656672d0599b94019ab94b501044b2a3"
+  },
+  {
+   "k": "s147",
+   "dataset": "context-2026",
+   "id": "647173d4bb8dd28de82f7d104649a900fc0024a1db8a1c565bb3f9ed653f0947"
+  },
+  {
+   "k": "s148",
+   "dataset": "context-2026",
+   "id": "973163ed7b999e2808b87382ddb4c4487e2e6a540dfc0e7a066a17593ce20bb8"
+  },
+  {
+   "k": "s149",
+   "dataset": "harvested",
+   "id": "36ddc11af8d0085f9a35e755539a179eb29989b9370cce30264d69ed98aa3cbd"
+  },
+  {
+   "k": "s150",
+   "dataset": "harvested",
+   "id": "4c7fb74c8745d322be3bf9e42b488168be557f3da58956ee207bfb50667c00ad"
+  },
+  {
+   "k": "s151",
+   "dataset": "beats-2026",
+   "id": "0bcc9a6c17c6cb2e1625913611dce0e914bda09fef61754288dff3242b28dd8c"
+  },
+  {
+   "k": "s152",
+   "dataset": "week-2026-10-19",
+   "id": "3f12a3ad908d56e1b55ef8701ed7985a807c35ccad261d6ad1b18151baf0b747"
+  },
+  {
+   "k": "s153",
+   "dataset": "broadsheet-2026",
+   "id": "2d720d4357f1cd1d39f28472613ec2c6b358903826520a8be1157fd1b6bebc06"
+  },
+  {
+   "k": "s154",
+   "dataset": "harvested",
+   "id": "1e1d6d323d3d83926b1a654980b990cfead4ebf6158e94b073fd2ccfebe05064"
+  },
+  {
+   "k": "s155",
+   "dataset": "broadsheet-2026",
+   "id": "cb6883e3a1c1f17f012546691ea63a78fe5156a38e81f521f9dd108b9398b9b7"
+  },
+  {
+   "k": "s156",
+   "dataset": "week-2026-10-19",
+   "id": "bcf788ef5b014567a34296b2e7693a8b1a92d1890976e238c45f2d8483a1d482"
+  },
+  {
+   "k": "s157",
+   "dataset": "week-2026-10-19",
+   "id": "23b701026276723d96d873173db4ae573d45a3112c0eac27b4a4ab22a9abe8c7"
+  },
+  {
+   "k": "s158",
+   "dataset": "beats-2026",
+   "id": "1e92efa99e73a5c93abaa40cb916624ca01e3cc51007279b06cc678d7af3a249"
+  },
+  {
+   "k": "s159",
+   "dataset": "beats-2026",
+   "id": "2526d9954aee0e48f1c5f73738207f46fe61e33f86a5b3bc5ed16d75fd4bb538"
+  },
+  {
+   "k": "s160",
+   "dataset": "context-2026",
+   "id": "da7149f8395a34f0575734229db275a86dcb958db183d63a1b81369f6b90a55c"
+  },
+  {
+   "k": "s161",
+   "dataset": "week-2026-10-19",
+   "id": "5eb19107c48e2269c212d9aea6239d8e9abcded185440a33e3e6717e5182dc52"
+  },
+  {
+   "k": "s162",
+   "dataset": "week-2026-10-19",
+   "id": "0b63f7e9a49c98be9fee72141c5c0c7e32cc69fa1970cab0bac47a92b1483301"
+  },
+  {
+   "k": "s163",
+   "dataset": "beats-2026",
+   "id": "3214470717a0f8fbfb6b1ab9c80bcf38732ec78d595308595b95ed571215f3f6"
+  },
+  {
+   "k": "s164",
+   "dataset": "week-2026-10-19",
+   "id": "eb0901f901a23ba3786b1523995b2140bc7c31d89319ec79e513ac7e56520966"
+  },
+  {
+   "k": "s165",
+   "dataset": "broadsheet-2026",
+   "id": "3c23859a4d718a1b5ef4b8f9af83ee39adfb4ff63686b2fc895526d46cfd3936"
+  },
+  {
+   "k": "s166",
+   "dataset": "beats-2026",
+   "id": "2b5d938ebe31058e269602cc198759202385f0367f3783d2f1035f4cc40801f8"
+  },
+  {
+   "k": "s167",
+   "dataset": "beats-2026",
+   "id": "2824eb2b83f8776acfca3347fd44ee4a02ed536f5c017f32ae38d2ab4de19f26"
+  },
+  {
+   "k": "s168",
+   "dataset": "beats-2026",
+   "id": "055bc0275e6610688389def8d188bb46bace368ebee5739de06d843804b927b4"
+  },
+  {
+   "k": "s169",
+   "dataset": "context-2026",
+   "id": "1b43fa175eee2a48590eb24172729fd58020cab5e6ca8be16eee78788b246632"
+  },
+  {
+   "k": "s170",
+   "dataset": "harvested",
+   "id": "de1425878cb33ac3edf4218d0084ad138cabb6bc2112e90a2a85a31f443e4e1b"
+  },
+  {
+   "k": "s171",
+   "dataset": "beats-2026",
+   "id": "665430108244c8e19fdc095ab0b5bb0f65a04b0f4a7c0f6824d8f3b3bfd1ad85"
+  },
+  {
+   "k": "s172",
+   "dataset": "beats-2026",
+   "id": "1dddbbd9df1d8945841c027108404812db7048d5445715ffd074710b12abe6d2"
+  },
+  {
+   "k": "s173",
+   "dataset": "beats-2026",
+   "id": "4756ac5cdf53471693f6ed7f4a3d293346d621f18ead804a9b90e077118ead13"
+  },
+  {
+   "k": "s174",
+   "dataset": "context-2026",
+   "id": "135dd621116cdcb62308789012612d72d7612df69ec51e2b655137a008ae025d"
+  },
+  {
+   "k": "s175",
+   "dataset": "broadsheet-2026",
+   "id": "40dc624d3002f7dfb0723235eb149957d4b730c207b9ef03f97b31bc08d9c7b5"
+  },
+  {
+   "k": "s176",
+   "dataset": "context-2026",
+   "id": "3b31f14ae3a0fd0e193d6d8ecc84a83566930ab396527555463caafd960f1cbc"
+  },
+  {
+   "k": "s177",
+   "dataset": "harvested",
+   "id": "5dd78cc51577af7ba933bcb5b24461591993450dd4c8f98907cd3664a90ae1da"
+  },
+  {
+   "k": "s178",
+   "dataset": "context-2026",
+   "id": "7bdb831efe83eb7ef2d21195936a55595c87bee17b80b4bb6f19919ebf82c5f8"
+  },
+  {
+   "k": "s179",
+   "dataset": "week-2026-10-19",
+   "id": "2c44c2f9666774585202327226eefebeb7f84e9b4b6abb91eb1b9e85166a4940"
+  },
+  {
+   "k": "s180",
+   "dataset": "broadsheet-2026",
+   "id": "9cdd81128fce0b40e9199d048dec701171f697be789652558a095ed1b5fa5234"
+  },
+  {
+   "k": "s181",
+   "dataset": "week-2026-10-19",
+   "id": "f6acd250c3da9492634bf090c77ac19a7dcaf390a056c3ba54a73a9c31792891"
+  },
+  {
+   "k": "s182",
+   "dataset": "beats-2026",
+   "id": "31caa540ddcfb7446efe9719b3bbefd70bd7ba1127f1a4bedc72ccc327f90602"
+  },
+  {
+   "k": "s183",
+   "dataset": "week-2026-10-19",
+   "id": "d388fba84a335f2e860016d03d57a2985039e6e38bc1c7cb09a5fd7d2b93f24f"
+  },
+  {
+   "k": "s184",
+   "dataset": "context-2026",
+   "id": "655f942bd512c3736717899e90a7078aa301a6a06889fc46b57dcb81e0d715d2"
+  },
+  {
+   "k": "s185",
+   "dataset": "context-2026",
+   "id": "c9db1b6c7f0f514a016f61eb44ec64b5d7ddf7d3c06c0d932d81602b93d25867"
+  },
+  {
+   "k": "s186",
+   "dataset": "week-2026-10-19",
+   "id": "e90449fed3a38fd19b1323e366c926bc9624ba2041097d3081e6d82b63ab2ee8"
+  },
+  {
+   "k": "s187",
+   "dataset": "broadsheet-2026",
+   "id": "f8f5443d92eadd22c66d7116969a215be457a8419c860af10864927de0fc33c9"
+  },
+  {
+   "k": "s188",
+   "dataset": "week-2026-10-19",
+   "id": "315e63299165fc0796d53bb654b640e45ae5b4e853d2b9f85b9d162b50cf9961"
+  },
+  {
+   "k": "s189",
+   "dataset": "context-2026",
+   "id": "22e111b028e9b2b56cff7a2fe8e023c2366c508bf8eac2c6ea7e94cb73077c61"
+  },
+  {
+   "k": "s190",
+   "dataset": "context-2026",
+   "id": "dfde34ca5d25f2be2baddfbafcf6d3d72698af783dc8571ad08a649d891660f2"
+  },
+  {
+   "k": "s191",
+   "dataset": "week-2026-10-19",
+   "id": "ba00340a9953153a1c6953a9a9be236482b66afaf22c8936a5f2390eceac6218"
+  },
+  {
+   "k": "s192",
+   "dataset": "context-2026",
+   "id": "7cd6361d36779aa1d083e02141598b63b5f886e4898cdde5430f37a2dbcd80c2"
+  },
+  {
+   "k": "s193",
+   "dataset": "beats-2026",
+   "id": "24760df793c8081eb97ba0caff46af83f2685f3eaa806f068eada4d39da5b12f"
+  },
+  {
+   "k": "s194",
+   "dataset": "week-2026-10-19",
+   "id": "9b1ffe0d382307d02964daeeac98fac82c99ee6f6620cfd1afba6a24488f9ab6"
+  },
+  {
+   "k": "s195",
+   "dataset": "week-2026-10-19",
+   "id": "d1494ba8b75d5cb1fd9c6d21cb3c5e4ad3271866b944f268c03603fc2e5cbdaf"
+  },
+  {
+   "k": "s196",
+   "dataset": "context-2026",
+   "id": "0b9ca3bd1b145624c851391d47ebd64dc0fd7fbc38586d6d79a10844b682991d"
+  },
+  {
+   "k": "s197",
+   "dataset": "harvested",
+   "id": "370e4860168d488c12f7b9329b1093aa7a61abbbfe9368c307cee6eba6ac291a"
+  },
+  {
+   "k": "s198",
+   "dataset": "beats-2026",
+   "id": "0d3e6dec4d5b434ca9d5e8cf4bfc3f946005ae43d87870d128c06477b299ceba"
+  },
+  {
+   "k": "s199",
+   "dataset": "week-2026-10-19",
+   "id": "27c670c5958b65f1ddb41a0b2bd0b8909cd0d72f7f2104e48dd6b3ee066ae685"
+  },
+  {
+   "k": "s200",
+   "dataset": "context-2026",
+   "id": "2bc6659ffaf88aa0faaf45cc2f066efe1a6241186a4434781c36200ed84662a2"
+  }
+ ]
+}

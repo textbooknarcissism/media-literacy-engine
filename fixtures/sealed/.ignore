@@ -1,0 +1,3 @@
+# Sealed test sets stay out of repo-wide searches (docs/benchmark/review-process.md, "Sealed sets").
+*
+!.ignore

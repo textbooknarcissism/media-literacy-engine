@@ -1,0 +1,170 @@
+{
+ "month": "2026-10",
+ "answers": {
+  "f01": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f02": {
+   "clear": true,
+   "helps": false,
+   "note": "This one is more of a curiousity gap and phrased like Microsoft shit down something people would be familiar with"
+  },
+  "f03": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f04": {
+   "clear": false,
+   "helps": false,
+   "note": "The author was trying to hard to be clever here in their review of a game"
+  },
+  "f05": {
+   "clear": true,
+   "helps": true,
+   "note": "Branded should be the anonymous sourcing and nightmare is the conflict framing"
+  },
+  "f06": {
+   "clear": true,
+   "helps": false,
+   "note": "This is a clear case but the flag is wrong, feels more like an opinion from an analyst than anything else"
+  },
+  "f07": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f08": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f09": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f10": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f11": {
+   "clear": true,
+   "helps": false,
+   "note": "Feels more like early science hype. I read the article and they use words like may and could"
+  },
+  "f12": {
+   "clear": true,
+   "helps": true,
+   "note": "Again, early science hype, words like suggests are used in the study"
+  },
+  "f13": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f14": {
+   "clear": false,
+   "helps": false,
+   "note": "Article is actually showing the images and it's in the headline"
+  },
+  "f15": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f16": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f17": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f18": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f19": {
+   "clear": true,
+   "helps": false,
+   "note": "This is a clear case but wrong flag, the author is being provocative by asking a rhetorical question as a headline using specific framing"
+  },
+  "f20": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f21": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f22": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f23": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f24": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f25": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f26": {
+   "clear": true,
+   "helps": false,
+   "note": "Early science but also speculation with words like pitentially"
+  },
+  "f27": {
+   "clear": false,
+   "helps": false,
+   "note": "In this case, the scientist actually made a verifiable discovery in nature"
+  },
+  "f28": {
+   "clear": true,
+   "helps": true,
+   "note": "Technically the article mentions the source/institute responsible for the study so not sure how to handle this"
+  },
+  "f29": {
+   "clear": true,
+   "helps": true,
+   "note": "Feels more like science hype again"
+  },
+  "f30": {
+   "clear": false,
+   "helps": false,
+   "note": "Headline says the judge ordered it, fairly clear"
+  },
+  "f31": {
+   "clear": false,
+   "helps": false,
+   "note": "The author mentioned the mashed potatoes, \"this dish...\" is referencing the mashed potatoes"
+  },
+  "f32": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  },
+  "f33": {
+   "clear": true,
+   "helps": true,
+   "note": ""
+  }
+ }
+}

@@ -1,0 +1,485 @@
+{
+  "month": "2026-11",
+  "answers": {
+    "f01": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": "not snow or most concerning seem like they both would work"
+    },
+    "f02": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f03": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f04": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f05": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f06": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f07": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f08": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f09": {
+      "clear": false,
+      "helps": false,
+      "miss": null,
+      "note": "the article is about something specific not really looking to decieve the reader"
+    },
+    "f10": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f11": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": "could and eliminate are doing the work here"
+    },
+    "f12": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f13": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f14": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f15": {
+      "clear": false,
+      "helps": false,
+      "miss": null,
+      "note": "issues statement in support kinda says it all"
+    },
+    "f16": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f17": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": "this whole title is rage bait"
+    },
+    "f18": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": "feels like an opinion"
+    },
+    "f19": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f20": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f21": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f22": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f23": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f24": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f25": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f26": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f27": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f28": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f29": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "f30": {
+      "clear": true,
+      "helps": true,
+      "miss": null,
+      "note": ""
+    },
+    "m01": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m02": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m03": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m04": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m05": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m06": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m07": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m08": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m09": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m10": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m11": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m12": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m13": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m14": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m15": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m16": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m17": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m18": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m19": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m20": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m21": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m22": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m23": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m24": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m25": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m26": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m27": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m28": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m29": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m30": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m31": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m32": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m33": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m34": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m35": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m36": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m37": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m38": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m39": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m40": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m41": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m42": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m43": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m44": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m45": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m46": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m47": {
+      "clear": null,
+      "helps": null,
+      "miss": true,
+      "note": ""
+    },
+    "m48": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m49": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    },
+    "m50": {
+      "clear": null,
+      "helps": null,
+      "miss": false,
+      "note": ""
+    }
+  }
+}

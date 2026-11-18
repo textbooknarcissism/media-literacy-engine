@@ -1,0 +1,22 @@
+# Headlines labelled by a person, blind.
+#
+# Written by tools/label. Nothing else reads or writes this file, and
+# this tool never touches harvested.tsv.
+#
+# The person answering saw the headline and its source only, not the
+# stored label, not the detector's verdict, not which group it came
+# from. That is what makes it worth comparing against.
+#
+# Columns: label, headline, source, group
+NONE	Brit mum 'kidnapped on school run' has been rescued by police as 'hero' officer shot	# Daily Star	QUIET
+PROMINENT	'He went into oblivion mode': Inside Raheem Sterling's terrifying fall from grace as he admits dangerous driving - the controversy he never recovered from, his 'huge mistake' in joining Chelsea and why friends fear he is 'completely lost'	# Daily Mail	FLAGGED
+SUBTLE	How record diesel prices will rip through the U.S. economy. Trucks, rails are only the start	# CNBC	MISSED
+NONE	White House withdraws Trump's ICE nominee as Republican senator objects	# BBC News	QUIET
+PROMINENT	Couple's 'sickening and horrifying' plot to abuse child	# Daily Star	FLAGGED
+PROMINENT	‘Godfather of AI’ warns Congress has ‘maybe a year’ left to regulate AI	# NBC News	FLAGGED
+PROMINENT	Britain could be hit by SIXTH heatwave of the year next week, Met Office says as forecaster predicts temperatures could hit 29C in the South	# Daily Mail	MISSED
+NONE	Premier League star Leif Davis hailed for joining Noah Woods search and huge donation	# Daily Mirror	QUIET
+NONE	Fresh boost for Nissan's Sunderland factory: New Kicks model to be built at UK plant and secure thousands of jobs	# Daily Mail	QUIET
+SUBTLE	Royal Family live: Prince Harry says it's 'good to be back' on first public outing since UK return	# Daily Mirror	QUIET
+NONE	DC Belichick resigns as UNC investigation finds disregard for conduct	# ESPN	QUIET
+NONE	Taste of nostalgia! The weird and wonderful British crisps from your childhood that don't exist anymore - as M&S launches trendy £3.90 Lobster flavour	# Daily Mail	MISSED

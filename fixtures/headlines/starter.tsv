@@ -1,0 +1,134 @@
+# starter: hand-written headline test set
+#
+# Two columns, separated by a TAB: what the flag SHOULD be, then the headline.
+# Allowed values: NONE, SUBTLE, PROMINENT
+#
+# IMPORTANT: these are hand-written examples in the style of real headlines,
+# not headlines actually scraped from news sites. They are enough to get the
+# rules roughly right and to catch obvious mistakes, but the rules cannot be
+# properly trusted until this file is replaced with several hundred real
+# headlines pulled from feeds you actually read. Adding those is a real task,
+# not a formality: it is the difference between a flag people trust and a flag
+# people switch off.
+#
+# Lines starting with # are ignored.
+
+# ---------------------------------------------------------------------------
+# Should be left completely alone. Ordinary, honest reporting.
+# ---------------------------------------------------------------------------
+NONE	Bank of England holds interest rates at 4.25%
+NONE	UK inflation falls to 2.1% in August
+NONE	Council approves plans for 400 new homes in Leeds
+NONE	England beat Australia by three wickets at Lord's
+NONE	Apple reports record quarterly revenue
+NONE	Train drivers accept pay deal, ending strike action
+NONE	Researchers publish first results from deep-sea survey
+NONE	Government announces review of planning rules
+NONE	Local library reopens after two-year refurbishment
+NONE	Wildfire near Athens brought under control
+NONE	Toyota recalls 50,000 vehicles over airbag fault
+NONE	Nobel Prize in Physics awarded to three researchers
+
+# Legitimate uncertainty. Honest reporting hedges, and must not be punished
+# for it. Each of these has exactly one soft signal and should stay silent.
+NONE	Storms may bring flooding to the south coast on May 3
+NONE	NASA says the launch window could open on Tuesday
+NONE	Rates might fall again before the end of the year
+SUBTLE	The vote could go either way, analysts say
+NONE	Talks are set to resume on Thursday
+
+# Honest science reporting: the headline says what stage the work is at,
+# so the science-overhype rule must not fire.
+NONE	New battery could double range in early-stage lab tests
+NONE	Drug may slow tumour growth in mice, researchers say
+NONE	Fusion design could cut costs, but is years away from commercial use
+NONE	Prototype chip could triple speeds, in simulations
+
+# Acronyms and single punctuation. Should not be read as shouting.
+NONE	NASA and ESA agree joint Mars mission
+NONE	NATO members meet in Brussels
+NONE	What a finish!
+
+# ---------------------------------------------------------------------------
+# A quiet marker. One real technique, or a couple of soft ones.
+# ---------------------------------------------------------------------------
+SUBTLE	Sources say the deal is close to collapse
+SUBTLE	Reports suggest the minister will resign this week
+SUBTLE	Insiders reveal details of the merger talks
+SUBTLE	Critics say the policy does not go far enough
+SUBTLE	It is understood that talks broke down late on Friday
+SUBTLE	Many are saying the sector has turned a corner
+SUBTLE	Anonymous sources describe a tense final meeting
+
+# Two soft signals stacking.
+SUBTLE	Experts warn the shortage may last months
+SUBTLE	Rates could rise again, according to reports
+
+# ---------------------------------------------------------------------------
+# Full-strength marker. Clear manufactured framing.
+# ---------------------------------------------------------------------------
+PROMINENT	You won't believe what happened next
+PROMINENT	Here's why your savings are at risk
+PROMINENT	This changes everything about how we sleep
+PROMINENT	The truth about what's really in your tap water
+PROMINENT	The real reason nobody is talking about this
+PROMINENT	Senator slams opponent in fiery exchange
+PROMINENT	Star rips into critics after awards snub
+PROMINENT	Minister blasted over handling of the crisis
+PROMINENT	Host destroys guest in heated debate
+PROMINENT	Campaigner lashes out at council decision
+PROMINENT	BREAKING: Deadly outbreak spreads to major cities
+PROMINENT	URGENT: Act now before it's too late
+PROMINENT	Just in: alarming new figures released
+PROMINENT	Last chance to claim before the deadline!!
+PROMINENT	Terrifying footage shows the moment it happened
+NONE	Catastrophic failure leaves thousands without power
+
+# Science overhype: a hedge, a big claim, and no mention of the stage.
+PROMINENT	New battery could give EVs 1,000 miles per charge
+PROMINENT	Scientists may have found a cure for ageing
+PROMINENT	Breakthrough drug could eliminate migraines forever
+PROMINENT	This material might revolutionize solar power
+PROMINENT	AI could replace 300 million jobs
+PROMINENT	New treatment promises to transform cancer care
+
+# Several techniques at once.
+PROMINENT	Here's why experts warn your pension could collapse
+PROMINENT	BREAKING: Sources say deadly new variant may be spreading
+PROMINENT	You won't believe what insiders revealed about the deal
+
+# ---------------------------------------------------------------------------
+# Known hard cases. These are where the rules are most likely to be wrong.
+# Expect some of these to fail on the first run. That is what this file is for.
+# ---------------------------------------------------------------------------
+NONE	Bridge collapse kills three in northern Italy
+NONE	Met Office issues warning for heavy rain
+NONE	Officials warn of icy roads tonight
+NONE	Deadly crash closes M6 in both directions
+NONE	Charity warns of rising winter fuel costs
+NONE	Developing story: results expected within the hour
+
+# ---------------------------------------------------------------------------
+# Wire service and broadsheet style: the house style of "serious" reporting.
+#
+# These exist because of a deliberate decision (see principle 2 in docs/positions.md): no
+# outlet is trusted by default. The same techniques get named wherever they
+# appear, including in respectable copy. Labels below are an honest judgement of
+# what the flag SHOULD be, not what the rules currently do. Expect failures,
+# because these are the headlines the rules have never been tested against.
+# ---------------------------------------------------------------------------
+NONE	Parliament votes to approve the budget
+NONE	Report warns of growing pressure on hospitals
+SUBTLE	Officials warn inflation could climb further
+SUBTLE	Sources close to the talks say a deal may be near
+# CONTESTED: three techniques stack here (unnamed authority + fear word +
+# speculation) so the rules call it PROMINENT. Arguably it is just a normal
+# public-health headline. Change this to SUBTLE if you disagree, but the
+# thresholds will then need retuning, because 1.0 is currently what a single
+# full-strength word earns.
+PROMINENT	Experts say the outbreak could spread further
+SUBTLE	Analysts say markets could face further turbulence
+SUBTLE	Study suggests screen time may affect sleep
+SUBTLE	Minister warns of dangerous consequences if talks fail
+SUBTLE	Poll suggests the race could tighten in final weeks
+NONE	Regulator opens inquiry into water company

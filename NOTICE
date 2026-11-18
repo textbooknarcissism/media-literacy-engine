@@ -1,0 +1,9 @@
+Media Literacy Engine
+Copyright 2026 Media Literacy Engine Contributors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The files under fixtures/ contain headlines and dataset extracts from third
+parties (news outlets, public research datasets and Reddit). They are included
+for evaluation only, remain the work of their owners, and are not covered by
+the Apache License. Each file's header and docs/REFERENCES.md give its source.
