@@ -141,7 +141,7 @@ The current results are in [`docs/benchmark-results.md`](benchmark-results.md).
 
 | Dataset | What it tests | Year | License |
 | :--- | :--- | :--- | :--- |
-| `context-2026` | Headlines labeled after reading the summary and story page (375 rows with cached pages), scored in three context modes. Single model reviewer, codebook version 4 plus version 5 rule 5; maintainer spot-check in progress. | 2026 | project |
+| `context-2026` | Headlines labeled after reading the summary and story page (375 rows with cached pages), scored in three context modes. Single model reviewer, codebook version 4 plus version 5 rule 5; a person's spot-check in progress. | 2026 | project |
 | `broadsheet-2026` | Headline techniques by article type, UK and US outlets. Double-annotated blind with adjudication per [`docs/benchmark/codebook.md`](benchmark/codebook.md). | 2026 | project |
 | BABE (Spinde et al., 2021) | Tone on expert-labeled news sentences, including word-level bias marks (proxy: sentences, not headlines) | 2021 | AGPL-3.0, cached only |
 | CheckThat! 2024 Task 2 (Struß et al., 2024) | Subjective vs objective news sentences (proxy) | 2024 | CC-BY-4.0 |
@@ -193,7 +193,7 @@ There are no rules for particular outlets. The same rule file (`rulepack-v1.json
 
 A model can give different answers to the same headline on different runs, costs battery and time, and cannot guarantee why it highlighted a particular word. Fixed rules give the same answer every time and every flag can be traced to the rule behind it.
 
-Language models are used in development only (decided 2026-10-19). They label headlines against the codebook without seeing the engine's answer, and they point at the words that carry each technique. Those words are turned into rule families, and each family must pass a check against the tuning rows before it ships. The benchmark labels were drafted the same way and are tested by the maintainer's blind spot-checks ([review process](benchmark/review-process.md)). In October 2026 a bake-off tried small open-source models as flaggers and found none accurate enough ([model bake-off](benchmark/model-bakeoff-2026-10.md)).
+Language models are used in development only (decided 2026-10-19). They label headlines against the codebook without seeing the engine's answer, and they point at the words that carry each technique. Those words are turned into rule families, and each family must pass a check against the tuning rows before it ships. The benchmark labels were drafted the same way and are tested by a person's blind spot-checks ([review process](benchmark/review-process.md)). In October 2026 a bake-off tried small open-source models as flaggers and found none accurate enough ([model bake-off](benchmark/model-bakeoff-2026-10.md)).
 
 **It misses a lot of clickbait. Isn't that a failure?**
 

@@ -489,7 +489,7 @@ class RealWorldPatternsTest {
 
     @Test
     fun `a fear word counts when it stands in for the facts, not next to a stated harm`() {
-        // Codebook v8 rule 3 (maintainer's spot-check): the threat is vague or still to come.
+        // Codebook v8 rule 3 (spot-check): the threat is vague or still to come.
         for (headline in listOf(
             "Horror as family return home to find their house transformed",
             "Nightmare winter ahead for millions of households",

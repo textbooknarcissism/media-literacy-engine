@@ -28,7 +28,7 @@ class ArticleTextTest {
         val text = ArticleText.extract(html)
 
         assertContains(text, "slowed tumour growth in mice")
-        // The caveat is the whole reason we fetch the body at all.
+        // The caveat is the whole reason the body is fetched at all.
         assertContains(text, "early stage")
         assertFalse(text.contains("tracking"), "script contents must not survive")
         assertFalse(text.contains("color: red"), "style contents must not survive")

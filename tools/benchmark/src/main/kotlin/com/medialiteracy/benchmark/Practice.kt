@@ -15,7 +15,7 @@ import kotlinx.serialization.json.jsonPrimitive
 import java.io.File
 
 /**
- * Practice mode (tools/practice): the maintainer's decided edge cases as a deck.
+ * Practice mode (tools/practice): the decided edge cases as a deck.
  *
  *   practice export     writes build/practice/cases.json
  *

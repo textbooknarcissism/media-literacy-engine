@@ -95,7 +95,7 @@ object Report {
     fun flagReviewSection(r: FlagReview.Result): String = buildString {
         appendLine("## Flag review")
         appendLine()
-        appendLine("The maintainer's review of ${r.sampled} headlines MLE flagged in ${r.month} (codebook version ${r.codebook}, rule pack ${r.rulePack}); " +
+        appendLine("The monthly review of ${r.sampled} headlines MLE flagged in ${r.month} (codebook version ${r.codebook}, rule pack ${r.rulePack}); " +
             "details in ${FlagReview.ROOT}/${r.month}/report.md. Target: at least ${Targets.percent(FlagReview.TARGET)} yes on each question.")
         appendLine()
         appendLine("| Question | Yes | Verdict |")

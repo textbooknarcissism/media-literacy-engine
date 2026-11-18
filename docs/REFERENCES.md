@@ -1,6 +1,6 @@
 # References and Credits
 
-MLE stands on prior research and open data. This list credits the works that informed its taxonomy, rules, and evaluation. Where we describe or apply a finding, any misreading is ours, not the authors'. Authors or maintainers who want an entry corrected, expanded, or removed are invited to open an issue.
+MLE stands on prior research and open data. This list credits the works that informed its taxonomy, rules, and evaluation. Where this project describes or applies a finding, any misreading is the project's, not the authors'. Authors or maintainers who want an entry corrected, expanded, or removed are invited to open an issue.
 
 Bibliographic details were checked against the publishers' records (DOI, arXiv, ACL Anthology) on 2026-10-11. What each recent study reports, and how far MLE relies on it, is set out in [METHODOLOGY.md §F](METHODOLOGY.md). A citation explains why a category exists; the rules themselves are judged by the benchmark.
 

@@ -8,7 +8,7 @@ Can a small open-source language model give the engine the reading of nuance its
 
 ## 1. Why
 
-On 2026-10-19 the maintainer reported that obvious clickbait goes unflagged and some honest headlines are flagged. Their 62 screenshot headlines (`fixtures/headlines/owner-reported-2026-10.tsv`) and a fresh week of headlines (`week-2026-10-19`) confirm it:
+On 2026-10-19 it was reported that obvious clickbait goes unflagged and some honest headlines are flagged. The 62 screenshot headlines (`fixtures/headlines/owner-reported-2026-10.tsv`) and a fresh week of headlines (`week-2026-10-19`) confirm it:
 
 | Set | The rules: left alone | The rules: caught |
 | :--- | :--- | :--- |
@@ -31,7 +31,7 @@ The rules were written phrase by phrase. They miss variants ("should know" where
 | H+ | H plus a model-only flag when no rule hit at all (reported only; nothing would be underlined) |
 | HP | H with the grammar guard |
 
-Thresholds were chosen on a fixed fifth of tuning rows (validation, 629 rows). The rule: catch the most bait while leaving alone at least as many honest headlines as the rules do there (98.6%). Held-out, maintainer and fresh-week rows were never used for training or thresholds; the harness asserts it. Its first run caught five week rows that were also in `context-2026` (stories still in their feeds a week later). They were dropped from the week set, and the intake now skips them (`ContextIntake.labelledIds`).
+Thresholds were chosen on a fixed fifth of tuning rows (validation, 629 rows). The rule: catch the most bait while leaving alone at least as many honest headlines as the rules do there (98.6%). Held-out, reported and fresh-week rows were never used for training or thresholds; the harness asserts it. Its first run caught five week rows that were also in `context-2026` (stories still in their feeds a week later). They were dropped from the week set, and the intake now skips them (`ContextIntake.labelledIds`).
 
 ## 3. Results
 
@@ -70,22 +70,22 @@ The models order headlines better than the rule score does, most of all on unsee
 | 1. Pooled held-out caught | at least 70% | 57.8% (H:M1, the same as the rules); 51.9% (H:M2) | **Fail** |
 | 2. Pooled held-out left alone | at least 97.5%, no set down more than 1 point | 98.2–98.7% | Pass |
 | 3. Unseen week (held-out): beat the rules on caught, at most 1 point lost on left alone | more than 25.0% caught | 21.4% (H:M3) | **Fail** |
-| 4. Maintainer set: fix at least half the rules' 19 errors | at least 10 | 4 (H:M3: 3 false flags cleared, 1 miss caught) | **Fail** |
+| 4. Reported set: fix at least half the rules' 19 errors | at least 10 | 4 (H:M3: 3 false flags cleared, 1 miss caught) | **Fail** |
 
 ## 5. What this means, and what to do
 
 1. **No model ships in the engine now.** METHODOLOGY.md's position stands for the present, for a new reason: not that a model can't be deterministic or small (this one is both), but that one trained on 345 examples isn't accurate enough to flag on its own word.
-2. **The rules need the family-by-family work regardless.** On headlines written after they were, their ranking falls from 0.82 to 0.62. They fit the older sets, not this week's news. `week-2026-10-19` (tuning rows) and the maintainer set are now the material for that work; the week held-out rows stay the honest test.
-3. **Revised the same day: distil into rules, not into a model.** The maintainer ruled out any model on the device: rules run in the app, language models are development tools. So the large model's reading goes into rules instead. A large model labeled 1,600 unseen harvested headlines (`mined-2026-10`) with the pattern and the exact trigger words, and the triggers were turned into rule families, each checked against tuning rows before it was kept (`docs/positions.md` §14). The original recommendation follows for the record.
+2. **The rules need the family-by-family work regardless.** On headlines written after they were, their ranking falls from 0.82 to 0.62. They fit the older sets, not this week's news. `week-2026-10-19` (tuning rows) and the reported set are now the material for that work; the week held-out rows stay the honest test.
+3. **Revised the same day: distil into rules, not into a model.** No model will run on the device: rules run in the app, language models are development tools. So the large model's reading goes into rules instead. A large model labeled 1,600 unseen harvested headlines (`mined-2026-10`) with the pattern and the exact trigger words, and the triggers were turned into rule families, each checked against tuning rows before it was kept (`docs/positions.md` §14). The original recommendation follows for the record.
 
    *Original recommendation:* **The route to nuance is distillation.** A large model reading the codebook already makes these calls: its blind first pass agreed with the adjudicated label (flagged or not) on 329 of 332 week rows, with 24 more marked unsure. That figure is optimistic, because adjudication covered only rows where the first pass and the rules disagreed. Have such a model label tens of thousands of harvested headlines, train the small model on those, and re-run this bake-off with the same criteria. It needs:
    - a steady supply of headlines: Haystack runs, plus the 1,538 unreviewed rows in `harvested-live-intake.tsv`;
    - a labeling budget.
-4. **The grammar guard (P) is not adopted as it is.** It cleared 3 week false flags and 2 maintainer false flags, but cost 4 harvested catches. It goes into the rule work as a narrower guard.
+4. **The grammar guard (P) is not adopted as it is.** It cleared 3 week false flags and 2 reported-set false flags, but cost 4 harvested catches. It goes into the rule work as a narrower guard.
 
 ## 6. Caveats
 
-- **Labels are model-made.** Two language models labeled them (a blind first pass, then adjudication); the maintainer spot-check is pending, and the label-leniency audit has not run. Codebook v6 calls the maintainer has not reviewed in bulk (unnamed researchers or officials as anonymous sourcing; pronoun subjects) shape the week labels.
+- **Labels are model-made.** Two language models labeled them (a blind first pass, then adjudication); a person's spot-check is pending, and the label-leniency audit has not run. Codebook v6 calls not yet reviewed in bulk (unnamed researchers or officials as anonymous sourcing; pronoun subjects) shape the week labels.
 - **M1's training data overlaps `chakraborty-legacy`**, which is not scored here.
 - **The held-out sets are small** (28 flagged week rows), so one row moves a rate by 3–4 points.
 - **Scoring reproduces exactly across runs** (same seed and threshold tables). Retraining was not repeated to confirm the weights reproduce.

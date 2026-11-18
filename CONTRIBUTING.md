@@ -16,7 +16,7 @@ Please open an issue. A false positive is the priority: MLE flagged an honest he
 
 ## Proposing a rule change
 
-1. The codebook is frozen between versions that the project maintainer approves ([codebook](docs/benchmark/codebook.md), section 7). If your change needs a ruling the codebook does not give, open an issue and propose the ruling first.
+1. The codebook only changes in numbered versions, and each one says why ([codebook](docs/benchmark/codebook.md), section 7). If your change needs a ruling the codebook does not give, open an issue and propose the ruling first.
 2. A rule must describe a clear case seen across several headlines. Do not add a phrase or a pattern taken from a single headline, because the memorization lint will reject it. Held-out rows are never used to write or tune a rule.
 3. Measure the false-flag risk first. Add your pattern and run the benchmark: it may match at most 0.5% of the tuning rows labeled `NONE`.
 4. Run the checks listed under Development below.
@@ -24,7 +24,7 @@ Please open an issue. A false positive is the priority: MLE flagged an honest he
 6. Check the EVEN-HANDEDNESS section that `rule-eval` prints, to confirm the change does not introduce political or regional bias.
 7. Put before-and-after numbers in your pull request. "Left alone" must not drop. The catch rate may move, but it is not the point.
 
-Rule packs ship monthly, together with the maintainer's flag review of what MLE flagged that month. A change that arrives between releases is welcome and waits for the next one.
+Rule packs ship monthly, together with that month's flag review of what MLE flagged. A change that arrives between releases is welcome and waits for the next one.
 
 ## Development
 
@@ -58,7 +58,7 @@ Where things are:
 
 ### The monthly flag review
 
-This is the project's main measure. Once a month the maintainer answers two yes-or-no questions about up to 50 headlines MLE flagged in that month's news.
+This is the project's main measure. Once a month a person answers two yes-or-no questions about up to 50 headlines MLE flagged in that month's news.
 
 1. Harvest: `./gradlew :tools:feed-harvest:haystack --args="--context-intake --since=YYYY-MM-01 --output=docs/benchmark/flag-review/YYYY-MM/intake.tsv"`
 2. Sample: `./gradlew :tools:benchmark:run --args="flag-review sample --intake docs/benchmark/flag-review/YYYY-MM/intake.tsv --month YYYY-MM"`. This writes `sample.json` beside the intake. The same intake always gives the same sample.

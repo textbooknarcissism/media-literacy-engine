@@ -13,14 +13,14 @@ import java.io.File
 /**
  * The monthly flag review (docs/teaching-reset-2026-10.md §6), MLE's main
  * measure: of the headlines it flagged, is each a clear case, and would the
- * highlight and question help a reader stop and think? The maintainer answers both
+ * highlight and question help a reader stop and think? A person answers both
  * on a review page; no model reads the headlines.
  *
  *   flag-review sample --intake <context intake tsv> --month YYYY-MM [--size 50]
  *   flag-review score --month YYYY-MM
  *   flag-review stories --month YYYY-MM          the cached stories as plain text, for reading
  *
- * A side check that is not the monthly measure (the maintainer's own outlets, say) takes a
+ * A side check that is not the monthly measure (a reader's own outlets, say) takes a
  * labeled month and its own folder, so it never lands beside the monthly results:
  *   flag-review sample --intake <tsv> --month YYYY-MM-label --out build/<folder>
  *
@@ -62,11 +62,11 @@ object FlagReview {
         val headlines: Int,
         val flagged: Int,
         val items: List<Item>,
-        /** The miss check: headlines MLE left alone, drawn the same way, for the maintainer to mark any obvious miss. Keys are m01, m02, ... */
+        /** The miss check: headlines MLE left alone, drawn the same way, for the reviewer to mark any obvious miss. Keys are m01, m02, ... */
         val unflagged: List<Item> = emptyList(),
     )
 
-    /** The maintainer's answers, keyed by item `k`. Null means not answered yet. */
+    /** The reviewer's answers, keyed by item `k`. Null means not answered yet. */
     @Serializable
     data class Answer(val clear: Boolean? = null, val helps: Boolean? = null, val note: String = "", val miss: Boolean? = null)
 
@@ -83,7 +83,7 @@ object FlagReview {
         val clearAnswered: Int,
         val helpsYes: Int,
         val helpsAnswered: Int,
-        /** The miss check: unflagged headlines the maintainer called an obvious miss, of those answered. */
+        /** The miss check: unflagged headlines the reviewer called an obvious miss, of those answered. */
         val missYes: Int = 0,
         val missAnswered: Int = 0,
     ) {
@@ -204,7 +204,7 @@ object FlagReview {
      * Each sampled story the harvest cached, as plain text (the opening
      * [STORY_TEXT_CHARS] characters), in build/flag-review/YYYY-MM/stories/fNN.txt.
      * Reading these instead of whole web pages costs a session a fraction of
-     * the tokens when the maintainer's notes need checking against the story.
+     * the tokens when the reviewer's notes need checking against the story.
      */
     private fun stories(month: String): Int {
         val sampleFile = File(dir(month), "sample.json")
@@ -266,7 +266,7 @@ object FlagReview {
         appendLine("# Flag review, ${sample.month}")
         appendLine()
         appendLine("Codebook version ${sample.codebook}, rule pack ${sample.rulePack}. Intake `${sample.intake}`: ${sample.headlines} headlines, " +
-            "${sample.flagged} flagged, ${sample.items.size} sampled, ${sample.items.count { it.k in answers }} answered by the maintainer. " +
+            "${sample.flagged} flagged, ${sample.items.size} sampled, ${sample.items.count { it.k in answers }} answered by the reviewer. " +
             "Written by `flag-review score`; do not edit by hand.")
         appendLine()
         appendLine("| Question | Yes | Verdict against ${Targets.percent(TARGET)} |")
@@ -275,11 +275,11 @@ object FlagReview {
         appendLine("| Would the highlight and question help a reader stop and think? | ${r.helps.formatWithInterval()} | ${verdict(r.helps)} |")
         appendLine()
         if (sample.unflagged.isNotEmpty()) {
-            appendLine("**Miss check** (information, not a target): of ${r.missAnswered} headlines MLE left alone, the maintainer called ${r.missYes} an obvious miss (${r.miss.formatWithInterval()}).")
+            appendLine("**Miss check** (information, not a target): of ${r.missAnswered} headlines MLE left alone, the reviewer called ${r.missYes} an obvious miss (${r.miss.formatWithInterval()}).")
             appendLine()
             for (item in sample.unflagged.filter { answers[it.k]?.miss == true }) {
                 val note = answers.getValue(item.k).note
-                appendLine("- ${item.k}: ${item.headline} _(${item.outlet})_${if (note.isNotBlank()) " Maintainer: ${note.trim()}" else ""}")
+                appendLine("- ${item.k}: ${item.headline} _(${item.outlet})_${if (note.isNotBlank()) " Reviewer: ${note.trim()}" else ""}")
             }
             appendLine()
         }
@@ -304,7 +304,7 @@ object FlagReview {
                 val a = answers.getValue(item.k)
                 val which = listOfNotNull("not clear".takeIf { a.clear == false }, "doesn't help".takeIf { a.helps == false }).joinToString(", ")
                 val hits = item.hits.joinToString { "${it.name} -> \"${it.text}\"" }
-                appendLine("- ${item.k}, $which: ${item.headline} _(${item.outlet}; $hits)_${if (a.note.isNotBlank()) " Maintainer: ${a.note.trim()}" else ""}")
+                appendLine("- ${item.k}, $which: ${item.headline} _(${item.outlet}; $hits)_${if (a.note.isNotBlank()) " Reviewer: ${a.note.trim()}" else ""}")
             }
             appendLine()
         }
@@ -314,7 +314,7 @@ object FlagReview {
             appendLine()
             for (item in notes) {
                 val hits = item.hits.joinToString { "${it.name} -> \"${it.text}\"" }
-                appendLine("- ${item.k}: ${item.headline} _(${item.outlet}; $hits)_ Maintainer: ${answers.getValue(item.k).note.trim()}")
+                appendLine("- ${item.k}: ${item.headline} _(${item.outlet}; $hits)_ Reviewer: ${answers.getValue(item.k).note.trim()}")
             }
             appendLine()
         }

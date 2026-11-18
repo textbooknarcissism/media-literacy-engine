@@ -105,7 +105,7 @@ object HeadlineFiles {
 
     /**
      * The owner-reported set: id, outlet, headline, app verdict, proposed level
-     * and techniques, call, note, then the maintainer's own level and techniques,
+     * and techniques, call, note, then the reviewer's own level and techniques,
      * which win where given.
      */
     fun readOwner(file: File): List<HeadlineCase> = dataLines(file).filterNot { it.startsWith("id\t") }.mapNotNull { line ->

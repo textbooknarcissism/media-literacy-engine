@@ -94,7 +94,7 @@ class HeadlineFlagger(
 
         val inspected = inspect(headline, context, sourceName)
 
-        // Below the quiet threshold we report nothing at all, not a weak flag,
+        // Below the quiet threshold nothing is reported at all, not a weak flag,
         // not a greyed-out one. Showing a marker for a single "could" is how
         // this feature would lose people's trust.
         val rawResult = if (inspected.level != FlagLevel.NONE) withoutRiders(inspected) else FlagResult(FlagLevel.NONE, inspected.score, emptyList())

@@ -62,17 +62,17 @@ val HEADLINE_DATASETS = listOf(
     ),
     HeadlineDataset(
         "beats-2026", "fixtures/headlines/beats-2026.tsv", HeadlineFormat.BEATS, 2026, "project",
-        "Beat-stratified headlines (gaming, science, politics, entertainment, local, opinion and long-form, business), labeled blind by a single model reviewer per docs/benchmark/codebook.md version 3; maintainer spot-check pending. " +
+        "Beat-stratified headlines (gaming, science, politics, entertainment, local, opinion and long-form, business), labeled blind by a single model reviewer per docs/benchmark/codebook.md version 3; a person's spot-check pending. " +
             "The headlines come from the live intake, which was in the repo when rule pack 1 was written, so the rules may have seen them and the held-out numbers may be optimistic",
     ),
     HeadlineDataset(
         "context-2026", "fixtures/headlines/context-2026.tsv", HeadlineFormat.CONTEXT, 2026, "project",
-        "Context-labeled headlines with summaries, page metadata and cached article pages, labeled by a single model reviewer under docs/benchmark/codebook.md version 4, plus version 5 (rule 5); maintainer spot-check in progress. " +
+        "Context-labeled headlines with summaries, page metadata and cached article pages, labeled by a single model reviewer under docs/benchmark/codebook.md version 4, plus version 5 (rule 5); a person's spot-check in progress. " +
             "Two engine signals were written from three held-out rows (docs/positions.md section 13), so three held-out catches are not independent", fresh = true,
     ),
     HeadlineDataset(
         "week-2026-10-19", "fixtures/headlines/week-2026-10-19.tsv", HeadlineFormat.CONTEXT, 2026, "project",
-        "Headlines published 2026-10-12 to 2026-10-19, after rule pack 27, labeled under codebook version 6: a language model's blind first pass, with a second pass adjudicating the unsure rows and every row where the first pass and the rules disagreed; maintainer spot-check pending. " +
+        "Headlines published 2026-10-12 to 2026-10-19, after rule pack 27, labeled under codebook version 6: a language model's blind first pass, with a second pass adjudicating the unsure rows and every row where the first pass and the rules disagreed; a person's spot-check pending. " +
             "Unseen by the rules and by the bake-off models (docs/benchmark/model-bakeoff-2026-10.md)", fresh = true,
     ),
     HeadlineDataset(
@@ -85,7 +85,7 @@ val HEADLINE_DATASETS = listOf(
     ),
     HeadlineDataset(
         "owner-reported", "fixtures/headlines/owner-reported-2026-10.tsv", HeadlineFormat.OWNER, 2026, "project",
-        "Headlines the maintainer saw in the reader app and reported as missed or wrongly flagged (2026-10-19); the maintainer's labels where given, otherwise proposed ones. Rule material, never evidence", tuningOnly = true,
+        "Headlines seen in the reader app and reported as missed or wrongly flagged (2026-10-19); the reviewer's labels where given, otherwise proposed ones. Rule material, never evidence", tuningOnly = true,
     ),
     HeadlineDataset(
         "mined-2026-10", "fixtures/headlines/mined-2026-10.tsv", HeadlineFormat.CONTEXT, 2026, "project",

@@ -75,8 +75,7 @@ enum class Category(
     ),
 
     /**
-     * Split from [SOURCING] in rule pack 38 (codebook 13), at the maintainer's
-     * request: the study is often named further down the story, so "who is
+     * Split from [SOURCING] in rule pack 38 (codebook 13), because the study is often named further down the story, so "who is
      * it?" was the wrong question. The trouble is the one finding picked to
      * fit the headline. The engine cannot see that from the headline, so the
      * wording names the move and hands the reader the check, without

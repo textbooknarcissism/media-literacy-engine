@@ -8,7 +8,7 @@ import kotlin.test.assertTrue
 
 /**
  * Rule pack 35: a flag needs a construction, not a word, and names one clear
- * technique. The headlines are ones the maintainer saw in the Know News app in
+ * technique. The headlines are ones seen in the Know News app in
  * November 2026, or of the same shape.
  */
 class ConstructionsTest {

@@ -221,7 +221,7 @@ object StoryGrouper {
         if (capitalised > longEnough.size * TITLE_CASE_SHARE) {
             // In Title Case headlines, every major word starts with a capital.
             // Rather than returning emptySet() and blinding the clustering engine to Title Case headlines,
-            // we filter out closed-class grammatical words, common news verbs, adjectives, and general vocabulary
+            // Filter out closed-class grammatical words, common news verbs, adjectives, and general vocabulary
             // to isolate proper nouns, company names, places, and distinctive subjects.
             return longEnough
                 .map { it.lowercase() }

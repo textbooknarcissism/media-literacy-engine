@@ -822,7 +822,7 @@ internal object Signals {
                 !SENTENCE_START.containsMatchIn(headline.substring(0, m.range.first))
             // In a sentence-case headline a capitalized word inside the phrase is a
             // name, so the referent is named: "these Silicon Valley haunts".
-            // (Title Case gives no such clue.) Rule pack 28, from the maintainer's
+            // (Title Case gives no such clue.) Rule pack 28, from
             // reported false flags.
             val namedInside = !titleCase && words.take(phraseLength).any { it.first().isUpperCase() }
             when {
@@ -1163,7 +1163,7 @@ internal object Signals {
      * without removing toxic tau". Codebook v11: a cure-style claim credited to
      * nobody the reader can check is early science. A stated stage ("…in
      * mice") is honest and cancels it (principle 7). Rule pack 32, from the
-     * 2026-10 flag review, where the maintainer read four such headlines as
+     * 2026-10 flag review, where four such headlines read as
      * science hype; it fires on none of the 15,681 tuning rows labeled NONE.
      */
     private val UNNAMED_WAY_TO_CURE = Regex(
@@ -1198,7 +1198,7 @@ internal object Signals {
     /**
      * A court or a legislature acting in public: "Judge orders Trump to sit for
      * deposition…: Reports". The act is on the record, so a "Reports" credit
-     * borrows nothing (codebook v12, maintainer, 2026-10-23).
+     * borrows nothing (codebook v12, 2026-10-23).
      */
     private val PUBLIC_ACT = Regex(
         """\b(?:judges?|court|jury|juries|justices|tribunal|magistrates?|senate|congress|parliament|house)\s+(?:[\p{L}-]+\s+)?""" +
@@ -1210,14 +1210,14 @@ internal object Signals {
 
     /**
      * An unnamed study, survey, poll or report as the authority (codebook v7,
-     * maintainer decision 2026-10-19): "Study Finds…", "…, study reveals", "Poll:",
+     * 2026-10-19): "Study Finds…", "…, study reveals", "Poll:",
      * "…: Survey". An unnamed report is not counted (codebook v8). A named body ("Pew poll", "ONS figures")
      * is not matched: the pattern needs the bare noun at the start or end.
      */
     /**
      * The summary or the story's opening names who did the study: "A study by
      * DZNE…", "researchers at the Carnegie Institution", "published in Nature
-     * Communications". Codebook v12 (maintainer, 2026-10-23): then "…, study shows"
+     * Communications". Codebook v12 (2026-10-23): then "…, study shows"
      * is ordinary shorthand, not borrowed authority.
      */
     private val STUDY_SOURCE = Regex(
@@ -1332,7 +1332,7 @@ internal object Signals {
     )
 
     /**
-     * One person characterizing a rival's remark (codebook v6, maintainer decision
+     * One person characterizing a rival's remark (codebook v6,
      * 2026-10-19): "Susan Collins Says Rival's 'Oh, Shut Up' Comment Reflects
      * How He Treats Women". Somebody's words staged as a fight. The match is
      * only "Rival's": the speaker's name and the quote are muted spans, so
@@ -1372,7 +1372,7 @@ internal object Signals {
             """\bis\s+(?:simply|undeniably|unquestionably|officially)\s+(?:better|back|the\s+best|over|dead|broken)\b|\bundeniably\b|""" +
             """\bwas\s+never\s+really\s+about\b|\bthe\s+most\s+[\p{L}-]+\s+[\p{L}-]+\s+in\s+(?:years|decades|a\s+generation)\b|""" +
             """\bjust\s+fell\s+apart\b|\bgambling\s+everything\b|\bis\s+a\s+lie\b|""" +
-            // The maintainer's my-outlets check, 2026-11-13: a promise about the reader's own reaction ("33+ Advent calendars so good you'll open all the doors on the first day").
+            // The outlets check, 2026-11-13: a promise about the reader's own reaction ("33+ Advent calendars so good you'll open all the doors on the first day").
             """\bso\s+[\p{L}-]+\s+(?:that\s+)?you(?:['’]ll|\s+will|\s+won['’]t|\s+can['’]t)\b|""" +
             // A closing verdict sentence in the outlet's voice: "The Hegseth Vote Was Jeffries's First Big Test. He Failed."
             """(?<=[.!?]\s)(?:He|She|They|It|We)\s+(?:Failed|Blew\s+It|Lost|Lied|Flunked|Flopped)\.?$""",
@@ -1623,29 +1623,29 @@ internal object Signals {
     }
 
     // ---- Miss-check constructions (rule pack 36) ------------------------------
-    // Each is one headline the maintainer called an obvious miss in the November 2026
+    // Each is one headline called an obvious miss in the November 2026
     // review (edge cases 2026-11-m*), kept narrow: none matched a tuning row
     // labeled NONE except POINTED_PERSON, which matched one.
 
-    /** A fond description owned by the subject, closing the headline in place of the name: "Microsoft shuts down its beloved maker space" (The Garage; maintainer, edge case 2026-10-f02b). */
+    /** A fond description owned by the subject, closing the headline in place of the name: "Microsoft shuts down its beloved maker space" (The Garage; edge case 2026-10-f02b). */
     private val FOND_POSSESSIVE = Regex(
         """\b(?:its|his|her|their)\s+(?:beloved|iconic|popular|much-loved|famous|legendary|flagship|cherished)\s+(?:[\w-]+\s+){0,2}[\w-]+$""",
         RegexOption.IGNORE_CASE,
     )
 
-    /** The article is the pictures the headline points at: "See Inside Cells Like Never Before in These Vivid Microscopic Images" (maintainer, edge case 2026-10-f14). Nothing is held back, so the pointing word is not a tease. */
+    /** The article is the pictures the headline points at: "See Inside Cells Like Never Before in These Vivid Microscopic Images" (edge case 2026-10-f14). Nothing is held back, so the pointing word is not a tease. */
     private val GALLERY_POINTER = Regex(
         """\b(?:in|with|through|from)\s+these\s+(?:[\w-]+\s+){0,3}(?:images|photos|photographs|pictures|maps|charts|graphics)\b""",
         RegexOption.IGNORE_CASE,
     )
 
-    /** A series label and then the object itself: "Look Closer: A Mysterious Pair of Mittens" (maintainer, edge case 2026-11-f09). The thing is named; "mysterious" describes it. */
+    /** A series label and then the object itself: "Look Closer: A Mysterious Pair of Mittens" (edge case 2026-11-f09). The thing is named; "mysterious" describes it. */
     private val LABELLED_OBJECT = Regex(
         """:\s+An?\s+(?:mysterious|strange|curious|surprising|unusual|unexpected)\s+(?:[\w-]+\s+){0,2}of\s+[\w-]+$""",
         RegexOption.IGNORE_CASE,
     )
 
-    /** The news is given before the statement is mentioned: "Gary O'Neill announces dad's death as Ipswich boss shares heartbreaking statement" (maintainer, 2026-11-12: not a tease). */
+    /** The news is given before the statement is mentioned: "Gary O'Neill announces dad's death as Ipswich boss shares heartbreaking statement" (2026-11-12: not a tease). */
     private val NEWS_GIVEN_FIRST = Regex(
         """\b(?:announces?|confirms?)\s+(?:[\w'’-]+\s+){0,4}(?:death|passing|retirement|split|divorce|engagement|pregnancy|diagnosis)\b""",
         RegexOption.IGNORE_CASE,
@@ -1653,7 +1653,7 @@ internal object Signals {
 
     private val STATEMENT_SLOT = Regex("""\b(?:statement|message|tribute|post)\s*$""", RegexOption.IGNORE_CASE)
 
-    /** A roundup's label after the names it covers: "WATCH: Kim Kardashian, Tay Keith, Millie Bobby Brown: Here's what's trending" (maintainer, 2026-11-12: lazy, not a trick). */
+    /** A roundup's label after the names it covers: "WATCH: Kim Kardashian, Tay Keith, Millie Bobby Brown: Here's what's trending" (2026-11-12: lazy, not a trick). */
     private val TRENDING_ROUNDUP = Regex("""\bhere(?:'s|’s|s)\s+what(?:'s|’s|\s+is)\s+trending\b""", RegexOption.IGNORE_CASE)
 
     /**
@@ -1706,8 +1706,8 @@ internal object Signals {
         RegexOption.IGNORE_CASE,
     )
 
-    // ---- The maintainer's outlets (rule pack 37) -----------------------------------
-    // From the maintainer's check of their own Know News outlets on 2026-11-13.
+    // ---- Outlets check (rule pack 37) -----------------------------------
+    // From a check of Know News outlets on 2026-11-13.
 
     /** A thing described by what the writer once said of it, and not named: "A survival game we once called 'Stalker and Tarkov's alien baby' is closing down". */
     private val RECALLED_DESCRIPTOR = Regex(
@@ -1809,7 +1809,7 @@ internal object Signals {
 
     private val REGISTRY: Map<String, SignalMatcher> = mapOf(
         "intrigue_slot" to regexMatcher(INTRIGUE_SLOT) { headline, match ->
-            // A statement mentioned after the headline has given the news is not held back (maintainer, edge case 2026-11-p05).
+            // A statement mentioned after the headline has given the news is not held back (edge case 2026-11-p05).
             slotKept(headline, match) && !(STATEMENT_SLOT.containsMatchIn(match.value) && NEWS_GIVEN_FIRST.containsMatchIn(headline.substring(0, match.range.first)))
         },
         "counted_slot" to regexMatcher(COUNTED_SLOT) { headline, match -> slotKept(headline, match) && !HOW_TO_LEAD.containsMatchIn(headline) },
@@ -1933,7 +1933,7 @@ internal object Signals {
         "horror_lead" to regexMatcher(HORROR_LEAD),
         "emphasis_caps" to regexMatcher(EMPHASIS_CAPS),
         "announced_statement" to regexMatcher(ANNOUNCED_STATEMENT) { headline, match ->
-            // "issues statement in support of…" says where the statement stands (maintainer, flag review 2026-11-f15).
+            // "issues statement in support of…" says where the statement stands (flag review 2026-11-f15).
             announcedAnswerKept(headline, match) && !NEWS_GIVEN_FIRST.containsMatchIn(headline.substring(0, match.range.first)) && !STANCE_GIVEN_AFTER.containsMatchIn(headline.substring(match.range.last + 1)) &&
                 AUTHORITY_UPDATE.findAll(headline).none { it.range.first <= match.range.first && match.range.first <= it.range.last }
         },

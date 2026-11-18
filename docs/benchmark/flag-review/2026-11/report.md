@@ -1,13 +1,13 @@
 # Flag review, 2026-11
 
-Codebook version 12, rule pack 35. Intake `docs/benchmark/flag-review/2026-11/intake.tsv`: 365 headlines, 30 flagged, 30 sampled, 30 answered by the maintainer. Written by `flag-review score`; do not edit by hand.
+Codebook version 12, rule pack 35. Intake `docs/benchmark/flag-review/2026-11/intake.tsv`: 365 headlines, 30 flagged, 30 sampled, 30 answered by the reviewer. Written by `flag-review score`; do not edit by hand.
 
 | Question | Yes | Verdict against 90% |
 | :--- | :--- | :--- |
 | Is this a clear case? | 28/30 (93.3%) [79–98%] | met, but within noise |
 | Would the highlight and question help a reader stop and think? | 28/30 (93.3%) [79–98%] | met, but within noise |
 
-**Miss check** (information, not a target): of 50 headlines MLE left alone, the maintainer called 23 an obvious miss (23/50 (46.0%) [33–60%]).
+**Miss check** (information, not a target): of 50 headlines MLE left alone, the reviewer called 23 an obvious miss (23/50 (46.0%) [33–60%]).
 
 - m03: Abortion Laws Treat “Viability” as a Bright Line. It Isn’t. _(Mother Jones)_
 - m04: Maya Jama's next TV role 'rumbled' by fans after ITV Love Island exit _(Daily Star)_
@@ -44,13 +44,13 @@ Codebook version 12, rule pack 35. Intake `docs/benchmark/flag-review/2026-11/in
 
 **Answered no** (candidates for docs/teaching-reset-2026-10.md §7: a "not clear" is a precision fix, a "doesn't help" a wording fix)
 
-- f09, not clear, doesn't help: Look Closer: A Mysterious Pair of Mittens _(The Atlantic; Withheld detail -> "A Mysterious Pair")_ Maintainer: the article is about something specific not really looking to decieve the reader
-- f15, not clear, doesn't help: Andrew Sachs’ granddaughter issues statement in support of Russell Brand before sentencing _(The Independent; Withheld detail -> "issues statement")_ Maintainer: issues statement in support kinda says it all
+- f09, not clear, doesn't help: Look Closer: A Mysterious Pair of Mittens _(The Atlantic; Withheld detail -> "A Mysterious Pair")_ Reviewer: the article is about something specific not really looking to decieve the reader
+- f15, not clear, doesn't help: Andrew Sachs’ granddaughter issues statement in support of Russell Brand before sentencing _(The Independent; Withheld detail -> "issues statement")_ Reviewer: issues statement in support kinda says it all
 
 **Notes on headlines answered yes**
 
-- f01: Professor tells BBC the 1 'most concerning' impact of polar vortex in UK — not snow _(Daily Express; Withheld detail -> " — not snow")_ Maintainer: not snow or most concerning seem like they both would work
-- f11: A New Approach Could Eliminate “Zombie” Cancer Cells That Survive Chemotherapy _(SciTechDaily; Early science -> "Eliminate")_ Maintainer: could and eliminate are doing the work here
-- f17: ‘We had the worst fight’: I want my husband to retire at 65, but I don’t want to lose his $280,000 salary. Is that unreasonable? _(MarketWatch; Withheld detail -> "‘We had the worst fight’: I want my husband to retire at 65, but I don’t want to lose his $280,000 salary. Is that unreasonable?")_ Maintainer: this whole title is rage bait
-- f18: A Strange Quantum Theorem Has Killed Einstein’s Reality _(Quanta Magazine; Withheld detail -> "A Strange Quantum")_ Maintainer: feels like an opinion
+- f01: Professor tells BBC the 1 'most concerning' impact of polar vortex in UK — not snow _(Daily Express; Withheld detail -> " — not snow")_ Reviewer: not snow or most concerning seem like they both would work
+- f11: A New Approach Could Eliminate “Zombie” Cancer Cells That Survive Chemotherapy _(SciTechDaily; Early science -> "Eliminate")_ Reviewer: could and eliminate are doing the work here
+- f17: ‘We had the worst fight’: I want my husband to retire at 65, but I don’t want to lose his $280,000 salary. Is that unreasonable? _(MarketWatch; Withheld detail -> "‘We had the worst fight’: I want my husband to retire at 65, but I don’t want to lose his $280,000 salary. Is that unreasonable?")_ Reviewer: this whole title is rage bait
+- f18: A Strange Quantum Theorem Has Killed Einstein’s Reality _(Quanta Magazine; Withheld detail -> "A Strange Quantum")_ Reviewer: feels like an opinion
 

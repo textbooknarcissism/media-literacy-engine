@@ -28,8 +28,8 @@ import kotlin.math.sqrt
  *    not to change a weight.
  * 3. **Publisher priors.** If each outlet's labeled rate nudged the engine's
  *    score, what would that fix and what would it break on held-out headlines?
- *    The project decided not to use priors. This measures the decision so the
- *    maintainer can revisit it with numbers.
+ *    The project decided not to use priors. This measures the decision so it
+ *    can be revisited with numbers.
  *
  * Held-out rows appear only in totals, exactly as in the benchmark.
  */

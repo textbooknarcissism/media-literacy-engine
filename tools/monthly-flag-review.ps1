@@ -1,6 +1,6 @@
 # Monthly flag review, steps 1 and 2: harvest fresh headlines and draw the sample.
 #
-# MLE is a teaching tool (docs/positions.md, position 17). Once a month the project maintainer
+# MLE is a teaching tool (docs/positions.md, position 17). Once a month a person
 # reviews up to 50 headlines it flagged. This script does the part that needs the network and
 # this machine: it harvests news published since the first of the month, flags it the way an
 # app with the page would, and draws the sample. The rest (answering the questions and

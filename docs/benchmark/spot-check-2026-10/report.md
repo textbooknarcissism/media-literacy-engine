@@ -1,10 +1,10 @@
-# Maintainer spot-check, 2026-10-19
+# Blind spot-check, 2026-10-19
 
 > The scoring script this report was made with (`tools/spotcheck`) was removed on 2026-10-23. It is not in this repository.
 
 ## What was done
 
-The maintainer labeled 200 tuning rows blind on a private page: 20 labeled `NONE` and 20 labeled flagged, from each of `broadsheet-2026`, `beats-2026`, `context-2026`, `week-2026-10-19` and `harvested` (seed 20261019; `sample.json`). The maintainer never saw the model label. The answers are in `owner-labels.json`. Score them with:
+A person labeled 200 tuning rows blind on a private page: 20 labeled `NONE` and 20 labeled flagged, from each of `broadsheet-2026`, `beats-2026`, `context-2026`, `week-2026-10-19` and `harvested` (seed 20261019; `sample.json`). They never saw the model label. The answers are in `owner-labels.json`. Score them with:
 
     node tools/spotcheck/score.mjs build/spotcheck/key.json docs/benchmark/spot-check-2026-10/owner-labels.json build/spotcheck/items.json
 
@@ -12,7 +12,7 @@ The model labels compared are the version 7 labels after the full re-label (fixt
 
 ## Agreement (flagged or not)
 
-| Set | Agree | κ | Model flagged, maintainer NONE | Model NONE, maintainer flagged |
+| Set | Agree | κ | Model flagged, reviewer NONE | Model NONE, reviewer flagged |
 |---|---|---|---|---|
 | all | 148/200 (74%) [68%–80%] | 0.48 [0.35–0.63] | 19 | 33 |
 | beats-2026 | 30/40 (75%) [60%–86%] | 0.50 [0.22–0.75] | 2 | 8 |
@@ -21,15 +21,15 @@ The model labels compared are the version 7 labels after the full re-label (fixt
 | week-2026-10-19 | 30/40 (75%) [60%–86%] | 0.50 [0.22–0.75] | 3 | 7 |
 | broadsheet-2026 | 29/40 (73%) [57%–84%] | 0.45 [0.23–0.71] | 2 | 9 |
 
-Intervals are 95% (Wilson for agreement, bootstrap for κ). Stratum-weighted agreement: 73.9%. Both flagged: 81; share a technique: 44. Maintainer unsure: 3.
+Intervals are 95% (Wilson for agreement, bootstrap for κ). Stratum-weighted agreement: 73.9%. Both flagged: 81; share a technique: 44. Reviewer unsure: 3.
 
-**Reading it.** Agreement of 74% and κ 0.48 is moderate. On a 40-row set the interval is too wide to rank sets. The maintainer flags more often than the labels: 33 rows the labels call `NONE` against 19 the other way. Where both flag, they name the same technique only about half the time. The maintainer noted that some rows are tricky.
+**Reading it.** Agreement of 74% and κ 0.48 is moderate. On a 40-row set the interval is too wide to rank sets. The reviewer flags more often than the labels: 33 rows the labels call `NONE` against 19 the other way. Where both flag, they name the same technique only about half the time. The reviewer noted that some rows are tricky.
 
 ## What the disagreements say about the codebook
 
-Most disagreements sit on a few rules. The maintainer asked for recommendations and approved them on 2026-10-19. They become codebook version 8.
+Most disagreements sit on a few rules. Recommendations for them were drawn up on 2026-10-19. They become codebook version 8.
 
-| Rule | What the maintainer did | Ruling |
+| Rule | What the reviewer did | Ruling |
 |---|---|---|
 | 3, a fear word on a real event | "Two dead after horror crash", "Epping fire horror as locals urged to keep windows shut", "Horror at train station as youths wield machetes": all clean (s047, s046, s026) | A fear word counts only when it stands in for the facts or the threat is vague or future. A real, stated harm described with "horror" is clean. |
 | 1, quoted words with no speaker | 'biting and punching crew', 'stolen' goods, 'Hamas tribute', 'Elon Is a Nuke': all clean (s095, s161, s121, s132) | Reported conduct or an allegation in quotes is shorthand for "alleged" and is clean. A loaded label or sneer the outlet uses to frame the story stays `vague_sourcing`. |
@@ -42,11 +42,11 @@ The rest are scattered single calls: teases (11), hedges (6), science claims (3)
 
 ## After codebook version 8
 
-After the version 8 re-label (12 of these 200 labels changed), agreement with the maintainer on the same rows is 154/200 (77%), κ 0.55. This is not independent: the codebook was adjusted on these rows. The remaining gap runs one way: the maintainer flags 36 rows the labels call `NONE` and leaves 10 flagged rows clean.
+After the version 8 re-label (12 of these 200 labels changed), agreement with the reviewer on the same rows is 154/200 (77%), κ 0.55. This is not independent: the codebook was adjusted on these rows. The remaining gap runs one way: the reviewer flags 36 rows the labels call `NONE` and leaves 10 flagged rows clean.
 
 ## All disagreements
 
-| Key | Set | Model | Maintainer | Outlet | Headline |
+| Key | Set | Model | Reviewer | Outlet | Headline |
 |---|---|---|---|---|---|
 | s003 | harvested | NONE  | SUBTLE opinion_as_fact | New Atlas | Jensen Interceptor GTX is Britain's emphatic reply to the Ford Mustang |
 | s009 | harvested | NONE  | PROMINENT opinion_as_fact, vague_sourcing | Deutsche Welle | US-China rivalry is reshaping global trade — and Europe is caught in the middle. |

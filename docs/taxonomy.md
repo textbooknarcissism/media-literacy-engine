@@ -136,7 +136,7 @@ alone.
 Offers an unnamed study, survey, poll or data set as the proof of the
 headline's point: "…, study finds", "Study Finds…", "New Research Reveals…",
 "Poll:", "…: Survey", "Data shows…". Split from vague sourcing in rule pack 38
-(codebook 13) at the maintainer's request, with the same words, weights and
+(codebook 13), with the same words, weights and
 cancels, so the same headlines are flagged.
 
 Why it is its own technique: the study is often named further down the story,

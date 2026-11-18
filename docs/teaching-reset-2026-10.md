@@ -1,6 +1,6 @@
 # The teaching-tool reset (2026-10)
 
-**Status:** design approved by the maintainer, 2026-10-22, section by section; all six steps built by 2026-10-23. The lasting position is `docs/positions.md` §17; this document keeps the reasoning and the plan as built.
+**Status:** design settled 2026-10-22, section by section; all six steps built by 2026-10-23. The lasting position is `docs/positions.md` §17; this document keeps the reasoning and the plan as built.
 
 ## 1. Why
 
@@ -13,7 +13,7 @@ MLE is an educational tool. The README has said so from the start: "Not a perfec
 
 Held-out catch rate stayed between about 24% and 45% through all of it. Chasing it is what churned the project, not the engine. (An earlier draft of this spec said the engine leaves 98.7% of held-out honest headlines alone; that was measured against the version 9 labels, which had relabeled many of the engine's own false flags as clickbait. Against the restored version 8 labels it is 96.6%, 1,230 of 1,273: about 1 wrong flag in 30, which is what §6 now watches.)
 
-The maintainer named the cause: the project had come to be read like Pi-hole, an ad blocker. That model is right for a blocker and wrong for a teacher.
+The cause was this: the project had come to be read like Pi-hole, an ad blocker. That model is right for a blocker and wrong for a teacher.
 
 | | A filter (Pi-hole) | MLE, a teacher |
 | :--- | :--- | :--- |
@@ -41,13 +41,13 @@ These follow from §1 and are written into position 17 so a future filter move h
 
 ## 4. The standard: codebook version 10, "the teaching standard"
 
-- Keeps the decision rules 1–6 of version 8, the owner-approved rulings (fear word beside a stated harm, quoted alleged conduct, labeled opinion, service headlines, explainers, words not outlets).
+- Keeps the decision rules 1–6 of version 8, the earlier rulings (fear word beside a stated harm, quoted alleged conduct, labeled opinion, service headlines, explainers, words not outlets).
 - Replaces version 9's rule 7 with one bar: **flag only when the technique is plain on a first reading and a reasonable reader could not argue the headline is fair. When torn, choose `NONE`.**
 - The four readings version 9 added (a thesis stated as fact in news, the outlet's own unattributed "could", a question about how something will turn out, an unease word over something still to come) are no longer grounds for a flag on their own. They count only where they are blatant under the existing technique definitions in §4 of the codebook.
 - §2 of the codebook ("When you are torn … choose the technique") and §5 (worked examples written for v9) are revised to match. The v9 entry in §7 stays, with a note that version 10 reverses it.
-- **The standard is frozen.** A change needs a new version approved by the maintainer and a §7 entry saying why. The aim is a few versions a year, not a week. Benchmark results are tagged with the codebook version.
+- **The standard is frozen.** A change needs a new version and a §7 entry saying why. The aim is a few versions a year, not a week. Benchmark results are tagged with the codebook version.
 
-**Labels.** The fixture changes of commit `aa2fb99` (the v9 re-label) are reverted, which returns every label to version 8. No new labeling run. The baseline (`fixtures/benchmark-baseline.json`) is hand-edited to match, never written with `--write-baseline`. The version 9 labeling run is kept as a record of what was tried.
+**Labels.** The fixture changes of the version 9 re-label are reverted, which returns every label to version 8. No new labeling run. The baseline (`fixtures/benchmark-baseline.json`) is hand-edited to match, never written with `--write-baseline`. The version 9 labeling run is kept as a record of what was tried.
 
 **Docs.**
 - `docs/positions.md` gains §17, "MLE is a teaching tool": §1–§3 of this document, in short. The targets of §14 and §16 and the 70% decision rule are marked retired. Earlier positions stay as history. The version line at the top is updated.
@@ -76,7 +76,7 @@ Strict existed for two days and v1.0.0 is unpublished, so there is nothing to de
 **The flag review (new, the main measure).**
 - Monthly. Each rule-pack release goes out with that month's review.
 - 50 headlines that MLE flagged, drawn from the month's fresh harvest, never from tuning rows. If the month has fewer than 50 flagged headlines, all of them are used.
-- The maintainer sees each as a reader would (headline, highlighted span, pattern name, question) and answers two yes/no questions:
+- A person sees each as a reader would (headline, highlighted span, pattern name, question) and answers two yes/no questions:
   1. Is this a clear case?
   2. Would the highlight and question help a reader stop and think?
 - **Target: at least 90% yes on each question**, reported with its 95% interval.
@@ -89,14 +89,14 @@ Strict existed for two days and v1.0.0 is unpublished, so there is nothing to de
 
 ## 7. How rules change
 
-- **Candidates come from** misses the maintainer reports and "no" answers in the flag review.
+- **Candidates come from** misses that get reported and "no" answers in the flag review.
 - **A candidate is accepted only if** it is a clear case under the teaching standard; it matches at most 0.5% of tuning `NONE` rows; and the gate passes.
 - Otherwise it is logged as "not a clear case" and dropped. It does not become a codebook argument.
 - **Rule packs ship monthly** with the flag review, not as each miss arrives.
 
 ## 8. Keeping the monthly work small
 
-- **`flag-review` Gradle tasks:** one draws the 50-row sample from the month's harvest and writes the review page's data; one scores the maintainer's answers and writes the report.
+- **`flag-review` Gradle tasks:** one draws the 50-row sample from the month's harvest and writes the review page's data; one scores the reviewer's answers and writes the report.
 
 ## 9. Order of work
 
@@ -112,5 +112,5 @@ Each step leaves the tests and the gate passing.
 ## 10. Out of scope
 
 - New detection rules. None are written as part of the reset.
-- Any learned or on-device model (the maintainer's position in §14 stands).
+- Any learned or on-device model (the position in §14 stands).
 - Apps built on MLE.

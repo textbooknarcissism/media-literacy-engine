@@ -135,8 +135,8 @@ internal val PANEL = listOf(
     Source("ScienceDaily", "sci-hype", "https://www.sciencedaily.com/rss/all.xml"),
 
     // Climate and environment, a beat the panel did not cover until the 2026-10
-    // beat audit. No lean pair yet: whether to add one, and which, is the
-    // maintainer's call. "Guardian Environment" is the Guardian's environment
+    // beat audit. No lean pair yet: whether to add one, and which, is
+    // still open. "Guardian Environment" is the Guardian's environment
     // section, kept apart from its main feed so the beat can be read on its own.
     Source("Carbon Brief", "climate", "https://www.carbonbrief.org/feed/"),
     Source("Inside Climate News", "climate", "https://insideclimatenews.org/feed/"),

@@ -8,7 +8,7 @@ import kotlin.test.assertTrue
 import kotlin.test.fail
 
 /**
- * The maintainer's edge cases from the monthly flag review (resources/edge-cases.tsv):
+ * Edge cases decided in the monthly flag review (resources/edge-cases.tsv):
  * headlines they reviewed, with the outcome they decided. A `fixed` case must
  * pass, so a later rule pack cannot quietly undo a decision; an `open` case is
  * a known gap, reported here and in the flag review until a rule closes it.
@@ -67,7 +67,7 @@ class EdgeCasesTest {
     }
 
     @Test
-    fun `the maintainer's decided edge cases hold`() {
+    fun `the decided edge cases hold`() {
         assertTrue(cases.size >= 30, "expected the October cases, found ${cases.size}")
         val broken = mutableListOf<String>()
         for (case in cases) {

@@ -99,9 +99,9 @@ CON-Text highlights the flagged words in a headline. Tapping one opens the techn
 
 ## How the rules are made
 
-A person writes and reviews every rule. The [codebook](docs/benchmark/codebook.md) is the authority on what counts as a technique, and a rule changes only when the maintainer approves the change. [docs/positions.md](docs/positions.md) gives the reasoning behind each line the codebook draws.
+A person writes and reviews every rule. The [codebook](docs/benchmark/codebook.md) is the authority on what counts as a technique, and a rule changes only through a new codebook version, with the reason written down. [docs/positions.md](docs/positions.md) gives the reasoning behind each line the codebook draws.
 
-AI is used around the rules and not inside them. It helps harvest headlines from feeds, and it helps the maintainer spot bias in their own headline reviews. A language model also drafts the labels on the test headlines without seeing the engine's answer, and the maintainer spot-checks them blind. No model runs when a headline is flagged and none ships in the library, which is why the same headline always gets the same answer.
+AI is used around the rules and not inside them. It helps harvest headlines from feeds, and it helps catch bias in headline reviews. A language model also drafts the labels on the test headlines without seeing the engine's answer, and a person spot-checks them blind. No model runs when a headline is flagged and none ships in the library, which is why the same headline always gets the same answer.
 
 ## Ways to contribute
 
@@ -212,7 +212,7 @@ Many headlines tease something their own feed summary then states plainly. `flag
 
 The numbers are published so you can judge it for yourself. They come from `./gradlew :tools:benchmark:run`, and the full report is [docs/benchmark-results.md](docs/benchmark-results.md). These are for rule pack 38.
 
-The main measure is a monthly review. The maintainer reads up to 50 headlines MLE flagged in that month's news and answers two questions about each. The target is 90% yes on both.
+The main measure is a monthly review. A person reads up to 50 headlines MLE flagged in that month's news and answers two questions about each. The target is 90% yes on both.
 
 | Month | Is this a clear case? | Would the highlight and question help a reader stop and think? |
 | :--- | :--- | :--- |
@@ -221,9 +221,9 @@ The main measure is a monthly review. The maintainer reads up to 50 headlines ML
 
 The second measure is how often it leaves honest headlines alone, counted on headlines the rules were never tuned on. The target is 97.5%. It currently leaves alone 1,238 of 1,275 (97.1%), which is short of the target.
 
-The third number is reported but is not a goal: of the clickbait in those same sets, it catches 111 of 274 (40.5%). In November the maintainer also looked at 50 headlines it had left alone and called 23 of them an obvious miss.
+The third number is reported but is not a goal: of the clickbait in those same sets, it catches 111 of 274 (40.5%). In November a person also looked at 50 headlines it had left alone and called 23 of them an obvious miss.
 
-Read these with care. The sets are small, so one or two headlines move a rate by several points. The test headlines were labeled against the project's own [codebook](docs/benchmark/codebook.md): a language model drafted the labels without seeing the engine's answer, and the maintainer spot-checks them blind. How that works, and where it is weak, is in [docs/METHODOLOGY.md](docs/METHODOLOGY.md) and [docs/benchmark/review-process.md](docs/benchmark/review-process.md). The reasoning behind each line the codebook draws is in [docs/positions.md](docs/positions.md).
+Read these with care. The sets are small, so one or two headlines move a rate by several points. The test headlines were labeled against the project's own [codebook](docs/benchmark/codebook.md): a language model drafted the labels without seeing the engine's answer, and a person spot-checks them blind. How that works, and where it is weak, is in [docs/METHODOLOGY.md](docs/METHODOLOGY.md) and [docs/benchmark/review-process.md](docs/benchmark/review-process.md). The reasoning behind each line the codebook draws is in [docs/positions.md](docs/positions.md).
 
 Known weak spots:
 

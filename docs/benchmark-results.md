@@ -10,7 +10,7 @@ Brackets after a headline rate are its 95% Wilson interval: where the true rate 
 
 ## Flag review
 
-The maintainer's review of 30 headlines MLE flagged in 2026-11 (codebook version 12, rule pack 35); details in docs/benchmark/flag-review/2026-11/report.md. Target: at least 90% yes on each question.
+The monthly review of 30 headlines MLE flagged in 2026-11 (codebook version 12, rule pack 35); details in docs/benchmark/flag-review/2026-11/report.md. Target: at least 90% yes on each question.
 
 | Question | Yes | Verdict |
 | :--- | :--- | :--- |
@@ -129,7 +129,7 @@ Model-labeled broadsheet and tabloid headlines, per docs/benchmark/codebook.md. 
 
 ## beats-2026
 
-Beat-stratified headlines (gaming, science, politics, entertainment, local, opinion and long-form, business), labeled blind by a single model reviewer per docs/benchmark/codebook.md version 3; maintainer spot-check pending. The headlines come from the live intake, which was in the repo when rule pack 1 was written, so the rules may have seen them and the held-out numbers may be optimistic. Year 2026, license project.
+Beat-stratified headlines (gaming, science, politics, entertainment, local, opinion and long-form, business), labeled blind by a single model reviewer per docs/benchmark/codebook.md version 3; a person's spot-check pending. The headlines come from the live intake, which was in the repo when rule pack 1 was written, so the rules may have seen them and the held-out numbers may be optimistic. Year 2026, license project.
 
 **Held-out per technique** (precision: when MLE names this technique, how often it is right)
 
@@ -254,7 +254,7 @@ Beat-stratified headlines (gaming, science, politics, entertainment, local, opin
 
 ## context-2026
 
-Context-labeled headlines with summaries, page metadata and cached article pages, labeled by a single model reviewer under docs/benchmark/codebook.md version 4, plus version 5 (rule 5); maintainer spot-check in progress. Two engine signals were written from three held-out rows (docs/positions.md section 13), so three held-out catches are not independent. Year 2026, license project.
+Context-labeled headlines with summaries, page metadata and cached article pages, labeled by a single model reviewer under docs/benchmark/codebook.md version 4, plus version 5 (rule 5); a person's spot-check in progress. Two engine signals were written from three held-out rows (docs/positions.md section 13), so three held-out catches are not independent. Year 2026, license project.
 
 **Held-out per technique** (precision: when MLE names this technique, how often it is right)
 
@@ -418,7 +418,7 @@ Context-labeled headlines with summaries, page metadata and cached article pages
 
 ## week-2026-10-19
 
-Headlines published 2026-10-12 to 2026-10-19, after rule pack 27, labeled under codebook version 6: a language model's blind first pass, with a second pass adjudicating the unsure rows and every row where the first pass and the rules disagreed; maintainer spot-check pending. Unseen by the rules and by the bake-off models (docs/benchmark/model-bakeoff-2026-10.md). Year 2026, license project.
+Headlines published 2026-10-12 to 2026-10-19, after rule pack 27, labeled under codebook version 6: a language model's blind first pass, with a second pass adjudicating the unsure rows and every row where the first pass and the rules disagreed; a person's spot-check pending. Unseen by the rules and by the bake-off models (docs/benchmark/model-bakeoff-2026-10.md). Year 2026, license project.
 
 **Held-out per technique** (precision: when MLE names this technique, how often it is right)
 
@@ -706,7 +706,7 @@ Hand-written starter cases. Year 2026, license project.
 
 ## owner-reported
 
-Headlines the maintainer saw in the reader app and reported as missed or wrongly flagged (2026-10-19); the maintainer's labels where given, otherwise proposed ones. Rule material, never evidence. Year 2026, license project.
+Headlines seen in the reader app and reported as missed or wrongly flagged (2026-10-19); the reviewer's labels where given, otherwise proposed ones. Rule material, never evidence. Year 2026, license project.
 
 | | Tuning | Held-out |
 | :--- | :--- | :--- |

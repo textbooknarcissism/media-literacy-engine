@@ -32,7 +32,7 @@ class ExportCasesTest {
         for (c in cases) assertEquals(Split.of(c.id).name, byId.getValue(c.id)["split"]!!.jsonPrimitive.content)
         val ownerRow = byId.getValue("abc")
         assertEquals("OWNER", ownerRow["split"]!!.jsonPrimitive.content)
-        assertEquals("PROMINENT", ownerRow["expectedLevel"]!!.jsonPrimitive.content, "the maintainer's label wins over the proposed one")
+        assertEquals("PROMINENT", ownerRow["expectedLevel"]!!.jsonPrimitive.content, "the reviewer's label wins over the proposed one")
         assertTrue(rows.all { "inspectHits" in it })
     }
 }

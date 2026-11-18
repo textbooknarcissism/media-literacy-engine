@@ -26,12 +26,12 @@ data class PatternHit(
     val category: Category,
     /** The exact text that matched, as it appeared in the headline. */
     val matchedText: String,
-    /** Where it was found, so the UI can underline it if we ever want to. */
+    /** Where it was found, so a UI can underline it if it needs to. */
     val range: IntRange,
     /**
      * Which rule fired: "term:slams", "signal:staged_exchange",
      * "compound:science_overhype", or "summary:..." for a flag the feed summary
-     * confirmed. Lets an inspection view name the rule and a "did we flag this
+     * confirmed. Lets an inspection view name the rule and a "was this flagged
      * correctly?" answer point at it. Null for hits built elsewhere.
      */
     val ruleId: String? = null,

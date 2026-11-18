@@ -36,7 +36,7 @@ object ExportCases {
         out.bufferedWriter(Charsets.UTF_8).use { w ->
             for (ds in datasets) {
                 val file = File(ds.path)
-                // The maintainer set is written once below, as OWNER rows. A sealed set
+                // The reported set is written once below, as OWNER rows. A sealed set
                 // never leaves the benchmark, not even as held-out rows.
                 if (!file.exists() || ds.format == HeadlineFormat.OWNER || ds.isSealed()) continue
                 for (case in ds.read(file)) {

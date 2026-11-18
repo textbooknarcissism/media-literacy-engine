@@ -265,7 +265,7 @@ internal object AdversarialBattery {
             expectedLevel = FlagLevel.NONE,
             targetCategory = Category.CURIOSITY,
             challengeType = ChallengeType.FALSE_POSITIVE_TRAP,
-            rationale = "Maintainer ruling 2026-11-17 (edge case 2026-11-17-g01): a service list that names its subject is fair, as in rule pack 37; the regret hook is hype, but nothing is withheld."
+            rationale = "Ruling 2026-11-17 (edge case 2026-11-17-g01): a service list that names its subject is fair, as in rule pack 37; the regret hook is hype, but nothing is withheld."
         ),
         AdversarialCase(
             headline = "Flight attendant shares the clever hotel door trick you should always do",
