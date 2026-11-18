@@ -1,7 +1,7 @@
 package com.medialiteracy.model
 
 /**
- * The nine headline techniques the Media Literacy Engine can recognize.
+ * The ten headline techniques the Media Literacy Engine can recognize.
  *
  * Wording note: every user-facing string here describes the *technique*, never
  * the outlet or the journalist. The engine names a pattern and stops there; it
@@ -124,6 +124,22 @@ enum class Category(
         cautionExplanation = "States a personal judgment without marking it as opinion.",
         askYourself = "Is this something that happened, or somebody's view of it?",
         whyItWorks = "Presenting subjective commentary as established fact bypasses skepticism, steering how the reader feels about the event before they even read the reporting.",
+    ),
+
+    /**
+     * Split from [OPINION] in rule pack 39 (codebook 14), at the owner's
+     * request: a question states nothing, so "is this a fact or a view?" is
+     * the wrong check. The move is a claim, verdict or worry carried inside a
+     * question, so the outlet can say it only asked. The check hands the
+     * reader the claim back as a statement.
+     */
+    QUESTION(
+        id = "loaded_question",
+        displayName = "Loaded question",
+        explanation = "Asks a question that carries a claim, verdict or worry the headline does not state outright.",
+        cautionExplanation = "Puts a claim in the form of a question.",
+        askYourself = "Turn the question into a statement: would the outlet print that, and does the story back it up?",
+        whyItWorks = "A question lets a headline plant a claim in the reader's mind while the outlet can say it only asked.",
     );
 
     companion object {

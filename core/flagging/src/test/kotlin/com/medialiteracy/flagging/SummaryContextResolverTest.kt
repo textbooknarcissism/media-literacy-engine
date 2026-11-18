@@ -232,7 +232,7 @@ class SummaryContextResolverTest {
 
         val result = flagger.flagWithSummary(headline, summary)
         assertTrue(result.isFlagged)
-        assertTrue(Category.OPINION in result.categories)
+        assertTrue(Category.QUESTION in result.categories)
         assertNotNull(result.resolvedContext)
         assertTrue(result.resolvedContext!!.contains("comes far too late to sway skeptical progressive voters"))
     }
@@ -245,7 +245,7 @@ class SummaryContextResolverTest {
 
         val result = flagger.flagWithSummary(headline, summary)
         assertTrue(result.isFlagged)
-        assertTrue(Category.CURIOSITY in result.categories)
+        assertTrue(Category.QUESTION in result.categories)
         assertNotNull(result.resolvedContext)
         assertTrue(result.resolvedContext!!.contains("the answer is an emphatic no"))
         assertFalse(result.resolvedContext!!.contains("packed theaters nationwide"))

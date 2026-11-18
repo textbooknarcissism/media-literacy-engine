@@ -1361,6 +1361,42 @@ internal object Signals {
     )
 
     /**
+     * Codebook v14 loaded question: a question whose premise carries the
+     * claim, read off the owner's question page (2026-11-18). Sarcasm ("What
+     * could possibly go wrong?"), a verdict on a person ("Was X right to…?",
+     * "Is it time for X to quit?"), a scare aimed at the reader ("Is fast
+     * charging killing your battery?", ". Is your backup ready?"), a closing
+     * "- but are centrists listening?", a "why … so bad" premise, a bare
+     * "Why now?" after the news, "Seriously, is anyone…?" and "the question
+     * no one dares ask".
+     *
+     * Not: "Is it time to lock in?" (service, no person), an open outlook
+     * question ("Can Labour end rough sleeping?"), a scare word inside an
+     * open question ("Could I survive the apocalypse?"). Both broader shapes
+     * were measured and dropped. Signed views, reviews and letters stand down
+     * through the category's labelled_opinion cancel (codebook rule 2). The
+     * em dash arrives as "-" (see [TRAILING_RHETORICAL_QUESTION]).
+     *
+     * Where the loaded words come early, the rest of the question is only
+     * checked with a lookahead, so a quoted fragment later in the question
+     * ("for a 'lack of effort'?") can still be claimed by its own technique
+     * without knocking this hit out.
+     */
+    private val LOADED_PREMISE_QUESTION = Regex(
+        """\bwhat\s+(?:can|could)\s+(?:possibly\s+)?go\s+wrong\s*\?|""" +
+            """\b(?:was|were|is|are)\s+[^?]{2,40}?\s+right\s+to\b(?=[^?]*\?)|""" +
+            """\bis\s+it\s+time\s+for\s+(?:[\p{L}'’.-]+\s+){1,3}to\s+(?:quit|go|resign|step\s+down|stand\s+down|leave|retire|be\s+sacked)\b(?=[^?]*\?)|""" +
+            """\b(?:is|are)\b[^?]{1,60}?\b(?:killing|ruining|destroying|wrecking|poisoning)\s+(?:your|our|us)\b(?=[^?]*\?)|""" +
+            """\s-\s*but\s+(?:are|is|will|can|could|should|would|do|does)\b[^?|]{0,50}\?(?=\s*(?:\|.*)?$)|""" +
+            """\bwhy\b[^?]{0,80}?\bso\s+(?:bad|easily|obsessed)\b(?=[^?]*\?)|""" +
+            """(?<=[.!]\s)Why\s+now\?|""" +
+            """^\W*Seriously,\s+[^?]*\?|""" +
+            """\bthe\s+question\s+no\s+one\s+(?:dares|wants)\s+(?:to\s+)?ask\b|""" +
+            """(?<=[.!]\s)Is\s+your\s+\w+(?:\s+\w+)?\s+(?:ready|safe|protected|next)\?""",
+        RegexOption.IGNORE_CASE,
+    )
+
+    /**
      * Codebook v7 sweeping verdict (`opinion_as_fact`): an absolute verdict in
      * the outlet's voice. "has changed everything", "will never be the same",
      * "turning … upside down", "Everything you've been told … is a lie".
@@ -1926,6 +1962,7 @@ internal object Signals {
         "withheld_verdict" to regexMatcher(WITHHELD_VERDICT, ::announcedAnswerKept),
         "characterised_remark" to regexMatcher(CHARACTERISED_REMARK),
         "leading_question" to regexMatcher(LEADING_QUESTION),
+        "loaded_premise_question" to regexMatcher(LOADED_PREMISE_QUESTION),
         "sweeping_verdict" to regexMatcher(SWEEPING_VERDICT),
         "insinuation" to regexMatcher(INSINUATION),
         "loaded_label" to regexMatcher(LOADED_LABEL),

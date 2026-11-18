@@ -1,6 +1,6 @@
 {
-  "version": 38,
-  "notes": "Version 38 splits a new technique, study_as_proof (\"Study as proof\"), out of vague_sourcing at the maintainer's request on 2026-11-17 (codebook 13). The maintainer saw that the study behind a \"…, study finds\" headline is often named further down the story, so asking who ran it missed the point: the trouble is the one finding picked to fit the headline. The unnamed_study and unnamed_poll signals and the study, poll, survey and data phrases move unchanged, with the same weights and the same cancels, so the same headlines are flagged; only the technique, its explanation and its reader questions change.",
+  "version": 39,
+  "notes": "Version 39 splits a new technique, loaded_question (\"Loaded question\"), out of opinion_as_fact at the owner's request on 2026-11-18 (codebook 14). A question states nothing, so asking whether it is fact or opinion missed the move: the claim, verdict or worry rides inside the question while the outlet only asked. leading_question and trailing_rhetorical_question move from opinion_as_fact, and betteridge_superlative_question from curiosity_gap, with the same notice weight. New loaded_premise_question, read off the owner's question page: sarcasm (\"What could possibly go wrong?\"), a verdict on a person (\"Was X right to…?\", \"Is it time for X to quit?\"), a scare aimed at the reader (\"killing your battery?\", \". Is your backup ready?\"), a closing \"- but are centrists listening?\", a \"why … so bad\" premise, \"Why now?\" after the news, \"Seriously, is anyone…?\" and \"the question no one dares ask\". Like opinion_as_fact it stands down on signed views, reviews and letters (codebook rule 2).",
   "allCapsAllowlist": [],
   "thresholds": {
     "subtle": 0.5,
@@ -772,7 +772,6 @@
         "celebrity_reaction_formula",
         "tell_all_why_hook",
         "withheld_statement",
-        "betteridge_superlative_question",
         "viral_emotional_imperative",
         "ingroup_identity_hook",
         "cataphoric_deictic_lead",
@@ -1154,17 +1153,13 @@
     {
       "id": "opinion_as_fact",
       "questions": {
-        "signal:loaded_label": "Is that word a fact about them, or the writer's opinion of them?",
-        "signal:leading_question": "What answer does the question push you toward, and does the story back it?",
-        "signal:trailing_rhetorical_question": "What answer does the closing question push you toward?"
+        "signal:loaded_label": "Is that word a fact about them, or the writer's opinion of them?"
       },
       "weight": 1,
       "noticeWeight": 0.5,
       "softWeight": 0.35,
       "enabledByDefault": true,
       "noticeSignals": [
-        "trailing_rhetorical_question",
-        "leading_question",
         "sweeping_verdict",
         "insinuation",
         "loaded_label"
@@ -1251,6 +1246,34 @@
       ],
       "muteSignals": [
         "quoted_speech"
+      ]
+    },
+    {
+      "id": "loaded_question",
+      "questions": {
+        "signal:leading_question": "What answer does the question push you toward, and does the story back it?",
+        "signal:trailing_rhetorical_question": "What answer does the closing question push you toward?",
+        "signal:betteridge_superlative_question": "Would the outlet print the answer it is hinting at as a plain statement?",
+        "signal:loaded_premise_question": "Turn the question into a statement: would the outlet print that, and does the story back it up?"
+      },
+      "weight": 1,
+      "noticeWeight": 0.5,
+      "softWeight": 0.35,
+      "enabledByDefault": true,
+      "terms": [],
+      "noticeTerms": [],
+      "softTerms": [],
+      "signals": [],
+      "noticeSignals": [
+        "leading_question",
+        "trailing_rhetorical_question",
+        "betteridge_superlative_question",
+        "loaded_premise_question"
+      ],
+      "softSignals": [],
+      "cancelSignals": [
+        "named_attribution",
+        "labelled_opinion"
       ]
     }
   ]

@@ -4,7 +4,7 @@ Research on clickbait and persuasive framing defines techniques in general: with
 
 This document records MLE's answers, the reasons for them, the research they rest on, where they go further than that research, and the evidence MLE has gathered for each. The [codebook](benchmark/codebook.md) is the operational version, written for people labeling headlines; this is the reasoning behind it. Where research is silent or draws the line elsewhere, the project decides, and its own labeled data tests the decision.
 
-**Version:** 2026-11-17, codebook version 13, rule pack 38.
+**Version:** 2026-11-18, codebook version 14, rule pack 39.
 
 **Read position 17 first.** Since 2026-10-22 MLE is run as a teaching tool, not a filter: it speaks only when a flag is clearly right and teaches something, and its catch rate is reported but never a target. Positions 14 and 16 record the period before that; their catch-rate targets and the 70% decision rule are retired.
 
@@ -342,7 +342,7 @@ MLE uses the first two and not the third.
 **Retired targets (2026-10-22, position 17).** The catch-rate targets that went with this position no longer apply; catch rate is reported as information. The left-alone targets (97.5% pooled, 96% per set) stand.
 
 **The position.** The engine should be good at the obvious ones, with rules alone on the device. Rhetorical and cynical styles count when they are obvious, as named patterns inside the existing techniques (codebook version 7):
-- leading questions, sweeping verdicts, insinuation and loaded labels under `opinion_as_fact`;
+- leading questions, sweeping verdicts, insinuation and loaded labels under `opinion_as_fact` (leading questions are `loaded_question` since rule pack 39, position 20);
 - sarcasm and mockery under `manufactured_rage`.
 
 Each pattern is its own signal, so its name rides on the hit (`signal:leading_question`) and an app needs no new category.
@@ -450,6 +450,20 @@ Read it honestly. The new rules were written after reading `savedyouaclick-2026`
 **Not decided.** A named study can be cherry-picked too ("A Harvard study finds…"). Flagging those would be a new rule, not a rename, and would be measured before it is proposed.
 
 **Status.** Decided 2026-11-17: a new technique, not a reworded question. Codebook version 13, rule pack 38.
+
+### 20. A loaded question is its own technique
+
+**The position.** A question that carries a claim, verdict or worry the headline does not state outright is `loaded_question`, "Loaded question", not `opinion_as_fact`: "Was Neville right to…?", "Is it time for Ed Davey to quit…?", "Has the next financial crisis begun?", "Is X really…?", "… Why now?", "… Should he?", ". Is your backup ready?". The flag asks the reader to turn the question into a statement and ask whether the outlet would print that, and whether the story backs it.
+
+**Why.** Question headlines often read as opinion, speculation or provocation, and "is this something that happened, or somebody's view of it?" does not fit them: a question states nothing. The move is to carry the claim inside the question, where the reader takes it in and the outlet can say it only asked. Implying a claim without asserting it is the same mechanism as misleading implicature (Scott, 2023), and *Doubt* covers the planted-doubt form (Piskorski et al., 2023).
+
+**Where the line falls.** It was drawn from a reading of 42 question headlines on 2026-11-18, each marked trick, gentle note or fair. That reading marked nearly every question a trick, including plain explainers, so the line is narrower than the reading: a question counts when its statement form is a verdict, a scare, an insinuation or a hook the outlet would not print as it stands. Left alone: a plain question the piece answers (rule 5), an open question about how something will turn out (rule 7), a question that doubts a claim ("…: Does it?"), service, a reader's dilemma (`curiosity_gap`), and signed opinion, reviews and letters (rule 2, as for `opinion_as_fact`).
+
+**What the rules can and cannot do.** The leading-question and closing-nudge signals move over unchanged. One new signal adds shapes read off tuning headlines: sarcasm ("What could possibly go wrong?"), a verdict on a person ("Was X right to…?", "Is it time for X to quit?"), a scare at the reader ("killing your battery?", ". Is your backup ready?"), a closing "- but are … ?", a "why … so bad" premise, "Why now?" after the news, "Seriously, …?" and "the question no one dares ask". Two broader shapes were measured and dropped because they caught fair questions: a scare word in any yes/no question ("Can Labour end rough sleeping?", "Could I survive the apocalypse?") and "So why …?". On held-out rows the new signal caught none of the loaded questions and added one wrong flag (pooled held-out left alone 97.1% to 97.0%). Most loaded questions carry their load in ordinary words ("Why Does Trump Think He Can Act Like a King?"), which rules cannot read reliably. The technique earns its place through the reader question, not the catch rate.
+
+**Not decided.** A plain question that holds back a short answer the headline could have given ("Why are two college football teams playing at Wembley on Saturday?") was raised at the same time. It is a withheld-detail question, not a loaded one, and changing it would reopen position 1's line between a plain question and an announced answer. One idea is to use the feed summary: when it gives the answer in one sentence, the headline held back something easy. It would be measured before it is proposed.
+
+**Status.** Decided 2026-11-18: a new technique. Codebook version 14, rule pack 39.
 
 ## Open questions
 

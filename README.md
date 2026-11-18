@@ -56,7 +56,7 @@ Put several headlines in the quotes, each in its own single quotes, to check a b
 
 ## What it looks for
 
-Nine techniques. Each has a name a reader can remember and a question they can reuse on the next headline.
+Ten techniques. Each has a name a reader can remember and a question they can reuse on the next headline.
 
 | Technique | What the headline does | The question |
 | :--- | :--- | :--- |
@@ -69,6 +69,7 @@ Nine techniques. Each has a name a reader can remember and a question they can r
 | Manufactured urgency | Sounds like breaking news when nothing is on a clock. | Is there a deadline in this story, or does it just sound like there is? |
 | Early science | Announces a breakthrough or a cure with no sign of how far the work has got. | Has this been tested on people, or only in a lab? |
 | Opinion as fact | States a judgment as though it were an event. | Is this something that happened, or somebody's view of it? |
+| Loaded question | Asks a question that carries a claim, verdict or worry it does not state outright. | Turn the question into a statement: would the outlet print that, and does the story back it up? |
 
 Fuller definitions, with what each rule deliberately leaves alone, are in [docs/taxonomy.md](docs/taxonomy.md).
 

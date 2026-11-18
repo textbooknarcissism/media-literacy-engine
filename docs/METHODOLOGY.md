@@ -12,7 +12,7 @@ Most work on clickbait treats it as a yes-or-no classification and solves it wit
 
 ## 2. The research behind each technique
 
-The engine's nine-technique taxonomy started from published work in linguistics, rhetoric and journalism research:
+The engine's ten-technique taxonomy started from published work in linguistics, rhetoric and journalism research:
 
 ### A. Forward-reference and withheld detail (`curiosity_gap`)
 Blom & Hansen (2015, [*Click bait: Forward-reference as lure in online news headlines*](https://doi.org/10.1016/j.pragma.2014.11.010), *Journal of Pragmatics*, 76:87–100) showed that clickbait headlines often use words that point forward to the article (`this`, `these`, `here's what they found`, `the one thing`) without saying what they refer to. Scott (2021) later found the same pattern in another corpus (see §F).
@@ -81,15 +81,15 @@ What each study reports, and how far MLE relies on it. A citation explains why a
 10. **Opinion labels and credibility (2024):**
    - *Reference:* Otis, A. (2024), [*The effects of transparency cues on news source credibility online: An investigation of 'opinion labels'*](https://doi.org/10.1177/14648849221129001) (*Journalism*, 25(1):198–217).
    - *What it reports:* In an experiment with 389 participants reading a feed of biased and unbiased stories from one source, labeling the opinion pieces significantly raised the source's perceived credibility.
-   - *How MLE uses it:* Support for codebook rule 2. A signed or labeled opinion piece has already told the reader whose judgment it is, so `opinion_as_fact` does not apply to it.
+   - *How MLE uses it:* Support for codebook rule 2. A signed or labeled opinion piece has already told the reader whose judgment it is, so neither `opinion_as_fact` nor `loaded_question` applies to it.
 
 **Project heuristics with no study behind them.** Three fear signals added in rule pack 23 were credited to items 2–6, none of which examines these constructions. Those citations have been withdrawn. `pseudo_reassurance_alarm` ("you probably aren't going to get the plague") and `temporal_suspension_threat` ("won't collapse this winter (for now)") have not matched one headline in any tuning split: harvested, broadsheet-2026, Webis-Clickbait-22 or the legacy Chakraborty set. `survival_challenge_frame` ("can your savings survive the budget?") has matched one legacy headline. The benchmark therefore neither supports nor contradicts them. They stay as the project's own position (2026-10-11): reassurance wrapped round a catastrophe is treated as a fear appeal, and labeled examples will test that as they are found. By contrast, `prescriptive_behavioral_imperative` and `cataphoric_second_person_gap` match 15 Webis-Clickbait-22 tuning posts and one harvested headline labeled prominent, and no headline labeled NONE in the 2026 tuning splits.
 
 ---
 
-## 3. The Nine Techniques
+## 3. The Ten Techniques
 
-The nine techniques, with what each looks for and what it deliberately leaves alone:
+The ten techniques, with what each looks for and what it deliberately leaves alone:
 
 | ID | Display Name | What it looks for | What it leaves alone |
 | :--- | :--- | :--- | :--- |
@@ -102,6 +102,7 @@ The nine techniques, with what each looks for and what it deliberately leaves al
 | `urgency_pressure` | **Manufactured urgency** | Breaking-news phrasing and artificial time pressure on stories that are not urgent. | Scheduled civic deadlines (*"filing deadline nears"*) and official emergency alerts. |
 | `science_overhype` | **Early science** | Breakthrough or cure claims that omit lab-stage, animal-model or simulation caveats. | Canceled immediately if the headline states the caveat (*"in mice"*, *"in lab tests"*); checks the summary for buried animal testing. |
 | `opinion_as_fact` | **Opinion as fact** | Value judgments or directives stated as plain fact in a news voice. | Never applied to signed or labeled opinion (bylines, *"Opinion:"*, reviews, letters) or to quoted words (codebook rules 1–2); separated from factual event reporting. |
+| `loaded_question` | **Loaded question** | A question that carries a claim, verdict or worry the headline does not state outright: a verdict (*"Was X right to…?"*, *"Is it time for X to quit?"*), a scare (*"Has the next financial crisis begun?"*), insinuation or sarcasm (*"Is X really…?"*, *"Why now?"*, *"What could possibly go wrong?"*), a nudge after a statement (*"… Should he?"*) and a hook aimed at the reader (*". Is your backup ready?"*); split from `opinion_as_fact` in codebook v14. | Plain and open questions (*"Can Labour end rough sleeping?"*), questions that doubt a claim (*"…: Does it?"*), service questions, a reader's dilemma (that is `curiosity_gap`), and signed opinion, reviews and letters (codebook rules 2, 5 and 7). |
 
 ---
 

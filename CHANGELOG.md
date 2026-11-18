@@ -6,7 +6,7 @@ Every release of the Media Literacy Engine is listed here, newest first. The bui
 
 A version has three numbers, `MAJOR.MINOR.PATCH`, and each release raises exactly one of them.
 
-- **MAJOR** (1.0.0 to 2.0.0): an app built on the engine may need to change its code. A technique is added, removed or renamed (apps often handle each technique by name), or a public class or function is removed or changes its shape.
+- **MAJOR** (1.0.0 to 2.0.0): an app built on the engine may need to change its code. A technique is added, removed or renamed (apps often handle each technique by name), or a public class or function is removed or changes its shape. Until the engine is public, a new technique is a MINOR release instead, with the change spelled out in its **For apps** note; once it is public, it is a MAJOR one.
 - **MINOR** (1.0.0 to 1.1.0): what the engine flags changes, but an app needs no code change. A new rule pack, a new codebook version, new or retired rules, or reworded explanations and reader questions.
 - **PATCH** (1.0.0 to 1.0.1): a fix that changes no verdict. A crash, a feed the parser could not read, a typo in documentation.
 
@@ -16,11 +16,13 @@ Work that is finished but not yet released sits under **Unreleased** at the top.
 
 ## Unreleased
 
-Rule pack 38, codebook 13, unchanged. No verdict changes.
+Rule pack 39, codebook 14. This adds a technique; the engine is not public yet, so the next release is 1.1.0 (see How version numbers work).
 
-- The Opinion family's description now says "judgment" (American spelling) instead of "judgement". It is the only text an app shows that changed.
+New in rule pack 39: **Loaded question** (`loaded_question`) is its own technique, split from Opinion as fact. It covers a question that carries a claim, verdict or worry the headline does not state outright: "Was X right to…?", "Has the next financial crisis begun?", "Is X really…?", "… Should he?", "Ransomware has a new target. Is your backup ready?". Its reader question: turn the question into a statement: would the outlet print that, and does the story back it up? The leading questions and closing nudges that Opinion as fact used to flag move here, and a few new shapes are caught. Like Opinion as fact, it never applies to signed opinion, reviews or letters. See [position 20](docs/positions.md#20-a-loaded-question-is-its-own-technique).
 
-**For apps.** Nothing to do.
+- The Opinion family's description now says "judgment" (American spelling) instead of "judgement".
+
+**For apps.** Handle the tenth technique, `Category.QUESTION` (id `loaded_question`, family `editorializing`), anywhere techniques are listed or switched on, including any `when` over `Category` without an `else`. Give it an icon, label and on/off setting if techniques have those, on by default. Headlines that showed Opinion as fact for a question now show Loaded question.
 
 ## 1.0.0 (2026-11-17)
 

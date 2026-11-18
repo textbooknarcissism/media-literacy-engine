@@ -328,7 +328,7 @@ class RealWorldPatternsTest {
     fun `broadsheet nudges still flag unless signed, and memorized v20 phrases stay gone`() {
         val nudge = flagger.flag("Tony Blair would like Andy Burnham to take his advice on rejoining the EU. Should he?")
         assertEquals(FlagLevel.SUBTLE, nudge.level)
-        assertTrue(Category.OPINION in nudge.categories)
+        assertTrue(Category.QUESTION in nudge.categories)
 
         val bribe = flagger.flag("Trump's $5,000 pledge to voters is a shameless bribe")
         assertTrue(Category.OPINION in bribe.categories)
@@ -655,10 +655,10 @@ class RealWorldPatternsTest {
     @Test
     fun `trailing rhetorical question survives dash normalisation and never underlines the byline`() {
         val xi = flagger.flag("Trump swoons over strongman soulmate Xi – are you feeling jealous, Vladimir?")
-        assertTrue(Category.OPINION in xi.categories, "An en-dash separated nudge must still be caught after dashes are normalised")
+        assertTrue(Category.QUESTION in xi.categories, "An en-dash separated nudge must still be caught after dashes are normalised")
 
         val harris = flagger.flag("Kamala Harris is belatedly courting progressives. Is it too little, too late?")
-        val hit = harris.hits.first { it.category == Category.OPINION }
+        val hit = harris.hits.first { it.category == Category.QUESTION }
         assertEquals("Is it too little, too late?", hit.matchedText)
 
         // The signal itself must still stop at the question when a byline
@@ -1061,5 +1061,49 @@ class RealWorldPatternsTest {
         val poll = flagger.flag("Yet another poll shows Reform UK falling to third place behind Tories")
             .hits.first { it.category == Category.STUDY }
         assertTrue(poll.question!!.contains("just the number that fits"))
+    }
+
+    @Test
+    fun `a question carrying its own claim is a loaded question`() {
+        // Codebook v14, from the owner's question page (2026-11-18).
+        for (loaded in listOf(
+            "Is it time for the club chairman to resign after a third relegation?",
+            "Was the minister right to call striking nurses 'greedy'?",
+            "Is your smart speaker ruining your sleep?",
+            "Ransomware gangs have a new favourite target. Is your backup ready?",
+            "The council voted for another rise in parking fees - but are drivers being heard?",
+            "The government approved the first fracking licence in a decade. Why now?",
+            "Regulators let the banks write their own rules. What could possibly go wrong?",
+            "Is the four-day week really the future of work?",
+        )) {
+            val result = flagger.flag(loaded)
+            assertTrue(Category.QUESTION in result.categories, loaded)
+            assertTrue(Category.OPINION !in result.categories, loaded)
+        }
+    }
+
+    @Test
+    fun `an open, service or signed question is not a loaded question`() {
+        for (fair in listOf(
+            "Can Labour end rough sleeping?",
+            "Fixed Annuity Payouts Are Spiking: Is it Time to Lock In?",
+            "Why are two college football teams playing at Wembley on Saturday?",
+            "Trump says US has 'permanent control' of Greenland security: Does it?",
+            "Could I survive the apocalypse?",
+        )) {
+            assertTrue(Category.QUESTION !in flagger.flag(fair).categories, fair)
+        }
+        // Codebook rule 2: a review or signed column has told the reader it is a view.
+        val review = flagger.flag("Crime drama season two review – why is this show so obsessed with car chases?")
+        assertTrue(Category.QUESTION !in review.categories)
+        val column = flagger.flag("Regulators let the banks write their own rules. What could possibly go wrong?", articleType = ArticleType.OPINION)
+        assertTrue(Category.QUESTION !in column.categories)
+    }
+
+    @Test
+    fun `a loaded question hands the reader the statement check`() {
+        val hit = flagger.flag("Was the minister right to call striking nurses 'greedy'?")
+            .hits.first { it.category == Category.QUESTION }
+        assertTrue(hit.question!!.contains("Turn the question into a statement"))
     }
 }

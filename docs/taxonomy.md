@@ -1,4 +1,4 @@
-# The nine techniques
+# The ten techniques
 
 Plain-language reference for what the Media Literacy Engine detects. The working version (the
 actual words and numbers) is in
@@ -242,3 +242,36 @@ Full strength: makes no sense, is a disaster, should be ashamed, has no idea, ev
 Half strength (0.5): out of touch, tone-deaf, pathetic, damning, more worried about, weird and wonderful, yet another awkward.
 
 Separates factual reporting of events ("Minister resigns after report") from editorial evaluation ("Ministers are completely out of touch"). Never applied to signed or labeled opinion, or to words inside quotation marks (codebook rules 1 and 2, above). An analysis piece is judged as normal.
+
+## 10. Loaded question
+Asks a question that carries a claim, verdict or worry the headline does not
+state outright, so the reader takes the claim in while the outlet has only
+asked. Split from opinion as fact in rule pack 39 (codebook 14): the leading
+questions and closing nudges that used to sit there move here unchanged, and a
+few shapes are new.
+
+What it covers:
+- a verdict in the question: "Was X right to…?", "Is it time for X to quit?",
+  "Did X ever write a good novel?";
+- a scare in the question: "Has the next financial crisis begun?", "Is fast
+  charging killing your battery?", "How long until…?", "Is this the end of…?";
+- insinuation or sarcasm: "Is X really…?", "…but at what cost?", "Why now?"
+  after a news statement, "What could possibly go wrong?", "Seriously, is
+  anyone…?";
+- a nudge after a statement: "… Should he?", "… - but are centrists
+  listening?";
+- a hook aimed at the reader after a threat: ". Is your backup ready?".
+
+Why it is its own technique: a question states nothing, so asking whether it is
+a fact or a view does not fit. The move is to carry the claim inside the
+question. The flag hands it back: **turn the question into a statement: would
+the outlet print that, and does the story back it up?**
+
+Leaves alone: a plain question the story answers ("Why have oil prices reached
+a record high?"), an open question about how something will turn out ("Can
+Labour end rough sleeping?"), a question that doubts a claim ("…: Does it?"),
+service ("Is it time to lock in?"), a reader's dilemma (that is curiosity gap),
+and signed opinion, reviews and letters (codebook rule 2). Most loaded
+questions carry their load in ordinary words ("Why does Trump think he can act
+like a king?"), which rules cannot read reliably, so the engine catches the
+clear shapes and leaves the rest.

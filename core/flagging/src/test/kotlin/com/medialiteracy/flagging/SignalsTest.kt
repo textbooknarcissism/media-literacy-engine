@@ -119,6 +119,7 @@ class SignalsTest {
             "withheld_verdict" to "Former captain gives verdict on penalty decision",
             "characterised_remark" to "Senator says rival's 'grow up' comment shows his contempt for voters",
             "leading_question" to "Is remote work really over?",
+            "loaded_premise_question" to "Was the coach right to drop his captain?",
             "sweeping_verdict" to "This tiny phone has changed everything",
             "insinuation" to "Council quietly scraps cycle lane plan",
             "loaded_label" to "Tech oligarchs line up for tax cut",

@@ -11,7 +11,7 @@ class EngineTest {
     fun `all-in-one engine exposes core flagging, models, and feeds`() {
         val pack = RulePackLoader.loadDefault()
         assertNotNull(pack)
-        assertEquals(38, pack.version)
+        assertEquals(39, pack.version)
 
         val flagger = HeadlineFlagger(pack)
         val result = flagger.flag("Scientists Discover One Weird Trick You Won't Believe")
