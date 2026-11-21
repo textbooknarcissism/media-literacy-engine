@@ -4,7 +4,7 @@ Research on clickbait and persuasive framing defines techniques in general: with
 
 This document records MLE's answers, the reasons for them, the research they rest on, where they go further than that research, and the evidence MLE has gathered for each. The [codebook](benchmark/codebook.md) is the operational version, written for people labeling headlines; this is the reasoning behind it. Where research is silent or draws the line elsewhere, the project decides, and its own labeled data tests the decision.
 
-**Version:** 2026-11-18, codebook version 14, rule pack 39.
+**Version:** 2026-11-21, codebook version 15, rule pack 40.
 
 **Read position 17 first.** Since 2026-10-22 MLE is run as a teaching tool, not a filter: it speaks only when a flag is clearly right and teaches something, and its catch rate is reported but never a target. Positions 14 and 16 record the period before that; their catch-rate targets and the 70% decision rule are retired.
 
@@ -464,6 +464,20 @@ Read it honestly. The new rules were written after reading `savedyouaclick-2026`
 **Not decided.** A plain question that holds back a short answer the headline could have given ("Why are two college football teams playing at Wembley on Saturday?") was raised at the same time. It is a withheld-detail question, not a loaded one, and changing it would reopen position 1's line between a plain question and an announced answer. One idea is to use the feed summary: when it gives the answer in one sentence, the headline held back something easy. It would be measured before it is proposed.
 
 **Status.** Decided 2026-11-18: a new technique. Codebook version 14, rule pack 39.
+
+### 21. A crowd reported as the news is its own technique
+
+**The position.** A crowd of unknown size and its reaction, reported as the news, is `social_scraping`, "Social scraping": "Fans are furious over region-locked cosmetics", "People are just realizing what the 'I' in iPhone stands for", "The internet reacts to…", "Strictly viewers say same thing as…", "GTA 6 players are already ditching Mandy". Pleased crowds count as well as angry ones. The flag asks: how many people is this, and where?
+
+**Why.** A writer reads a feed, finds a reaction that did well, and reports it as news, or as what many people think. When the articles behind seven such headlines were read in November 2026, the crowd was one Reddit thread with about eight commenters (Daily Dot), five Reddit posts and a friend's chat (Kotaku), one thread and two posts on X (TheGamer), one post on X and four or five replies (Dexerto), and, in one case, no posts at all in the part of the page that could be read, only the writer's view (Windows Central). The others rested on something countable: 908 Steam reviews (Dexerto), or about six threads plus a request for comment from the company (Android Authority). The move borrows the weight of a crowd the headline never measures: the popularity cue research on persuasion calls an *appeal to popularity* (Piskorski et al., 2023).
+
+**Where the line falls.** It was drawn from a page of 41 crowd headlines and lookalikes, each marked trick, gentle note or fair on 2026-11-21. That page came mostly from tabloids, so it was checked on gaming, tech, lifestyle and TV outlets before anything was built: one day of 1,337 headlines from 35 feeds, and 32,448 headlines from eight outlets' monthly sitemaps for September to mid-November 2026, before the GTA 6 launch. The pattern is a house style at some gaming sites as much as in tabloids: about 2% of TheGamer and Dexerto headlines, against 2.2% at the Manchester Evening News and 1.35% at the Daily Star, and almost none at Variety, The Verge, Ars Technica, Rock Paper Shotgun or BBC Sport. Left alone: a real count, a named person making the claim, specific people in the story stating a fact ("Florida parents say their baby…"), the crowd as the subject of the story ("MPs warn disabled people…"), a poll or study, a bug report, what people do in a game or with a product, a leading quote, first person and shopping copy. A real event with the crowd added on is still flagged; the reviewer marked those a gentle note, and the engine's quiet marker is the only level a single technique gets.
+
+**What the rules can and cannot do.** One signal, a crowd word, optional helpers and a reaction word, with the spares above. On the 32,448 untuned headlines it flags about 1.2%; a hand reading of the 115 gaming and tech flags found six to eight doubtful, most of them a real grievance ("pet owners furious after finding pets living with vets") or a real legal event ("Discord users outraged over GTA 6 leak subpoena"). Feeds and URL slugs were read, not pages, so the tabloid history was judged from slugs of about five words. When the crowd's reaction is an anger word ("fans fume"), it counts once, as social scraping, not as conflict too. On held-out rows, after a blind relabel, pooled left alone moved from 97.0% to 97.1% and caught from 111/277 to 115/286; one held-out honest headline is newly flagged.
+
+**Not decided.** A single post presented as the internet ("Woman on TikTok says…", "Internet Sparks Debate") is the same move in a smaller form; neither is caught today.
+
+**Status.** Decided 2026-11-21: a new technique. Codebook version 15, rule pack 40.
 
 ## Open questions
 

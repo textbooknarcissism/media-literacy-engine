@@ -6,7 +6,7 @@ import com.medialiteracy.model.FlagLevel
 import java.time.LocalDate
 
 /** The labeling codebook the fixtures follow (docs/benchmark/codebook.md). Bump it with the codebook. */
-const val CODEBOOK_VERSION = 13
+const val CODEBOOK_VERSION = 15
 
 object Report {
     private const val MAX_LISTED = 40

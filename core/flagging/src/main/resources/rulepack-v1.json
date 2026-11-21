@@ -1,6 +1,6 @@
 {
-  "version": 39,
-  "notes": "Version 39 splits a new technique, loaded_question (\"Loaded question\"), out of opinion_as_fact at the owner's request on 2026-11-18 (codebook 14). A question states nothing, so asking whether it is fact or opinion missed the move: the claim, verdict or worry rides inside the question while the outlet only asked. leading_question and trailing_rhetorical_question move from opinion_as_fact, and betteridge_superlative_question from curiosity_gap, with the same notice weight. New loaded_premise_question, read off the owner's question page: sarcasm (\"What could possibly go wrong?\"), a verdict on a person (\"Was X right to…?\", \"Is it time for X to quit?\"), a scare aimed at the reader (\"killing your battery?\", \". Is your backup ready?\"), a closing \"- but are centrists listening?\", a \"why … so bad\" premise, \"Why now?\" after the news, \"Seriously, is anyone…?\" and \"the question no one dares ask\". Like opinion_as_fact it stands down on signed views, reviews and letters (codebook rule 2).",
+  "version": 40,
+  "notes": "Version 40 adds a new technique, social_scraping (\"Social scraping\") on 2026-11-21 (codebook 15): a crowd of unknown size and its reaction reported as the news (\"Fans are furious\", \"People are just realizing\", \"The internet reacts\"), often built from a few social media posts. One new signal, crowd_reaction: a crowd word, optional helpers and a reaction word, left alone for a real count, a named speaker, people in the story stating a fact, a negated claim, a leading quote, shopping copy, first person, a study, poll or bug report, and the writer cheering the reader on. The crowd phrases that sat in vague_sourcing (\"people are saying\", \"many are saying\", \"fans brand\", \"viewers brand\", \"shoppers say\", \"shoppers reveal\", \"customers say\", \"diners say\") move here unchanged, with the same weights.",
   "allCapsAllowlist": [],
   "thresholds": {
     "subtle": 0.5,
@@ -481,9 +481,7 @@
         "pals say",
         "rumour has it",
         "rumor has it",
-        "some believe",
-        "many are saying",
-        "people are saying"
+        "some believe"
       ],
       "noticeTerms": [
         "experts warn",
@@ -499,13 +497,7 @@
         "said to be",
         "as experts worry",
         "experts worry",
-        "viewers brand",
-        "fans brand",
         "critics brand",
-        "shoppers say",
-        "shoppers reveal",
-        "customers say",
-        "diners say",
         "economists warn",
         "leading economists warn",
         "health economists warn",
@@ -1275,6 +1267,34 @@
         "named_attribution",
         "labelled_opinion"
       ]
+    },
+    {
+      "id": "social_scraping",
+      "questions": {
+        "signal:crowd_reaction": "How many people is this, and where? Stories like this are often built from a few social media posts."
+      },
+      "weight": 0.6,
+      "noticeWeight": 0.5,
+      "softWeight": 0.35,
+      "enabledByDefault": true,
+      "terms": [
+        "many are saying",
+        "people are saying"
+      ],
+      "noticeTerms": [
+        "viewers brand",
+        "fans brand",
+        "shoppers say",
+        "shoppers reveal",
+        "customers say",
+        "diners say"
+      ],
+      "softTerms": [],
+      "signals": [],
+      "noticeSignals": [
+        "crowd_reaction"
+      ],
+      "softSignals": []
     }
   ]
 }

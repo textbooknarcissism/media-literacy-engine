@@ -1397,6 +1397,65 @@ internal object Signals {
     )
 
     /**
+     * Codebook v15 social scraping: a crowd of unknown size and its reaction
+     * reported as the news. "Fans are furious", "People are just realizing",
+     * "The internet reacts", "Strictly viewers say same thing", "GTA 6
+     * players are already ditching Mandy". Read off a page of 41 crowd
+     * headlines a reviewer marked trick, gentle note or fair (2026-11-21) and a study of gaming, tech, lifestyle and
+     * TV outlets, including 32,000 headlines from before the GTA 6 launch.
+     *
+     * A crowd word, optional helpers ("are", "left", "only just", "can't"),
+     * then a reaction: saying, thinking, feeling, wanting, noticing, joking.
+     * What a crowd does inside a game or a product ("lets players access",
+     * "users can edit") has no reaction word and is left alone. The spares
+     * are in [crowdUncounted].
+     */
+    private val CROWD_REACTION = Regex(
+        """\b(?:fans|players|gamers|viewers|people|shoppers|users|owners|customers|parents|mums|drivers|commenters|redditors|tiktokers|followers|the\s+internet|internet|social\s+media|everyone|fanbase)""" +
+            """(?:\s+(?:are|is|were|have|has|left|all|just|now|still|already|only\s+just|seriously|really|finally|clearly|quickly|not|aren'?t|can'?t|cannot|won'?t|have\s+been|are\s+being|being|getting|got|continue\s+to))*\s+""" +
+            """(?:saying|says?|said|think|thinks|thought|convinced|believe|reacts?|reacting|divided|split|torn|fum(?:e|es|ing)|furious|outraged|angry|mad|upset|livid|up\s+in\s+arms|""" +
+            """unhappy|happy|unimpressed|disappointed|frustrated|worried|confused|baffled|shocked|stunned|horrified|emotional|""" +
+            """slam(?:s|ming)?|blast(?:s|ing)?|roast(?:s|ing)?|mock(?:s|ing)?|call(?:s|ing)?\s+(?:out|for|it|him|her|them|this)|brand(?:s|ing)?|""" +
+            """thrilled|delighted|loving|loves?|hyped|excited|obsessed|impressed|celebrat\w*|rejoic\w*|hat(?:e|es|ing)|""" +
+            """want(?:s|ed)?|demand(?:s|ing)?|beg(?:s|ging)?|petition\w*|spot(?:s|ted)?|notic(?:e|es|ed)|discover(?:s|ed)?|reali[sz](?:e|es|ed|ing)|think\s+they'?ve\s+found|""" +
+            """losing\s+(?:it|their\s+minds)|lose\s+their\s+minds|go(?:ing)?\s+wild|in\s+stitches|in\s+tears|(?:making|make)\s+(?:the\s+)?same|issu(?:e|es|ing)\s+(?:the\s+)?same|""" +
+            """sounding\s+off|having\s+a\s+field\s+day|ditching|skipping|flocking|yearning|complain\w*|have\s+questions|(?:falling\s+)?in\s+love|""" +
+            """call(?:s|ing)?\s+(?:it\s+)?(?:a\s+|an\s+|the\s+)?['"]|agree|apologi[sz]\w*|speculat\w*|predict\w*|theori[sz]\w*|joke|jok(?:es|ing)|meme\w*|cringe\w*|swoon\w*|rav(?:e|es|ing))\b""",
+        RegexOption.IGNORE_CASE,
+    )
+
+    private const val CROWD_NOUNS = """(?:fans|players|gamers|viewers|people|shoppers|users|owners|customers|parents|everyone)"""
+
+    /** What leaves a crowd headline alone (codebook v15). Each line was read off the reviewer's answers or the beat study. */
+    private val CROWD_SPARES = listOf(
+        // A real count: "35 million people", "over 35,000 people". Not a title number ("GTA 6 fans",
+        // "Final Fantasy 14 fans"), a year ("Celebrity Traitors 2026 fans") or a price ("£12 top shoppers call…").
+        Regex("""(?<![£${'$'}€\w.,])(?:\d{1,3}(?:[,\s]\d{3})+|(?!(?:19|20)\d\d\b)\d{3,}|\d+(?:\.\d+)?\s*(?:k|m|million|thousand|billion))\s+(?:\w+\s+)?$CROWD_NOUNS\b""", RegexOption.IGNORE_CASE),
+        Regex("""\b(?:over|more\s+than|nearly|almost|about|around|some)\s+(?:half|a\s+third|a\s+quarter|\d+\s*%|\d+\s+per\s*cent)\s+of\b""", RegexOption.IGNORE_CASE),
+        // A named person makes the claim: "Einhorn says younger people…", "…rich people are leaving, says … Jim Ratcliffe".
+        Regex("""\b[A-Z][\w.'-]+\s+(?:says?|said|admits?|warns?|claims?|tells?|told|telling|argues?|thinks|insists?)\b.*\b(?i:$CROWD_NOUNS)\b"""),
+        Regex("""\b(?i:$CROWD_NOUNS)\b.*,\s*(?i:says?|said|admits?|warns?|claims?)\s+[\w\s'-]*[A-Z]"""),
+        Regex("""\b(?:doesn't|does\s+not|don't|do\s+not)\s+mean\b""", RegexOption.IGNORE_CASE),
+        // People in the story state a fact ("Florida parents say their baby…"), unless a quoted reaction follows.
+        // Shoppers and customers are left out: "Dusk shoppers say…" is an affiliate line flagged since codebook v6.
+        Regex("""\b(?:people|parents|mums|dads|families|residents)\s+(?:say|says|said)\s+(?!['"])""", RegexOption.IGNORE_CASE),
+        Regex("""\b(?:say|says|said|bid)\s+(?:farewell|goodbye)\b""", RegexOption.IGNORE_CASE),
+        // Someone in the story said it, in a leading quote: "'People are scared of her'", "'People Were Livid' Rockstar co-founder…".
+        Regex("""^['"][^'"]*\b(?:people|fans|everyone|players)\b[^'"]*['"]""", RegexOption.IGNORE_CASE),
+        Regex("""\b(?:won't|will\s+not|wouldn't)\s+want\s+to\s+miss\b""", RegexOption.IGNORE_CASE),
+        Regex("""\bconvinced\s+me\b|\bso\s+I\s+(?:tried|tested|bought)\b""", RegexOption.IGNORE_CASE),
+        // The writer cheering the reader on: "PC Gamers Rejoice, …".
+        Regex("""\b(?:fans|gamers|players|shoppers)\s*,?\s+rejoice\s*[,!:]""", RegexOption.IGNORE_CASE),
+        Regex("""\b(?:than|what)\s+(?:most\s+)?(?:fans|players|people|gamers)\s+(?:reali[sz]e|think|know)""", RegexOption.IGNORE_CASE),
+        Regex("""\b(?:my|our)\s+(?:fans|players|parents|viewers|followers|customers)\b""", RegexOption.IGNORE_CASE),
+        // A study, poll or report is the source (study_as_proof judges those), and so is a bug report.
+        Regex("""\b(?:survey|poll|study|research|report)\b|\b(?:users|players|owners|customers)\s+(?:are\s+)?report(?:s|ing|ed)?\b""", RegexOption.IGNORE_CASE),
+    )
+
+    private fun crowdUncounted(headline: String, match: MatchResult): Boolean =
+        CROWD_SPARES.none { it.containsMatchIn(headline) }
+
+    /**
      * Codebook v7 sweeping verdict (`opinion_as_fact`): an absolute verdict in
      * the outlet's voice. "has changed everything", "will never be the same",
      * "turning … upside down", "Everything you've been told … is a lie".
@@ -1963,6 +2022,7 @@ internal object Signals {
         "characterised_remark" to regexMatcher(CHARACTERISED_REMARK),
         "leading_question" to regexMatcher(LEADING_QUESTION),
         "loaded_premise_question" to regexMatcher(LOADED_PREMISE_QUESTION),
+        "crowd_reaction" to regexMatcher(CROWD_REACTION, ::crowdUncounted),
         "sweeping_verdict" to regexMatcher(SWEEPING_VERDICT),
         "insinuation" to regexMatcher(INSINUATION),
         "loaded_label" to regexMatcher(LOADED_LABEL),

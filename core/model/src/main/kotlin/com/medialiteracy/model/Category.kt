@@ -1,7 +1,7 @@
 package com.medialiteracy.model
 
 /**
- * The ten headline techniques the Media Literacy Engine can recognize.
+ * The eleven headline techniques the Media Literacy Engine can recognize.
  *
  * Wording note: every user-facing string here describes the *technique*, never
  * the outlet or the journalist. The engine names a pattern and stops there; it
@@ -140,6 +140,23 @@ enum class Category(
         cautionExplanation = "Puts a claim in the form of a question.",
         askYourself = "Turn the question into a statement: would the outlet print that, and does the story back it up?",
         whyItWorks = "A question lets a headline plant a claim in the reader's mind while the outlet can say it only asked.",
+    ),
+
+    /**
+     * Added in rule pack 40 (codebook 15): a crowd of
+     * unknown size reported as the news ("Fans are furious", "People are
+     * just realizing", "The internet reacts"). Often the story rests on a
+     * handful of social media posts. The headline cannot show how many
+     * people there were, so the wording names the move and hands the reader
+     * the question, without saying the crowd was small.
+     */
+    CROWD(
+        id = "social_scraping",
+        displayName = "Social scraping",
+        explanation = "Reports what \"people\", \"fans\" or \"the internet\" are saying or doing, without saying how many or where.",
+        cautionExplanation = "Presents a crowd of unknown size as the news.",
+        askYourself = "How many people is this, and where? Stories like this are often built from a few social media posts.",
+        whyItWorks = "A few posts reported as what \"fans\" or \"people\" think read like a groundswell, so a handful of strangers' reactions passes for news.",
     );
 
     companion object {

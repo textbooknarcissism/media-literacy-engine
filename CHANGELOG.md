@@ -16,7 +16,19 @@ Work that is finished but not yet released sits under **Unreleased** at the top.
 
 ## Unreleased
 
-Rule pack 39, codebook 14. This adds a technique; the engine is not public yet, so the next release is 1.1.0 (see How version numbers work).
+Nothing yet.
+
+## 1.2.0 (2026-11-21)
+
+Rule pack 40, codebook 15. This adds a technique; the engine is not public yet, so it is a MINOR release (see How version numbers work).
+
+New in rule pack 40: **Social scraping** (`social_scraping`) is a new technique. It covers a crowd of unknown size and its reaction reported as the news: "Fans are furious over…", "People are just realizing…", "The internet reacts to…", "Strictly viewers say same thing as…", "GTA 6 players are already ditching…". Its reader question: how many people is this, and where? Stories like this are often built from a few social media posts. A real count ("35 million people"), a named person making the claim, people in the story stating a fact ("Florida parents say their baby…"), a study or poll, and a bug report are left alone. The crowd phrases Unnamed sources used to flag ("people are saying", "shoppers say", "fans brand") move here. See [position 21](docs/positions.md#21-a-crowd-reported-as-the-news-is-its-own-technique).
+
+**For apps.** Handle the eleventh technique, `Category.CROWD` (id `social_scraping`, family `speculation`), anywhere techniques are listed or switched on, including any `when` over `Category` without an `else`. Give it an icon, label and on/off setting if techniques have those, on by default. Headlines that showed Unnamed sources for "people are saying" or "shoppers say" now show Social scraping.
+
+## 1.1.0 (2026-11-18)
+
+Rule pack 39, codebook 14. This adds a technique; the engine is not public yet, so it is a MINOR release (see How version numbers work).
 
 New in rule pack 39: **Loaded question** (`loaded_question`) is its own technique, split from Opinion as fact. It covers a question that carries a claim, verdict or worry the headline does not state outright: "Was X right to…?", "Has the next financial crisis begun?", "Is X really…?", "… Should he?", "Ransomware has a new target. Is your backup ready?". Its reader question: turn the question into a statement: would the outlet print that, and does the story back it up? The leading questions and closing nudges that Opinion as fact used to flag move here, and a few new shapes are caught. Like Opinion as fact, it never applies to signed opinion, reviews or letters. See [position 20](docs/positions.md#20-a-loaded-question-is-its-own-technique).
 

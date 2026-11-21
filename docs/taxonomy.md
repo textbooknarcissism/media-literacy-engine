@@ -118,7 +118,8 @@ source is:
   reportedly, claims, insists. Real, but citable in a way an "insider" is not.
 
 Studies, surveys and polls are no longer here: since rule pack 38 they are
-their own technique, below.
+their own technique, below. Nor is a crowd's reaction ("people are saying",
+"shoppers say", "fans brand"): since rule pack 40 that is social scraping.
 
 Also detects **scare quotes**: a short quoted fragment inside a longer headline
 ("man seen with 'gun'", "'Trojan horse'"). These let a paper print a claim
@@ -275,3 +276,34 @@ and signed opinion, reviews and letters (codebook rule 2). Most loaded
 questions carry their load in ordinary words ("Why does Trump think he can act
 like a king?"), which rules cannot read reliably, so the engine catches the
 clear shapes and leaves the rest.
+
+## 11. Social scraping
+Reports a crowd of unknown size and its reaction as the news: what "people",
+"fans", "viewers", "players", "shoppers" or "the internet" are saying,
+thinking, feeling or doing. Added in rule pack 40 (codebook 15).
+
+What it covers:
+- a reaction as the story: "Fans are furious over region-locked cosmetics",
+  "Celebrity Traitors viewers divided as…", "The internet reacts to…";
+- a discovery or a trend credited to a crowd: "People are just realizing what
+  the 'I' in iPhone stands for", "GTA 6 players are already ditching Mandy";
+- pleased crowds as well as angry ones: "fans are thrilled", "shoppers call it
+  a 'must-have'";
+- a real event with the crowd added on: "Football club apologises for shirt
+  advert as people fume".
+
+Why it is its own technique: a writer reads a feed, finds a reaction that did
+well and reports it as news, or as what many people think. Read in the
+articles, these headlines rested on one Reddit thread, two or three posts on
+X, or none at all. The headline cannot show how many people there were, so the
+flag does not say the crowd was small. It hands the reader the check: **how
+many people is this, and where?**
+
+Leaves alone: a counted crowd ("35 million people", "over 35,000 people
+say…"), a named person making the claim ("Einhorn says younger people are…"),
+specific people in the story stating a fact ("Florida parents say their baby
+has wrong father…"), a poll, survey or study, a bug report ("players report
+crashes"), what people do in a game or with a product ("glitch lets players
+access first-person mode"), a leading quote, first person, and shopping copy
+("Fans won't want to miss…"). When the crowd's reaction is an anger word
+("fans fume"), it counts once, as social scraping, not as conflict as well.

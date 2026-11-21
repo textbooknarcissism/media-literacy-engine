@@ -12,7 +12,7 @@ Most work on clickbait treats it as a yes-or-no classification and solves it wit
 
 ## 2. The research behind each technique
 
-The engine's ten-technique taxonomy started from published work in linguistics, rhetoric and journalism research:
+The engine's eleven-technique taxonomy started from published work in linguistics, rhetoric and journalism research:
 
 ### A. Forward-reference and withheld detail (`curiosity_gap`)
 Blom & Hansen (2015, [*Click bait: Forward-reference as lure in online news headlines*](https://doi.org/10.1016/j.pragma.2014.11.010), *Journal of Pragmatics*, 76:87–100) showed that clickbait headlines often use words that point forward to the article (`this`, `these`, `here's what they found`, `the one thing`) without saying what they refer to. Scott (2021) later found the same pattern in another corpus (see §F).
@@ -87,9 +87,9 @@ What each study reports, and how far MLE relies on it. A citation explains why a
 
 ---
 
-## 3. The Ten Techniques
+## 3. The Eleven Techniques
 
-The ten techniques, with what each looks for and what it deliberately leaves alone:
+The eleven techniques, with what each looks for and what it deliberately leaves alone:
 
 | ID | Display Name | What it looks for | What it leaves alone |
 | :--- | :--- | :--- | :--- |
@@ -103,6 +103,7 @@ The ten techniques, with what each looks for and what it deliberately leaves alo
 | `science_overhype` | **Early science** | Breakthrough or cure claims that omit lab-stage, animal-model or simulation caveats. | Canceled immediately if the headline states the caveat (*"in mice"*, *"in lab tests"*); checks the summary for buried animal testing. |
 | `opinion_as_fact` | **Opinion as fact** | Value judgments or directives stated as plain fact in a news voice. | Never applied to signed or labeled opinion (bylines, *"Opinion:"*, reviews, letters) or to quoted words (codebook rules 1–2); separated from factual event reporting. |
 | `loaded_question` | **Loaded question** | A question that carries a claim, verdict or worry the headline does not state outright: a verdict (*"Was X right to…?"*, *"Is it time for X to quit?"*), a scare (*"Has the next financial crisis begun?"*), insinuation or sarcasm (*"Is X really…?"*, *"Why now?"*, *"What could possibly go wrong?"*), a nudge after a statement (*"… Should he?"*) and a hook aimed at the reader (*". Is your backup ready?"*); split from `opinion_as_fact` in codebook v14. | Plain and open questions (*"Can Labour end rough sleeping?"*), questions that doubt a claim (*"…: Does it?"*), service questions, a reader's dilemma (that is `curiosity_gap`), and signed opinion, reviews and letters (codebook rules 2, 5 and 7). |
+| `social_scraping` | **Social scraping** | A crowd of unknown size and its reaction reported as the news: *"Fans are furious over…"*, *"People are just realizing…"*, *"The internet reacts to…"*, *"Strictly viewers say same thing as…"*; added in codebook v15 | Left alone for a real count (*"35 million people"*), a named person making the claim, specific people in the story stating a fact (*"Florida parents say their baby…"*), a study or poll, a bug report, and what players or users do in a game or product. |
 
 ---
 

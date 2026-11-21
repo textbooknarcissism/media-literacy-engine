@@ -13,7 +13,7 @@ MLE is a teaching tool, not a filter ([position 17](positions.md#17-mle-is-a-tea
 | Catch rate, held-out, pooled | 111/274 (40.5%) | none; reported as information |
 | Miss check: headlines left alone called an obvious miss (November 2026) | 23/50 | none; reported as information |
 
-Current release: codebook version 13, rule pack 38 (`1.0.0`). Unreleased: codebook version 14, rule pack 39, a tenth technique, "Loaded question" (next release `1.1.0`). Rule packs ship monthly with the flag review.
+Current release: codebook version 15, rule pack 40 (`1.2.0`), which added an eleventh technique, "Social scraping". Rule packs ship monthly with the flag review.
 
 ## Near term
 

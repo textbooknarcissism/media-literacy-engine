@@ -1,9 +1,9 @@
 package com.medialiteracy.model
 
 /**
- * The ten techniques grouped into four things that feel different to read.
+ * The eleven techniques grouped into four things that feel different to read.
  *
- * Ten icons is too many to become instinctive; four is learnable in about a
+ * Eleven icons is too many to become instinctive; four is learnable in about a
  * week of normal use. The precise technique is still named when the reader taps
  * the headline: the icon only has to say which *kind* of thing is going on.
  *
@@ -47,7 +47,7 @@ enum class Family(
     companion object {
         fun of(category: Category): Family = when (category) {
             Category.FEAR, Category.RAGE -> SENSATIONALISM
-            Category.HEDGE, Category.SOURCING, Category.STUDY, Category.OVERHYPE -> SPECULATION
+            Category.HEDGE, Category.SOURCING, Category.STUDY, Category.CROWD, Category.OVERHYPE -> SPECULATION
             Category.CURIOSITY, Category.URGENCY -> ENGAGEMENT
             Category.OPINION, Category.QUESTION -> EDITORIALIZING
         }

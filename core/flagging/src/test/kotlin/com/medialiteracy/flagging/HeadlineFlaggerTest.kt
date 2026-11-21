@@ -378,8 +378,8 @@ class RealWorldPatternsTest {
     fun `affiliate commerce sourcing and rush are caught under standard categories`() {
         val affiliateSourcing = flagger.flag("Dusk shoppers say they've found the 'perfect' hallway rug - and it's reduced to £21")
         assertTrue(
-            Category.SOURCING in affiliateSourcing.categories,
-            "shoppers say must be caught under unnamed sources",
+            Category.CROWD in affiliateSourcing.categories,
+            "shoppers say must be caught under social scraping (moved from unnamed sources in rule pack 40)",
         )
 
         val commercialRush = flagger.flag("Fans rush to buy viral autumn jacket before it sells out")

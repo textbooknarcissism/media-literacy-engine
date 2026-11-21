@@ -2,7 +2,7 @@
 
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.4.20-blue.svg)](https://kotlinlang.org)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-![Version](https://img.shields.io/badge/Version-1.0.0-informational.svg)
+![Version](https://img.shields.io/badge/Version-1.2.0-informational.svg)
 ![Network calls](https://img.shields.io/badge/Network%20Calls-None-lightgrey.svg)
 
 MLE reads a news headline and points at the words that are working on you. It names the technique, marks the exact characters, and gives the reader one question to ask before they click.
@@ -56,7 +56,7 @@ Put several headlines in the quotes, each in its own single quotes, to check a b
 
 ## What it looks for
 
-Ten techniques. Each has a name a reader can remember and a question they can reuse on the next headline.
+Eleven techniques. Each has a name a reader can remember and a question they can reuse on the next headline.
 
 | Technique | What the headline does | The question |
 | :--- | :--- | :--- |
@@ -70,6 +70,7 @@ Ten techniques. Each has a name a reader can remember and a question they can re
 | Early science | Announces a breakthrough or a cure with no sign of how far the work has got. | Has this been tested on people, or only in a lab? |
 | Opinion as fact | States a judgment as though it were an event. | Is this something that happened, or somebody's view of it? |
 | Loaded question | Asks a question that carries a claim, verdict or worry it does not state outright. | Turn the question into a statement: would the outlet print that, and does the story back it up? |
+| Social scraping | Reports what "people", "fans" or "the internet" are saying or doing, without saying how many or where. | How many people is this, and where? Stories like this are often built from a few social media posts. |
 
 Fuller definitions, with what each rule deliberately leaves alone, are in [docs/taxonomy.md](docs/taxonomy.md).
 
@@ -120,7 +121,7 @@ This project gets better when people disagree with it. In rough order of how muc
 
 ## Use it in your app
 
-Version 1.0.0 is not on Maven Central yet. What each version contains, and what an app has to change when it upgrades, is in [CHANGELOG.md](CHANGELOG.md). Build it into your local Maven repository:
+Version 1.2.0 is not on Maven Central yet. What each version contains, and what an app has to change when it upgrades, is in [CHANGELOG.md](CHANGELOG.md). Build it into your local Maven repository:
 
 ```bash
 ./gradlew publishToMavenLocal
@@ -135,7 +136,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.medialiteracy:engine:1.0.0")
+    implementation("com.medialiteracy:engine:1.2.0")
 }
 ```
 
@@ -211,7 +212,7 @@ Many headlines tease something their own feed summary then states plainly. `flag
 
 ## How well it works
 
-The numbers are published so you can judge it for yourself. They come from `./gradlew :tools:benchmark:run`, and the full report is [docs/benchmark-results.md](docs/benchmark-results.md). These are for rule pack 38.
+The numbers are published so you can judge it for yourself. They come from `./gradlew :tools:benchmark:run`, and the full report is [docs/benchmark-results.md](docs/benchmark-results.md). These are for rule pack 40.
 
 The main measure is a monthly review. A person reads up to 50 headlines MLE flagged in that month's news and answers two questions about each. The target is 90% yes on both.
 
@@ -220,9 +221,9 @@ The main measure is a monthly review. A person reads up to 50 headlines MLE flag
 | October 2026 (33 headlines) | 28/33 (84.8%) | 23/33 (69.7%) |
 | November 2026 (30 headlines) | 28/30 (93.3%) | 28/30 (93.3%) |
 
-The second measure is how often it leaves honest headlines alone, counted on headlines the rules were never tuned on. The target is 97.5%. It currently leaves alone 1,238 of 1,275 (97.1%), which is short of the target.
+The second measure is how often it leaves honest headlines alone, counted on headlines the rules were never tuned on. The target is 97.5%. It currently leaves alone 1,226 of 1,263 (97.1%), which is short of the target.
 
-The third number is reported but is not a goal: of the clickbait in those same sets, it catches 111 of 274 (40.5%). In November a person also looked at 50 headlines it had left alone and called 23 of them an obvious miss.
+The third number is reported but is not a goal: of the clickbait in those same sets, it catches 115 of 286 (40.2%). In November a person also looked at 50 headlines it had left alone and called 23 of them an obvious miss.
 
 Read these with care. The sets are small, so one or two headlines move a rate by several points. The test headlines were labeled against the project's own [codebook](docs/benchmark/codebook.md): a language model drafted the labels without seeing the engine's answer, and a person spot-checks them blind. How that works, and where it is weak, is in [docs/METHODOLOGY.md](docs/METHODOLOGY.md) and [docs/benchmark/review-process.md](docs/benchmark/review-process.md). The reasoning behind each line the codebook draws is in [docs/positions.md](docs/positions.md).
 

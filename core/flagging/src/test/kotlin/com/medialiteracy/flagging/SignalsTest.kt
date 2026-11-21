@@ -160,6 +160,7 @@ class SignalsTest {
             "aged_unnamed_rule" to "Fishing crews are testing a little-known maritime law",
             "borrowed_name_condition" to "New pill tested for same condition as Bruce Willis",
             "crowd_credit" to "Presenter's exit plan 'rumbled' by viewers",
+            "crowd_reaction" to "Overwatch fans are furious over region-locked cosmetics",
             "unnamed_poll" to "New poll shows mayor trailing in every ward",
             "unspoken_quotes" to "Striker faces 'nightmare' week as deadline nears – 'time is running out'",
             "disclosed_slot" to "Actor reveals his daughter's reaction to the film",

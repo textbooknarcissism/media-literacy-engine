@@ -4,6 +4,7 @@
 # context: a sentence from the story, passed as story text, when the owner's call rests on it.
 # 2026-11-09 (rule pack 35): f12, f24 and f33 used to list a second technique that came from a hit too weak to flag alone ("Deadly", "could"). The owner said yes to those flags as a whole, not to each label, and decided that a flag names one clear technique unless two are each strong enough alone; the rows now require the main technique only.
 # 2026-11-17 (rule pack 38, codebook 13): f28a, f28b and m33 now name study_as_proof, split out of vague_sourcing at the owner's request. Same headlines, new technique.
+# 2026-11-21 (rule pack 40, codebook 15): c01 to c04 are the owner's calls from the crowd page; the new technique is social_scraping.
 # 2026-11-18 (rule pack 39, codebook 14): s01 now names loaded_question, split out of opinion_as_fact at the owner's request. Same headline, new technique.
 case	status	present	absent	headline	articleType	summary	context	note
 2026-10-f01	fixed	curiosity_gap	-	These Mini Backpacks Hold More Than You Think		Get the hands-free convenience of a backpack without all the bulk—these mini bags are ideal for light hikes, theme parks, and sightseeing.		Owner: clear, and helps a reader.
@@ -65,3 +66,7 @@ case	status	present	absent	headline	articleType	summary	context	note
 2026-11-13-m28	open	any	-	Do the Dems need new leadership?				Owner 2026-11-13 (my-outlets check): a question written to provoke. Open: codebook rule 7 calls a question about how something stands fair ("Can Labour end rough sleeping?"); waits on a codebook decision.
 2026-11-13-s01	fixed	loaded_question	-	Creatine is everywhere. What does science actually say?				Owner 2026-11-13 (screenshot from Know News): slipped past; the closing question implies you have been told wrong.
 2026-11-17-g01	fixed	-	all	21 brilliant ways to organize your kitchen that you'll wish you knew sooner				Owner 2026-11-17: fair. A service list that names its subject (as in rule pack 37); the regret hook is hype, but nothing is withheld. Was a Gauntlet case expecting a flag.
+2026-11-21-c01	fixed	social_scraping	-	'Best' Death in Paradise detective returns to screens and fans are thrilled				Owner 2026-11-21 (crowd page): a trick. A pleased crowd of unknown size counts as much as an angry one (codebook 15).
+2026-11-21-c02	fixed	-	social_scraping	Florida parents say their baby has wrong father after a clinic's IVF mistake				Owner 2026-11-21 (crowd page): fair. Specific people in the story stating a fact, not a crowd.
+2026-11-21-c03	fixed	social_scraping	-	Football club apologises for United 93 shirt advert as people fume over 9/11 reference				Owner 2026-11-21 (crowd page): a gentle note. The crowd is added to a real event; still flagged, as the quiet marker.
+2026-11-21-c04	fixed	-	social_scraping	About 35 million people have been put into new House districts in the fight over congressional maps, report says				Owner 2026-11-21 (crowd page): fair. A counted crowd.
