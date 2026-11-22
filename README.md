@@ -11,8 +11,8 @@ MLE reads a news headline and points at the words that are working on you. It na
 These 3 Tech Stocks Could Be Poised To Surge Next Week
 ^^^^^^^^^^^^^^^^^^^          ^^^^^^^^^^^^^^^
 Withheld detail              Speculation
-"Which things is it          "Has this actually happened,
-talking about, and does      or might it happen?"
+"Which things is it          "Who says it could happen,
+talking about, and does      and on what evidence?"
 the headline name them?"
 ```
 
@@ -48,7 +48,7 @@ On Windows use `gradlew.bat`. The first run takes a minute to build. Then you ge
 Scientists discover miracle cure that could end ageing
   PROMINENT
   Early science: "miracle" at 20..26
-    Ask yourself: Has this been tested on people, or only in a lab?
+    Ask yourself: Has this been tested on people, or only in a lab or on animals?
     Rule: compound:science_overhype
 ```
 
@@ -62,15 +62,15 @@ Eleven techniques. Each has a name a reader can remember and a question they can
 | :--- | :--- | :--- |
 | Alarmist framing | Uses frightening words without saying who is at risk or how likely it is. | Does it say who is actually at risk, and how likely it is? |
 | Conflict framing | Describes a disagreement in the language of a fight. | Did anyone actually attack anyone, or did they just disagree? |
-| Speculation | Reports something that could, may or might happen as if it were news. | Has this actually happened, or might it happen? |
-| Unnamed sources | Leans on "sources say" or "experts warn" with nobody to check. | Who said this, and could you go and check them? |
-| Study as proof | Uses "study finds" or "poll shows" as proof, without saying whose study it is or what else it found. | What did the study actually measure, and does the story tell you what else it found, or only the part that fits the headline? |
+| Speculation | Reports something that could, may or might happen as if it were news. | Who says it could happen, and on what evidence? |
+| Vague sourcing | Leans on "sources say" or "experts warn" with nobody to check. | Who, specifically, is saying this? |
+| Study as proof | Uses "study finds" or "poll shows" as proof, without saying whose study it is or what else it found. | What did the study measure, and does the story show what else it found? |
 | Withheld detail | Holds back the one fact that would let you skip the article. | What has been left out, and could it have been said here? |
 | Manufactured urgency | Sounds like breaking news when nothing is on a clock. | Is there a deadline in this story, or does it just sound like there is? |
-| Early science | Announces a breakthrough or a cure with no sign of how far the work has got. | Has this been tested on people, or only in a lab? |
+| Early science | Announces a breakthrough or a cure with no sign of how far the work has got. | Has this been tested on people, or only in a lab or on animals? |
 | Opinion as fact | States a judgment as though it were an event. | Is this something that happened, or somebody's view of it? |
 | Loaded question | Asks a question that carries a claim, verdict or worry it does not state outright. | Turn the question into a statement: would the outlet print that, and does the story back it up? |
-| Social scraping | Reports what "people", "fans" or "the internet" are saying or doing, without saying how many or where. | How many people is this, and where? Stories like this are often built from a few social media posts. |
+| Social scraping | Reports what "people", "fans" or "the internet" are saying or doing, without saying how many or where. | How many people is this, and where did they say it? |
 
 Fuller definitions, with what each rule deliberately leaves alone, are in [docs/taxonomy.md](docs/taxonomy.md).
 

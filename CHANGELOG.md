@@ -18,6 +18,21 @@ Work that is finished but not yet released sits under **Unreleased** at the top.
 
 Nothing yet.
 
+## 1.3.0 (2026-11-22)
+
+Rule pack 40, codebook 15. Reworded, no verdict changes. The technique `vague_sourcing` is now called **Vague sourcing** (was "Unnamed sources"), because the old name read as a complaint about all anonymous sourcing, including protected sources that serious reporting depends on. Its reader question is now "Who, specifically, is saying this?" and its explanation says it leans on "sources" or "experts" without saying who. The id, rules and weights are unchanged.
+
+Reader questions reworded, also with no verdict changes:
+
+- Speculation: "Who says it could happen, and on what evidence?" (was "Has this actually happened, or might it happen?", which the word "could" already answers).
+- Study as proof: "What did the study measure, and does the story show what else it found?" (shorter, with the same two checks).
+- Early science: "Has this been tested on people, or only in a lab or on animals?"
+- Social scraping: "How many people is this, and where did they say it?"
+- Withheld detail: the closing-tease question is now "What does the end of the headline promise, and why doesn't it just say it?", the same-answer question now ends "and could the headline have said it?", and the what-clause question gets back its missing "it".
+- Four rule questions that repeated their technique's question word for word were removed (`term:could`, `signal:unnamed_study`, `signal:loaded_premise_question`, `signal:crowd_reaction`). Those hits now show the technique's question, which is the same text.
+
+**For apps.** Nothing to handle in code: the id is the same. Anywhere an app hard-codes the old display name "Unnamed sources" or any of the old questions above, change it to match. Show `hit.askYourself`, not `hit.question`: `question` is now null for the four rules listed above.
+
 ## 1.2.0 (2026-11-21)
 
 Rule pack 40, codebook 15. This adds a technique; the engine is not public yet, so it is a MINOR release (see How version numbers work).

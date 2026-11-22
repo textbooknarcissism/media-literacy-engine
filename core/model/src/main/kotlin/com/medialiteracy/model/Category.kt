@@ -23,7 +23,7 @@ package com.medialiteracy.model
 enum class Category(
     /** Stable name used in the rule file and in saved settings. Never change these. */
     val id: String,
-    /** Shown next to the flag, e.g. "Unnamed sources". */
+    /** Shown next to the flag, e.g. "Vague sourcing". */
     val displayName: String,
     /** One plain sentence saying what the writer did. Shown on a full flag. */
     val explanation: String,
@@ -31,8 +31,8 @@ enum class Category(
     val cautionExplanation: String,
     /**
      * The question the reader should ask themselves: here and next time,
-     * without the tool. Written in second person, and always answerable by
-     * looking at the headline.
+     * without the tool. Written in second person, and answerable from the
+     * headline, or from the story when the headline cannot show it.
      */
     val askYourself: String,
     /**
@@ -62,15 +62,15 @@ enum class Category(
         displayName = "Speculation",
         explanation = "Reports hypothetical future scenarios as active news using modal words like could, may, or might.",
         cautionExplanation = "Says could or may, so the event has not actually happened yet.",
-        askYourself = "Has this actually happened, or might it happen?",
+        askYourself = "Who says it could happen, and on what evidence?",
         whyItWorks = "Modal verbs let an outlet run dramatic hypothetical scenarios as active news while protecting themselves from liability if the scenario never occurs.",
     ),
     SOURCING(
         id = "vague_sourcing",
-        displayName = "Unnamed sources",
-        explanation = "Rests major claims on unnamed insiders, rumors, or uncheckable sources.",
+        displayName = "Vague sourcing",
+        explanation = "Leans on \"sources\" or \"experts\" without saying who, so there is no one to check.",
         cautionExplanation = "Mentions sources or insiders without saying who they are.",
-        askYourself = "Who said this, and could you go and check them?",
+        askYourself = "Who, specifically, is saying this?",
         whyItWorks = "Anonymous attribution lends institutional authority to rumors or leaks without holding any named individual accountable for the truth of the claim.",
     ),
 
@@ -81,16 +81,15 @@ enum class Category(
      * wording names the move and hands the reader the check, without
      * accusing anyone of cherry-picking.
      *
-     * The one deliberate exception to the rule above that [askYourself] is
-     * answerable from the headline: what else a study found is only in the
-     * story, and that is the place to look.
+     * What else a study found is only in the story, so the question sends
+     * the reader there.
      */
     STUDY(
         id = "study_as_proof",
         displayName = "Study as proof",
         explanation = "Presents a study or poll as the proof of its point, without saying whose it is or what else it found.",
         cautionExplanation = "Credits a study or poll without saying whose it is.",
-        askYourself = "What did the study actually measure, and does the story tell you what else it found, or only the part that fits the headline?",
+        askYourself = "What did the study measure, and does the story show what else it found?",
         whyItWorks = "A study sounds like settled science, so one result picked to fit the story can borrow the authority of the whole study.",
     ),
     CURIOSITY(
@@ -114,7 +113,7 @@ enum class Category(
         displayName = "Early science",
         explanation = "Presents lab-bench, animal, or simulation research as a breakthrough before human clinical trials.",
         cautionExplanation = "Reports early-stage research without disclosing how far along it is.",
-        askYourself = "Has this been tested on people, or only in a lab?",
+        askYourself = "Has this been tested on people, or only in a lab or on animals?",
         whyItWorks = "Staging laboratory or animal trials as human breakthroughs generates widespread viral hope, while burying the years of trial hurdles deep in the text.",
     ),
     OPINION(
@@ -155,7 +154,7 @@ enum class Category(
         displayName = "Social scraping",
         explanation = "Reports what \"people\", \"fans\" or \"the internet\" are saying or doing, without saying how many or where.",
         cautionExplanation = "Presents a crowd of unknown size as the news.",
-        askYourself = "How many people is this, and where? Stories like this are often built from a few social media posts.",
+        askYourself = "How many people is this, and where did they say it?",
         whyItWorks = "A few posts reported as what \"fans\" or \"people\" think read like a groundswell, so a handful of strangers' reactions passes for news.",
     );
 

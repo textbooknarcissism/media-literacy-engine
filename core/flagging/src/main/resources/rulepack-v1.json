@@ -394,7 +394,6 @@
     {
       "id": "speculative_hedge",
       "questions": {
-        "term:could": "Who says it could happen, and on what evidence?",
         "term:may": "Does the headline say how likely this is, or only that it's possible?"
       },
       "weight": 0.35,
@@ -553,7 +552,6 @@
     {
       "id": "study_as_proof",
       "questions": {
-        "signal:unnamed_study": "What did the study actually measure, and does the story tell you what else it found, or only the part that fits the headline?",
         "signal:unnamed_poll": "Whose poll is it, who was asked, and does the story show the whole result or just the number that fits?"
       },
       "weight": 0.6,
@@ -619,12 +617,12 @@
         "signal:fond_descriptor": "Which one is it, and why isn't it named?",
         "signal:pointed_person": "Who is it, and why doesn't the headline say?",
         "signal:announced_list": "What are they, and could the headline have named one?",
-        "signal:closing_teaser": "What does the last sentence promise without saying?",
+        "signal:closing_teaser": "What does the end of the headline promise, and why doesn't it just say it?",
         "signal:borrowed_name_condition": "What is the condition, and why is a famous name standing in for it?",
         "signal:crowd_credit": "What did they notice, and why isn't it in the headline?",
         "signal:fond_possessive": "Which one is it, and why isn't it named?",
-        "signal:same_answer": "What was the answer they all gave?",
-        "signal:what_clause": "What was it, and could the headline have said?",
+        "signal:same_answer": "What answer did they all give, and could the headline have said it?",
+        "signal:what_clause": "What was it, and could the headline have said it?",
         "signal:unstated_reason": "What is the reason, and why isn't it given?",
         "signal:withheld_attribute": "What is the date, name or detail, and could the headline have given it?",
         "signal:generic_subject": "Which one is it, and why isn't it named?",
@@ -1245,8 +1243,7 @@
       "questions": {
         "signal:leading_question": "What answer does the question push you toward, and does the story back it?",
         "signal:trailing_rhetorical_question": "What answer does the closing question push you toward?",
-        "signal:betteridge_superlative_question": "Would the outlet print the answer it is hinting at as a plain statement?",
-        "signal:loaded_premise_question": "Turn the question into a statement: would the outlet print that, and does the story back it up?"
+        "signal:betteridge_superlative_question": "Would the outlet print the answer it is hinting at as a plain statement?"
       },
       "weight": 1,
       "noticeWeight": 0.5,
@@ -1270,9 +1267,6 @@
     },
     {
       "id": "social_scraping",
-      "questions": {
-        "signal:crowd_reaction": "How many people is this, and where? Stories like this are often built from a few social media posts."
-      },
       "weight": 0.6,
       "noticeWeight": 0.5,
       "softWeight": 0.35,

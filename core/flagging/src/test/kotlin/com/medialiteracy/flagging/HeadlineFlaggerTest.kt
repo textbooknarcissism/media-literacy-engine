@@ -1057,7 +1057,7 @@ class RealWorldPatternsTest {
     fun `study as proof asks what else the study found`() {
         val hit = flagger.flag("Women's autoimmune symptoms more likely to be dismissed as psychological, study finds")
             .hits.first { it.category == Category.STUDY }
-        assertTrue(hit.question!!.contains("what else it found"))
+        assertTrue(hit.askYourself.contains("what else it found"))
         val poll = flagger.flag("Yet another poll shows Reform UK falling to third place behind Tories")
             .hits.first { it.category == Category.STUDY }
         assertTrue(poll.question!!.contains("just the number that fits"))
@@ -1104,6 +1104,6 @@ class RealWorldPatternsTest {
     fun `a loaded question hands the reader the statement check`() {
         val hit = flagger.flag("Was the minister right to call striking nurses 'greedy'?")
             .hits.first { it.category == Category.QUESTION }
-        assertTrue(hit.question!!.contains("Turn the question into a statement"))
+        assertTrue(hit.askYourself.contains("Turn the question into a statement"))
     }
 }
