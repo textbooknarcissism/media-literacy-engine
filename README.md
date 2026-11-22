@@ -2,7 +2,7 @@
 
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.4.20-blue.svg)](https://kotlinlang.org)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-![Version](https://img.shields.io/badge/Version-1.2.0-informational.svg)
+![Version](https://img.shields.io/badge/Version-1.3.1-informational.svg)
 ![Network calls](https://img.shields.io/badge/Network%20Calls-None-lightgrey.svg)
 
 MLE reads a news headline and points at the words that are working on you. It names the technique, marks the exact characters, and gives the reader one question to ask before they click.
@@ -19,6 +19,12 @@ the headline name them?"
 It is a Kotlin library made of fixed rules. There is no model inside it, it makes no network calls, and the same headline always gets the same answer, so every flag can be traced to the rule that produced it.
 
 MLE is a research and educational project. It tries to make a handful of headline techniques easy to name and easy to question, and it is open so that people can test the rules, challenge them and improve them. It is a ruleset, and you can use it however suits you. If you would like to help, start with [Ways to contribute](#ways-to-contribute).
+
+## Why it exists
+
+MLE did not start with a question about what the news says. It started with how the news is told, and with what gets chosen as news at all. Read enough headlines and the same moves keep coming back: the detail held back to earn a click, the borrowed authority, the guess dressed as a fact. These moves turn out to be well studied. Linguists have described them, and computer scientists have built classifiers that sort headlines into clickbait and not clickbait. What the research mostly stops short of is giving the skill to the reader: a way to see the technique in the words in front of them, and a question to ask about it. MLE is an attempt at that missing step.
+
+What gets chosen as news is part of the same question, but a headline cannot show what was left out, so MLE works on the part a headline does show: its wording.
 
 ## What it is for
 

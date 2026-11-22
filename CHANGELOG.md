@@ -18,6 +18,12 @@ Work that is finished but not yet released sits under **Unreleased** at the top.
 
 Nothing yet.
 
+## 1.3.1 (2026-11-22)
+
+Rule pack 40, codebook 15. Documentation only, no verdict changes. The README has a new "Why it exists" section on where MLE came from, and METHODOLOGY.md §1 opens with a longer version of it. The README version badge is corrected.
+
+**For apps:** nothing to do. The engine flags exactly as 1.3.0 does.
+
 ## 1.3.0 (2026-11-22)
 
 Rule pack 40, codebook 15. Reworded, no verdict changes. The technique `vague_sourcing` is now called **Vague sourcing** (was "Unnamed sources"), because the old name read as a complaint about all anonymous sourcing, including protected sources that serious reporting depends on. Its reader question is now "Who, specifically, is saying this?" and its explanation says it leans on "sources" or "experts" without saying who. The id, rules and weights are unchanged.

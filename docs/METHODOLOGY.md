@@ -4,6 +4,8 @@ This document covers the research behind the Media Literacy Engine, how the rule
 
 ## 1. The approach
 
+MLE began with how news is reported and with what outlets treat as newsworthy, more than with what any one story says. Watching headlines over time showed a small set of techniques coming back again and again, and each of them has been studied: linguists have described how they work on a reader, and clickbait research has built systems to detect them. That research mostly ends at a label, though. A headline gets marked as clickbait, or hidden, and the reader learns nothing they can use on the next one. MLE takes the research a step further, toward the reader: it names the technique, shows the exact words, and asks one question. Choosing what counts as news is out of its reach, because a headline cannot show what was left out, so the engine works on wording alone.
+
 Most work on clickbait treats it as a yes-or-no classification and solves it with a neural network or a large language model. MLE does something narrower, for three reasons.
 
 1. It is meant to teach. The goal is a reader who recognizes a technique on sight. Filtering or blocking headlines would not get there.
