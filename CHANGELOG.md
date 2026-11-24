@@ -16,7 +16,7 @@ Work that is finished but not yet released sits under **Unreleased** at the top.
 
 ## Unreleased
 
-Nothing yet.
+Documentation only, no verdict changes. The 1.1.0 entry now says why that version has no git tag.
 
 ## 1.3.1 (2026-11-22)
 
@@ -50,6 +50,8 @@ New in rule pack 40: **Social scraping** (`social_scraping`) is a new technique.
 ## 1.1.0 (2026-11-18)
 
 Rule pack 39, codebook 14. This adds a technique; the engine is not public yet, so it is a MINOR release (see How version numbers work).
+
+This version has no git tag. Its changes were first published with 1.2.0.
 
 New in rule pack 39: **Loaded question** (`loaded_question`) is its own technique, split from Opinion as fact. It covers a question that carries a claim, verdict or worry the headline does not state outright: "Was X right to…?", "Has the next financial crisis begun?", "Is X really…?", "… Should he?", "Ransomware has a new target. Is your backup ready?". Its reader question: turn the question into a statement: would the outlet print that, and does the story back it up? The leading questions and closing nudges that Opinion as fact used to flag move here, and a few new shapes are caught. Like Opinion as fact, it never applies to signed opinion, reviews or letters. See [position 20](docs/positions.md#20-a-loaded-question-is-its-own-technique).
 
