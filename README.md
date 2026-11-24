@@ -88,7 +88,7 @@ When you also have the story's summary or opening, a flag for withheld detail ca
 
 ### One implementation: Know News
 
-[Know News](https://knownews.app) is a calm, private RSS reader for Android and the first app built on these rules. Its flagging feature is called CON-Text (Cues Observed in News Text): MLE is the engine, and CON-Text is how Know News puts it in front of readers.
+[Know News](https://knownews.app) is a calm, private RSS reader, on Android now and coming to iOS, and the first app built on these rules. Its flagging feature is called CON-Text (Cues Observed in News Text): MLE is the engine, and CON-Text is how Know News puts it in front of readers.
 
 CON-Text highlights the flagged words in a headline. Tapping one opens the technique's name, what the headline is doing, and a question that asks the reader to pause for a moment before reading on. Readers can switch off any technique, and change or remove a flag they think is wrong. Those changes stay on the device. They can also be exported as a file, so a reader can test them against their own copy of MLE.
 
